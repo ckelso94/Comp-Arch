@@ -15,6 +15,10 @@
 # 21 "test.s"
 ;where we can save registers if we need a temporary register
 
+;0x0100
+
+;0xFF00
+
 
 ;while($a1 > 0) do {
 while_top:
@@ -29,16 +33,7 @@ jmp while_end
 
  ;if($t0 > 0x0100) then {
  sw $v0, 0x20($zero);save $v0
- andi $v0, $v0, 0x0000
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
- ori $v0, $v0, 0x1
- slli $v0, $v0, 4
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
-
+ lw $v0, 0x22($zero);load const 1 from address (put in memory by simulator)
  slt $v0, $v0, $t0;$v0 = 1 if 0x0100 < $t0
  sne $v0, $zero;if $v0 = 1 (i.e. $t0 > 0x0100), then skip the jump
  jmp else_body
@@ -51,16 +46,7 @@ jmp while_end
 
   ;Mem[$a0] = 0xFF00
   sw $v0, 0x20($zero);save $v0
-  andi $v0, $v0, 0x0000
- ori $v0, $v0, 0xF
- slli $v0, $v0, 4
- ori $v0, $v0, 0xF
- slli $v0, $v0, 4
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
-
+  lw $v0, 0x24($zero);load const 1 from address (put in memory by simulator)
   sw $v0, 0($a0);save 0xFF00 to memory
   lw $v0, 0x20($zero);restore $v0
 
@@ -75,16 +61,7 @@ jmp while_end
 
   ;Mem[$a0] = 0x00FF
   sw $v0, 0x20($zero);save $v0
-  andi $v0, $v0, 0x0000
- ori $v0, $v0, 0xF
- slli $v0, $v0, 4
- ori $v0, $v0, 0xF
- slli $v0, $v0, 4
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
- ori $v0, $v0, 0x0
- slli $v0, $v0, 4
-
+  lw $v0, 0x24($zero);load const 1 from address (put in memory by simulator)
   sw $v0, 0($a0);save 0xFF00 to memory
   lw $v0, 0x20($zero);restore $v0
 
