@@ -21,14 +21,6 @@
 ;where we can save registers if we need a temporary register
 #define TEMP_ADDR 0x20
 
-mov($v0,0,0,4,0)
-mov($v1,1,0,1,0)
-mov($v2,0,0,0,F)
-mov($v3,0,0,F,0)
-mov($t0,0,0,0,0)
-mov($a0,0,0,1,0)
-mov($a1,0,0,0,5)
-
 ;while($a1 > 0) do {
 while_top:
 slti $t0, $a1, 1;test <= 0 (or < 1) (we don't need t0 until later)
