@@ -1,4 +1,5 @@
 import sys
+import os
 
 ALU_OPS = {"add", "sub", "sll", "srl", "and", "or", "xor", "nor"}
 ALU_FUNC = {"add":0x0, "sub":0x1, "sll":0x2, "srl":0x3, "and":0x4, "or":0x5, "xor":0x6, "nor":0x7}
@@ -12,7 +13,6 @@ R = 1
 I = 2
 L = 3
 J = 4
-
 
 #returns a 4 bit value
 def op_encode(op):
@@ -77,6 +77,9 @@ def main():
     #will be a dictionary linking labels to real addresses
     labels = {}
 
+    #list of machine codes
+    codes = []
+
     #loop to clean up spacing and record labels
     #lines with labels are deleted
     i = 0
@@ -113,6 +116,12 @@ def main():
             lines = lines[0:i] + lines[i+1:]
         else:
             i += 1
+
+    #this fails if outfilename doesn't exist, so just ignore it
+    try:
+        os.unlink(outfilename)
+    except:
+        pass
 
     #now we actually look at the code
     for line in lines:
@@ -186,7 +195,9 @@ def main():
         elif type == J:
             hex |= const
 
-        #TODO output to binary file
-        print(format(hex,"04x"))
+        codes.append(hex)
+        with open(outfilename, "ab") as f:
+            f.write(bytes([hex & 0x00FF]))
+            f.write(bytes([(hex & 0xFF00) >> 8]))
 
 main()
