@@ -161,9 +161,9 @@ def main():
             except:
                 const = labels[addr]
         elif type == L:#lw and sw are weird because they're like lw rs,const(rt)
-            rs = REGS[args[0]]
+            rt = REGS[args[0]]
             pred = args[1].split("(")
-            rt = REGS[pred[1].strip(" ")[0:-1]]
+            rs = REGS[pred[1].strip(" ")[0:-1]]
             try:#if it's not a valid int, assume it's a label
                 const = int_base(pred[0].strip(" "))
             except:
