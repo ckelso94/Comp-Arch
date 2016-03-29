@@ -49,7 +49,7 @@ uint16_t sign_extend_const(uint16_t instr)
 }
 
 
-void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, EXE_MEM_Buffer *out_buf)
+void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 {
 	printf("EXE\n");
 	//see what value we need to feed into the ALU
