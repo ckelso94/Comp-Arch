@@ -20,8 +20,8 @@ typedef struct
 	uint16_t PC;
 	//control values
 	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,
-			mem_write,mem_to_reg,
-			reg_dst,reg_write;
+			mem_write,mem_read,
+			mem_to_reg,reg_dst,reg_write;
 } ID_EXE_Buffer;
 
 typedef struct
@@ -35,7 +35,7 @@ typedef struct
 	//next PC value
 	uint16_t next_PC;
 	//control values
-	uint8_t mem_write,
+	uint8_t mem_write,mem_read,
 			mem_to_reg,reg_dst,reg_write;
 
 } EXE_MEM_Buffer;

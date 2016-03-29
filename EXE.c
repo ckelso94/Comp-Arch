@@ -25,7 +25,7 @@ uint16_t ALU(uint16_t a, uint16_t b, uint8_t func)
 	}
 }
 
-uint8_t ALU_ctrl(ALU_op, func)
+uint8_t ALU_ctrl(uint8_t ALU_op, uint8_t func)
 {
 	switch(ALU_op)//TODO use the actual values
 	{
@@ -71,8 +71,8 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	
 	//skipping (branching)
 	//TODO fix skip_value to use the actual value
-	if(in_buf->skip && (!in_buf->skip_value && out_buf->ALU_out == 0 ||//seq
-				in_buf->skip_value && out_buf->ALU_out != 0))//sne
+	if(in_buf->skip && ((!in_buf->skip_value && out_buf->ALU_out == 0) ||//seq
+						(in_buf->skip_value && out_buf->ALU_out != 0)))//sne
 	{
 		out_buf->next_PC = in_buf->PC + 4;
 	}
@@ -85,7 +85,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	if(in_buf->slt_ctrl == 1)
 	{
 		out_buf->ALU_out &= 0x8000;//get sign bit
-		out_buf->ALU_out >> 15;//shift all the way down
+		out_buf->ALU_out >>= 15;//shift all the way down
 	}
 
 	//jumping
@@ -106,6 +106,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	out_buf->mem_to_reg = in_buf->mem_to_reg;
 	out_buf->reg_dst = in_buf->reg_dst;
 	out_buf->reg_write = in_buf->reg_write;
+	out_buf->mem_read = in_buf->mem_read;
 }
 
 

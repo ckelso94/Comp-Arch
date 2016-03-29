@@ -8,7 +8,7 @@ OBJ=$(SRC:%.c=%.o)
 all: $(OBJ)
 	$(CC) -o $(BIN) $^ $(CCFLAGS)
 
-%.o: %.c
+%.o: %.c stages.h
 	$(CC) -o $@ -c $< $(CCFLAGS)
 
 clean:
