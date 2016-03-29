@@ -25,6 +25,7 @@ uint16_t ALU(uint16_t a, uint16_t b, uint8_t func)
 	}
 }
 
+/*
 uint8_t ALU_ctrl(uint8_t ALU_op, uint8_t func)
 {
 	switch(ALU_op)//TODO use the actual values
@@ -33,10 +34,11 @@ uint8_t ALU_ctrl(uint8_t ALU_op, uint8_t func)
 			return 0x0;//add, for lw-type instructions
 		case 0x1:
 			return 0x1;//sub, for slt-type instructions
-		case 0x2:
+		case 0x02:
 			return func;//standard ALU
 	}
 }
+*/
 
 uint16_t sign_extend_const(uint16_t instr)
 {
@@ -64,7 +66,8 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	}
 
 	//what the ALU should do
-	uint8_t func = ALU_ctrl(in_buf->ALU_op, in_buf->instr & 0x3);//last three bits of instr are func
+	//uint8_t func = ALU_ctrl(in_buf->ALU_op, in_buf->instr & 0x3);//last three bits of instr are func
+	uint8_t func = in_buf->ALU_op;
 	
 	//actually do th math
 	out_buf->ALU_out = ALU(in_buf->rs, ALU_b, func);
@@ -74,7 +77,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	if(in_buf->skip && ((!in_buf->skip_value && out_buf->ALU_out == 0) ||//seq
 						(in_buf->skip_value && out_buf->ALU_out != 0)))//sne
 	{
-		out_buf->next_PC = in_buf->PC + 4;
+		out_buf->next_PC = in_buf->PC + 2;
 	}
 	else
 	{
