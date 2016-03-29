@@ -6,7 +6,7 @@ typedef struct
 {
 	//the instruction, not the address
 	uint16_t instr;
-	//the value of the next PC (actually PC+4)
+	//the value of the next PC (actually PC+2)
 	uint16_t PC;
 } IF_ID_Buffer;
 

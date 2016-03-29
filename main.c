@@ -3,6 +3,27 @@
 #include <stdlib.h>
 #include "stages.h"
 
+void EXE_test()
+{
+	ID_EXE_Buffer in;
+	in.rs = 0x0005;
+	in.rt = 0x0004;
+	in.instr = 0x0002;
+	in.PC = 0x0006;
+	in.ALU_src = 1;
+	in.slt_ctrl = 0;
+	in.skip = 0;
+	in.skip_value = 0;
+	in.jump = 0;
+	in.ALU_op = 0x00;
+	//other control bits don't matter
+	
+	EXE_MEM_Buffer out;
+	EXE_stage(&in, &out);
+	printf("out:%d\n",out.ALU_out);
+	printf("new PC:%d\n",out.next_PC);
+}
+
 int main(int argc, char** argv)
 {
 	printf("hello world\n");
@@ -35,7 +56,7 @@ int main(int argc, char** argv)
 	//TODO see if endianness matters
 	for(int i = 0; i < size; i++)
 	{
-		printf("%d\n",instr_mem[i]);
+		//printf("%d\n",instr_mem[i]);
 	}
 
 	IF_stage(&PC, instr_mem, &if_id);
@@ -43,4 +64,6 @@ int main(int argc, char** argv)
 	EXE_stage(&id_exe, &exe_mem);
 	MEM_stage(&exe_mem, &PC, data_mem, &mem_wb);
 	WB_stage(&mem_wb, reg_file);
+
+	EXE_test();
 }
