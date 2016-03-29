@@ -3,7 +3,7 @@ CCFLAGS=-Wall -Wextra -pedantic -g
 BIN=main.exe
 
 SRC=$(wildcard *.c)
-OBJ=$(SRC:%.cpp=%.o)
+OBJ=$(SRC:%.c=%.o)
 
 all: $(OBJ)
 	$(CC) -o $(BIN) $^ $(CCFLAGS)
