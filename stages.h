@@ -35,19 +35,21 @@ typedef struct
 	//next PC value
 	uint16_t next_PC;
 	//control values
-	uint8_t mem_write,mem_to_reg,
-			reg_dst,reg_write;
+	uint8_t mem_write,
+			mem_to_reg,reg_dst,reg_write;
 
 } EXE_MEM_Buffer;
 
 typedef struct
 {
-	//data to possibly be written back
-	uint16_t data;
+	//memory data to possibly be written back
+	uint16_t mem_data;
+	//alu output to possibly be written back
+	uint16_t alu_data;
 	//possible registers to write to
 	uint8_t rt,rd;
 	//control values
-	uint8_t reg_dst,reg_write;
+	uint8_t mem_to_reg,reg_dst,reg_write;
 } MEM_WB_Buffer;
 
 //PC is just a pointer, we need it to possible modify the PC value across stages

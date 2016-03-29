@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 
 	IF_stage(&PC, instr_mem, &if_id);
 	ID_stage(&if_id, reg_file, &id_exe);
-	EXE_stage(&id_exe, &PC, &exe_mem);
-	MEM_stage(&exe_mem, data_mem, &mem_wb);
+	EXE_stage(&id_exe, &exe_mem);
+	MEM_stage(&exe_mem, &PC, data_mem, &mem_wb);
 	WB_stage(&mem_wb, reg_file);
 }
