@@ -64,7 +64,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	}
 
 	//what the ALU should do
-	uint8_t func = ALU_ctrl(in_buf->ALU_op, in_buf->func);
+	uint8_t func = ALU_ctrl(in_buf->ALU_op, in_buf->instr & 0x3);//last three bits of instr are func
 	
 	//actually do th math
 	out_buf->ALU_out = ALU(in_buf->rs, ALU_b, func);
