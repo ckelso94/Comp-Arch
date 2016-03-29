@@ -40,7 +40,7 @@ uint8_t ALU_ctrl(ALU_op, func)
 
 uint16_t sign_extend_const(uint16_t instr)
 {
-	uint16_t c = (in_buf->instr) & 0x3F;//get last 6 bits
+	uint16_t c = instr & 0x3F;//get last 6 bits
 	if(c & 0x20)//if sign bit is set
 		{
 			c |= ~0x003F;//fill upper bits with 1s
@@ -54,7 +54,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, EXE_MEM_Buffer *out_buf)
 	printf("EXE\n");
 	//see what value we need to feed into the ALU
 	uint16_t ALU_b;
-	if(ALU_src == 0)//TODO use actual values
+	if(in_buf->ALU_src == 0)//TODO use actual values
 	{
 		ALU_b = in_buf->rt;
 	}
@@ -71,12 +71,12 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, EXE_MEM_Buffer *out_buf)
 	
 	//skipping (branching)
 	//TODO fix skip_value to use the actual value
-	if(skip && (!in_buf->skip_value && out_buf->ALU_out == 0 ||//seq
-				inbuf->skip_value && out_buf->ALU_out != 0))//sne
+	if(in_buf->skip && (!in_buf->skip_value && out_buf->ALU_out == 0 ||//seq
+				in_buf->skip_value && out_buf->ALU_out != 0))//sne
 	{
 		out_buf->next_PC = in_buf->PC + 4;
 	}
-	else if(skip)
+	else
 	{
 		out_buf->next_PC = in_buf->PC;
 	}
