@@ -19,7 +19,7 @@ typedef struct
 	//PC+4 from IF_ID
 	uint16_t PC;
 	//control values
-	uint8_t ALU_src,slt_ctrl,skip,jump,ALU_op,func,
+	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,func,
 			mem_write,mem_to_reg,
 			reg_dst,reg_write;
 } ID_EXE_Buffer;
