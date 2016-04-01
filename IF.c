@@ -15,5 +15,5 @@ void IF_stage(uint16_t *PC, uint16_t *instr_mem, IF_ID_Buffer *out_buf)
 	*PC += 2;
 
 	//Store new value of PC for next stage
-	out_buf->PC = PC;
+	out_buf->PC = *PC;
 }
