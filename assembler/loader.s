@@ -1,12 +1,12 @@
 #define mov(r,A,B,C,D)\
 	andi r, r, 0x0000@\
-	ori r, r, 0x(A)@\
+	ori r, r, 0x~A@\
 	slli r, r, 4@\
-	ori r, r, 0x(B)@\
+	ori r, r, 0x~B@\
 	slli r, r, 4@\
-	ori r, r, 0x(C)@\
+	ori r, r, 0x~C@\
 	slli r, r, 4\
-	ori r, r, 0x(D)@\
+	ori r, r, 0x~D@\
 	slli r, r, 4@\
 
 ;where we can save registers if we need a temporary register

@@ -1,12 +1,12 @@
 #define mov(r,A,B,C,D)\
 	andi r, r, 0x0000@\
-	ori r, r, 0x(A)@\
+	ori r, r, 0x~A@\
 	slli r, r, 4@\
-	ori r, r, 0x(B)@\
+	ori r, r, 0x~B@\
 	slli r, r, 4@\
-	ori r, r, 0x(C)@\
+	ori r, r, 0x~C@\
 	slli r, r, 4\
-	ori r, r, 0x(D)@\
+	ori r, r, 0x~D@\
 	slli r, r, 4@\
 
 ;where we can save registers if we need a temporary register
@@ -14,7 +14,7 @@
 
 ;some needed addresses for constants
 #define CONST_1_ADDR 0x22
-#define CONST_1_ADDR 0x24
+#define CONST_2_ADDR 0x24
 
 ;loading some constants into memory
 mov($v0,0,1,0,0)
