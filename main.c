@@ -28,10 +28,14 @@ int main(int argc, char** argv)
 {
 	printf("hello world\n");
 
-	IF_ID_Buffer if_id;
-	ID_EXE_Buffer id_exe;
-	EXE_MEM_Buffer exe_mem;
-	MEM_WB_Buffer mem_wb;
+	IF_ID_Buffer if_id_read;
+	IF_ID_Buffer if_id_write;
+	ID_EXE_Buffer id_exe_read;
+	ID_EXE_Buffer id_exe_write;
+	EXE_MEM_Buffer exe_mem_read;
+	EXE_MEM_Buffer exe_mem_write;
+	MEM_WB_Buffer mem_wb_read;
+	MEM_WB_Buffer mem_wb_write;
 
 	uint16_t PC;
 	uint16_t reg_file[8];
@@ -59,11 +63,16 @@ int main(int argc, char** argv)
 		//printf("%d\n",instr_mem[i]);
 	}
 
-	IF_stage(&PC, instr_mem, &if_id);
-	ID_stage(&if_id, reg_file, &id_exe);
-	EXE_stage(&id_exe, &exe_mem);
-	MEM_stage(&exe_mem, &PC, data_mem, &mem_wb);
-	WB_stage(&mem_wb, reg_file);
+	IF_stage(&PC, instr_mem, &if_id_write);
+	ID_stage(&if_id_read, reg_file, &id_exe_write);
+	EXE_stage(&id_exe_read, &exe_mem_write);
+	MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_write);
+	WB_stage(&mem_wb_read, reg_file);
+
+	if_id_read = if_id_write;
+	id_exe_read = id_exe_write;
+	exe_mem_read = exe_mem_write;
+	mem_wb_read = mem_wb_write;
 
 	EXE_test();
 }
