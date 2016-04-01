@@ -41,24 +41,41 @@ int main(int argc, char** argv)
 	uint16_t reg_file[8];
 	uint16_t data_mem[1024];
 
-	//getting the instructions from a binary file
-	//TODO filename should be from argv
-	FILE *in = fopen("a.out", "r");
-	if(in == NULL)
+	long prog_size = 0;
+	FILE **files = (FILE **) malloc((argc-1) * sizeof(FILE *));
+	int *sizes = (int *) malloc((argc-1) * sizeof(int));
+
+	//getting the instructions from a binary file from args
+	for(int i = 1; i < argc; i++)
 	{
-		fprintf(stderr, "a.out not found\n");
-		return EXIT_FAILURE;
+		files[i-1] = fopen(argv[i], "r");
+		if(files[i-1] == NULL)
+		{
+			fprintf(stderr, "a.out not found\n");
+			return EXIT_FAILURE;
+		}
+		fseek(files[i-1], 0, SEEK_END);
+		//size is the number of instructions
+		sizes[i-1] = ftell(files[i-1]) / sizeof(uint16_t);
+		prog_size += sizes[i-1];
+		rewind(files[i-1]);
 	}
-	fseek(in, 0, SEEK_END);
-	//size is the number of instructions
-	int size = ftell(in) / sizeof(uint16_t);
-	rewind(in);
-	uint16_t *instr_mem = malloc(size * sizeof(uint16_t));
-	fread(instr_mem, sizeof(uint16_t), size, in);
-	fclose(in);
+
+	uint16_t *instr_mem = malloc(prog_size * sizeof(uint16_t));
+
+	long current = 0;//offset of where to insert each file into instr_mem
+	for(int i = 0; i < argc - 1; i++)
+	{
+		int size = sizes[i];
+		fread(instr_mem + current, sizeof(uint16_t), size, files[i]);
+		current += size;
+		fclose(files[i]);
+	}
+	free(sizes);
+	free(files);
 
 	//TODO see if endianness matters
-	for(int i = 0; i < size; i++)
+	for(int i = 0; i < prog_size; i++)
 	{
 		//printf("%d\n",instr_mem[i]);
 	}
