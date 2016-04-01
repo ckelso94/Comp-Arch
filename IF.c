@@ -7,8 +7,7 @@ void IF_stage(uint16_t *PC, uint16_t *instr_mem, IF_ID_Buffer *out_buf)
 	printf("IF\n");
 
 	//Access instruction stored at address held in PC
-	//TODO: Check to see if this offset calculation is correct
-	uint16_t offset_index = *instr_mem - *PC;
+	uint16_t offset_index = *PC / 2;//byte index -> word index
 	out_buf->instr = instr_mem[offset_index];
 
 	//Add 2 to PC to get to next instruction

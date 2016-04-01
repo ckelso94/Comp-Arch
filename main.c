@@ -27,8 +27,8 @@ void EXE_test()
 void IF_test()
 {
 	IF_ID_Buffer out;
-	uint16_t instr_mem[1] = {0x0};
-	uint16_t PC = 0;
+	uint16_t instr_mem[] = {0x0, 0x5, 0x3};
+	uint16_t PC = 4;
 	IF_stage(&PC, instr_mem, &out);
 	printf("instr: %d\n", out.instr);
 	printf("PC: %d\n", out.PC);
