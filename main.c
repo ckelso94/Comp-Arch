@@ -24,6 +24,16 @@ void EXE_test()
 	printf("new PC:%d\n",out.next_PC);
 }
 
+void IF_test()
+{
+	IF_ID_Buffer out;
+	uint16_t instr_mem[1] = {0x0};
+	uint16_t PC = 0;
+	IF_stage(&PC, instr_mem, &out);
+	printf("instr: %d\n", out.instr);
+	printf("PC: %d\n", out.PC);
+}
+
 int main(int argc, char** argv)
 {
 	printf("hello world\n");
@@ -94,5 +104,5 @@ int main(int argc, char** argv)
 	mem_wb_read = mem_wb_write;
 	*/
 
-	EXE_test();
+	IF_test();
 }
