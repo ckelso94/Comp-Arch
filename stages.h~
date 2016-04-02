@@ -36,7 +36,7 @@ typedef struct
 	uint16_t next_PC;
 	//control values
 	uint8_t mem_write,mem_read,
-	        mem_to_reg,reg_dst,reg_write;
+			mem_to_reg,reg_dst,reg_write;
 
 } EXE_MEM_Buffer;
 
@@ -45,7 +45,7 @@ typedef struct
 	//memory data to possibly be written back
 	uint16_t mem_data;
 	//alu output to possibly be written back
-	uint16_t ALU_data;
+	uint16_t alu_data;
 	//possible registers to write to
 	uint8_t rt,rd;
 	//control values
