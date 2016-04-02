@@ -22,6 +22,8 @@ uint16_t ALU(uint16_t a, uint16_t b, uint8_t func)
 			return a ^ b;
 		case 0x7:
 			return ~(a | b);
+		default:
+			return 0;
 	}
 }
 

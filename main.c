@@ -57,6 +57,27 @@ void MEM_test()
 	}
 }
 
+void WB_test()
+{
+	MEM_WB_Buffer in;
+	in.mem_data = 15;
+	in.ALU_data = 10;
+	in.rt = 6;
+	in.rd = 2;
+	in.mem_to_reg = 1;
+	in.reg_dst = 1;
+	in.reg_write = 1;
+
+	uint16_t reg_file[] = {7,6,5,4,3,2,1,0};
+
+	WB_stage(&in, reg_file);
+
+	for(int i = 0; i < 8; i++)
+	{
+		printf("reg[%d]:%d\n",i,reg_file[i]);
+	}
+}
+
 int main(int argc, char** argv)
 {
 	printf("hello world\n");
@@ -127,5 +148,4 @@ int main(int argc, char** argv)
 	mem_wb_read = mem_wb_write;
 	*/
 
-	//MEM_test();
 }
