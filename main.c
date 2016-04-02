@@ -34,6 +34,29 @@ void IF_test()
 	printf("PC: %d\n", out.PC);
 }
 
+void MEM_test()
+{
+	EXE_MEM_Buffer in;
+	in.ALU_out = 4;
+	in.rt_val = 2;
+	in.next_PC = 10;
+	in.mem_write = 1;
+	in.mem_read = 1;
+
+	uint16_t data[] = {9,8,7,6,5,4,3,2,1,0};
+
+	MEM_WB_Buffer out;
+	uint16_t PC;
+	MEM_stage(&in, &PC, data, &out);
+
+	printf("mem data:%d\n",out.mem_data);
+	printf("alu data:%d\n",out.ALU_data);
+	for(int i = 0; i < 10; i++)
+	{
+		printf("mem[%d]:%d\n",i,data[i]);
+	}
+}
+
 int main(int argc, char** argv)
 {
 	printf("hello world\n");
@@ -104,5 +127,5 @@ int main(int argc, char** argv)
 	mem_wb_read = mem_wb_write;
 	*/
 
-	IF_test();
+	//MEM_test();
 }
