@@ -101,8 +101,8 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	out_buf->rt_val = in_buf->rt;
 
 	//passing the register addresses using in WB forward
-	out_buf->rt = in_buf->instr & 0x01C0;//just the rt part
-	out_buf->rd = in_buf->instr & 0x0038;//just the rd part
+	out_buf->rt = (in_buf->instr & 0x01C0) >> 6;//just the rt part
+	out_buf->rd = (in_buf->instr & 0x0038) >> 3;//just the rd part
 	
 	//setting future control values
 	out_buf->mem_write = in_buf->mem_write;
