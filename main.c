@@ -6,6 +6,7 @@
 void EXE_test()
 {
 	ID_EXE_Buffer in;
+	uint8_t skip_next = 0;
 	in.rs = 0x0005;
 	in.rt = 0x0004;
 	in.instr = 0x0002;
@@ -19,7 +20,7 @@ void EXE_test()
 	//other control bits don't matter
 	
 	EXE_MEM_Buffer out;
-	EXE_stage(&in, &out);
+	EXE_stage(&in, &skip_next, &out);
 	printf("out:%d\n",out.ALU_out);
 	printf("new PC:%d\n",out.next_PC);
 }
@@ -94,6 +95,7 @@ int main(int argc, char** argv)
 	uint16_t PC;
 	uint16_t reg_file[8];
 	uint16_t data_mem[1024];
+	uint8_t skip_next = 0;
 
 	long prog_size = 0;
 	FILE **files = (FILE **) malloc((argc-1) * sizeof(FILE *));
@@ -137,7 +139,7 @@ int main(int argc, char** argv)
 	//to actually pipeline, change the rightmost buffers from _read to _write
 	IF_stage(PC, instr_mem, &if_id_read);
 	ID_stage(&if_id_read, reg_file, &id_exe_read);
-	EXE_stage(&id_exe_read, &exe_mem_read);
+	EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);
 	MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_read);
 	WB_stage(&mem_wb_read, reg_file);
 

@@ -53,9 +53,21 @@ uint16_t sign_extend_const(uint16_t instr)
 }
 
 
-void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
+void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_buf)
 {
 	printf("EXE\n");
+	if(*skip_next)
+	{
+		//clearing control values to skip
+		out_buf->mem_write = 0;
+		out_buf->mem_to_reg = 0;
+		out_buf->reg_dst = 0;
+		out_buf->reg_write = 0;
+		out_buf->mem_read = 0;
+		*skip_next = 0;
+		return;
+	}
+
 	//see what value we need to feed into the ALU
 	uint16_t ALU_b;
 	if(in_buf->ALU_src == 0)//TODO use actual values
@@ -79,11 +91,13 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	if(in_buf->skip && ((!in_buf->skip_value && out_buf->ALU_out == 0) ||//seq
 						(in_buf->skip_value && out_buf->ALU_out != 0)))//sne
 	{
-		out_buf->next_PC = in_buf->PC + 2;
+		//out_buf->next_PC = in_buf->PC + 2;
+		*skip_next = 1;
 	}
 	else
 	{
-		out_buf->next_PC = in_buf->PC;
+		*skip_next = 0;
+		//out_buf->next_PC = in_buf->PC;
 	}
 
 	//slt logic
@@ -112,6 +126,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)
 	out_buf->reg_dst = in_buf->reg_dst;
 	out_buf->reg_write = in_buf->reg_write;
 	out_buf->mem_read = in_buf->mem_read;
+
 }
 
 
