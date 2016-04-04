@@ -1,0 +1,169 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALU	EXE.c	/^uint16_t ALU(uint16_t a, uint16_t b, uint8_t func)$/;"	f
+ALU_FUNC	assembler/asm.py	/^ALU_FUNC = {"add":0x0, "sub":0x1, "sll":0x2, "srl":0x3, "and":0x4, "or":0x5, "xor":0x6, "nor":0x7}$/;"	v
+ALU_OPS	assembler/asm.py	/^ALU_OPS = {"add", "sub", "sll", "srl", "and", "or", "xor", "nor"}$/;"	v
+ALU_data	stages.h	/^	uint16_t ALU_data;$/;"	m	struct:__anon4
+ALU_op	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+ALU_out	stages.h	/^	uint16_t ALU_out;$/;"	m	struct:__anon3
+ALU_src	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+BASE_ADDR	assembler/asm.py	/^BASE_ADDR = 0x78$/;"	v
+BIN	makefile	/^BIN=main.exe$/;"	m
+CC	makefile	/^CC=gcc$/;"	m
+CCFLAGS	makefile	/^CCFLAGS=-Wall -Wextra -pedantic -g$/;"	m
+CONST_1_ADDR	assembler/loader.s	/^#define CONST_1_ADDR 0x22$/;"	d
+CONST_1_ADDR	assembler/test.s	/^#define CONST_1_ADDR 0x22$/;"	d
+CONST_2_ADDR	assembler/loader.s	/^#define CONST_2_ADDR 0x24$/;"	d
+CONST_2_ADDR	assembler/test.s	/^#define CONST_2_ADDR 0x24$/;"	d
+EXE_MEM_Buffer	stages.h	/^} EXE_MEM_Buffer;$/;"	t	typeref:struct:__anon3
+EXE_stage	EXE.c	/^void EXE_stage(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *out_buf)$/;"	f
+EXE_test	main.c	/^void EXE_test()$/;"	f
+I	assembler/asm.py	/^I = 2$/;"	v
+ID_EXE_Buffer	stages.h	/^} ID_EXE_Buffer;$/;"	t	typeref:struct:__anon2
+ID_stage	ID.c	/^void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)$/;"	f
+IF_ID_Buffer	stages.h	/^} IF_ID_Buffer;$/;"	t	typeref:struct:__anon1
+IF_stage	IF.c	/^void IF_stage(uint16_t PC, uint16_t *instr_mem, IF_ID_Buffer *out_buf)$/;"	f
+IF_test	main.c	/^void IF_test()$/;"	f
+J	assembler/asm.py	/^J = 4$/;"	v
+L	assembler/asm.py	/^L = 3$/;"	v
+MEM_WB_Buffer	stages.h	/^} MEM_WB_Buffer;$/;"	t	typeref:struct:__anon4
+MEM_stage	MEM.c	/^void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_Buffer *out_buf)$/;"	f
+MEM_test	main.c	/^void MEM_test()$/;"	f
+Mux_Mem_to_Reg	WB.c	/^uint16_t Mux_Mem_to_Reg(uint8_t mem_to_reg, uint16_t mem_data, uint16_t alu_data)$/;"	f
+Mux_Reg_Dst	WB.c	/^uint8_t Mux_Reg_Dst(uint8_t reg_dst, uint8_t rt, uint8_t rd)$/;"	f
+OBJ	makefile	/^OBJ=$(SRC:%.c=%.o)$/;"	m
+PC	stages.h	/^	uint16_t PC;$/;"	m	struct:__anon1
+PC	stages.h	/^	uint16_t PC;$/;"	m	struct:__anon2
+R	assembler/asm.py	/^R = 1$/;"	v
+REGS	assembler/asm.py	/^REGS = {"$zero":0x0, "$v0":0x1, "$v1":0x2, "$v2":0x3, "$v3":0x4, "$t0":0x5, "$a0":0x6, "$a1":0x7}$/;"	v
+SRC	makefile	/^SRC=$(wildcard *.c)$/;"	m
+STAGES_H	stages.h	/^#define STAGES_H$/;"	d
+TEMP_ADDR	assembler/loader.s	/^#define TEMP_ADDR 0x20$/;"	d
+TEMP_ADDR	assembler/test.s	/^#define TEMP_ADDR 0x20$/;"	d
+WB_stage	WB.c	/^void WB_stage(MEM_WB_Buffer *in_buf, uint16_t *reg_file)$/;"	f
+WB_test	main.c	/^void WB_test()$/;"	f
+__anon1::PC	stages.h	/^	uint16_t PC;$/;"	m	struct:__anon1
+__anon1::instr	stages.h	/^	uint16_t instr;$/;"	m	struct:__anon1
+__anon2::ALU_op	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+__anon2::ALU_src	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+__anon2::PC	stages.h	/^	uint16_t PC;$/;"	m	struct:__anon2
+__anon2::instr	stages.h	/^	uint16_t instr;$/;"	m	struct:__anon2
+__anon2::jump	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+__anon2::mem_read	stages.h	/^			mem_write,mem_read,$/;"	m	struct:__anon2
+__anon2::mem_to_reg	stages.h	/^			mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon2
+__anon2::mem_write	stages.h	/^			mem_write,mem_read,$/;"	m	struct:__anon2
+__anon2::reg_dst	stages.h	/^			mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon2
+__anon2::reg_write	stages.h	/^			mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon2
+__anon2::rs	stages.h	/^	uint16_t rs,rt;$/;"	m	struct:__anon2
+__anon2::rt	stages.h	/^	uint16_t rs,rt;$/;"	m	struct:__anon2
+__anon2::skip	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+__anon2::skip_value	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+__anon2::slt_ctrl	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+__anon3::ALU_out	stages.h	/^	uint16_t ALU_out;$/;"	m	struct:__anon3
+__anon3::mem_read	stages.h	/^	uint8_t mem_write,mem_read,$/;"	m	struct:__anon3
+__anon3::mem_to_reg	stages.h	/^	        mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon3
+__anon3::mem_write	stages.h	/^	uint8_t mem_write,mem_read,$/;"	m	struct:__anon3
+__anon3::next_PC	stages.h	/^	uint16_t next_PC;$/;"	m	struct:__anon3
+__anon3::rd	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon3
+__anon3::reg_dst	stages.h	/^	        mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon3
+__anon3::reg_write	stages.h	/^	        mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon3
+__anon3::rt	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon3
+__anon3::rt_val	stages.h	/^	uint16_t rt_val;$/;"	m	struct:__anon3
+__anon4::ALU_data	stages.h	/^	uint16_t ALU_data;$/;"	m	struct:__anon4
+__anon4::mem_data	stages.h	/^	uint16_t mem_data;$/;"	m	struct:__anon4
+__anon4::mem_to_reg	stages.h	/^	uint8_t mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon4
+__anon4::rd	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon4
+__anon4::reg_dst	stages.h	/^	uint8_t mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon4
+__anon4::reg_write	stages.h	/^	uint8_t mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon4
+__anon4::rt	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon4
+andi	assembler/f.s	/^andi $a0, $a0, 0x0000@ ori $a0, $a0, 0xA@ slli $a0, $a0, 4@ ori $a0, $a0, 0xB@ slli $a0, $a0, 4@ ori $a0, $a0, 0xC@ slli $a0, $a0, 4@ ori $a0, $a0, 0xD@ slli $a0, $a0, 4@$/;"	l
+andi	assembler/f.s	/^andi $a1, $a1, 0x0000@ ori $a1, $a1, 0xA@ slli $a1, $a1, 4@ ori $a1, $a1, 0xB@ slli $a1, $a1, 4@ ori $a1, $a1, 0xC@ slli $a1, $a1, 4@ ori $a1, $a1, 0xD@ slli $a1, $a1, 4@$/;"	l
+andi	assembler/f.s	/^andi $t0, $t0, 0x0000@ ori $t0, $t0, 0xA@ slli $t0, $t0, 4@ ori $t0, $t0, 0xB@ slli $t0, $t0, 4@ ori $t0, $t0, 0xC@ slli $t0, $t0, 4@ ori $t0, $t0, 0xD@ slli $t0, $t0, 4@$/;"	l
+andi	assembler/f.s	/^andi $v0, $v0, 0x0000@ ori $v0, $v0, 0xA@ slli $v0, $v0, 4@ ori $v0, $v0, 0xB@ slli $v0, $v0, 4@ ori $v0, $v0, 0xC@ slli $v0, $v0, 4@ ori $v0, $v0, 0xD@ slli $v0, $v0, 4@$/;"	l
+andi	assembler/f.s	/^andi $v1, $v1, 0x0000@ ori $v1, $v1, 0xA@ slli $v1, $v1, 4@ ori $v1, $v1, 0xB@ slli $v1, $v1, 4@ ori $v1, $v1, 0xC@ slli $v1, $v1, 4@ ori $v1, $v1, 0xD@ slli $v1, $v1, 4@$/;"	l
+andi	assembler/f.s	/^andi $v2, $v2, 0x0000@ ori $v2, $v2, 0xA@ slli $v2, $v2, 4@ ori $v2, $v2, 0xB@ slli $v2, $v2, 4@ ori $v2, $v2, 0xC@ slli $v2, $v2, 4@ ori $v2, $v2, 0xD@ slli $v2, $v2, 4@$/;"	l
+andi	assembler/f.s	/^andi $v3, $v3, 0x0000@ ori $v3, $v3, 0xA@ slli $v3, $v3, 4@ ori $v3, $v3, 0xB@ slli $v3, $v3, 4@ ori $v3, $v3, 0xC@ slli $v3, $v3, 4@ ori $v3, $v3, 0xD@ slli $v3, $v3, 4@$/;"	l
+binlines	assembler/ziphexbin.py	/^        binlines = bin.readlines()$/;"	v
+binlines	assembler/ziphexbin.py	/^binlines = {}$/;"	v
+else_body	assembler/f.s	/^ else_body:$/;"	l
+else_body	assembler/out-cleaned.s	/^ else_body: lw $v0, 0x20($zero);restore $vo from if statement$/;"	l
+else_body	assembler/out.s	/^ else_body:$/;"	l
+else_body	assembler/test.s	/^	else_body:$/;"	l
+hexlines	assembler/ziphexbin.py	/^        hexlines = hex.readlines()$/;"	v
+hexlines	assembler/ziphexbin.py	/^hexlines = {}$/;"	v
+i	assembler/padzero.py	/^            i = "0" + i$/;"	v
+i	assembler/padzero.py	/^        i = input()$/;"	v
+i	assembler/padzero.py	/^i = 1$/;"	v
+if_end	assembler/f.s	/^ if_end:$/;"	l
+if_end	assembler/out-cleaned.s	/^ if_end: addi $a0, $a0, 2$/;"	l
+if_end	assembler/out.s	/^ if_end:$/;"	l
+if_end	assembler/test.s	/^	if_end:$/;"	l
+instr	stages.h	/^	uint16_t instr;$/;"	m	struct:__anon1
+instr	stages.h	/^	uint16_t instr;$/;"	m	struct:__anon2
+int_base	assembler/asm.py	/^def int_base(s):$/;"	f
+jmp	assembler/f.s	/^jmp while_end$/;"	l
+jmp	assembler/f.s	/^jmp while_end;do nothing$/;"	l
+jmp	assembler/out-cleaned.s	/^jmp while_end$/;"	l
+jmp	assembler/out.s	/^jmp while_end$/;"	l
+jmp	assembler/out.s	/^jmp while_end;do nothing$/;"	l
+jmp	assembler/test.s	/^jmp while_end$/;"	l
+jmp	assembler/test.s	/^jmp while_end;do nothing$/;"	l
+jump	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+main	assembler/asm.py	/^def main():$/;"	f
+main	main.c	/^int main(int argc, char** argv)$/;"	f
+mem_data	stages.h	/^	uint16_t mem_data;$/;"	m	struct:__anon4
+mem_read	stages.h	/^			mem_write,mem_read,$/;"	m	struct:__anon2
+mem_read	stages.h	/^	uint8_t mem_write,mem_read,$/;"	m	struct:__anon3
+mem_to_reg	stages.h	/^			mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon2
+mem_to_reg	stages.h	/^	        mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon3
+mem_to_reg	stages.h	/^	uint8_t mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon4
+mem_write	stages.h	/^			mem_write,mem_read,$/;"	m	struct:__anon2
+mem_write	stages.h	/^	uint8_t mem_write,mem_read,$/;"	m	struct:__anon3
+mov	assembler/loader.s	/^#define mov(r,A,B,C,D)\\$/;"	d
+mov	assembler/test.s	/^#define mov(r,A,B,C,D)\\$/;"	d
+next_PC	stages.h	/^	uint16_t next_PC;$/;"	m	struct:__anon3
+op_encode	assembler/asm.py	/^def op_encode(op):$/;"	f
+os	assembler/asm.py	/^import os$/;"	i
+rd	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon3
+rd	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon4
+reg_dst	stages.h	/^			mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon2
+reg_dst	stages.h	/^	        mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon3
+reg_dst	stages.h	/^	uint8_t mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon4
+reg_write	stages.h	/^			mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon2
+reg_write	stages.h	/^	        mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon3
+reg_write	stages.h	/^	uint8_t mem_to_reg,reg_dst,reg_write;$/;"	m	struct:__anon4
+rs	stages.h	/^	uint16_t rs,rt;$/;"	m	struct:__anon2
+rt	stages.h	/^	uint16_t rs,rt;$/;"	m	struct:__anon2
+rt	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon3
+rt	stages.h	/^	uint8_t rt,rd;$/;"	m	struct:__anon4
+rt_val	stages.h	/^	uint16_t rt_val;$/;"	m	struct:__anon3
+seq	assembler/f.s	/^seq $t0, $zero;if <= 0, jump to end$/;"	l
+seq	assembler/out-cleaned.s	/^seq $t0, $zero;if <= 0, jump to end$/;"	l
+seq	assembler/out.s	/^seq $t0, $zero;if <= 0, jump to end$/;"	l
+seq	assembler/test.s	/^seq $t0, $zero;if <= 0, jump to end$/;"	l
+sign_extend_const	EXE.c	/^uint16_t sign_extend_const(uint16_t instr)$/;"	f
+skip	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+skip_value	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+slt_ctrl	stages.h	/^	uint8_t ALU_src,slt_ctrl,skip,skip_value,jump,ALU_op,$/;"	m	struct:__anon2
+slti	assembler/f.s	/^slti $t0, $a1, 1;test <= 0 (or < 1) (we don't need t0 until later)$/;"	l
+slti	assembler/out.s	/^slti $t0, $a1, 1;test <= 0 (or < 1) (we don't need t0 until later)$/;"	l
+slti	assembler/test.s	/^slti $t0, $a1, 1;test <= 0 (or < 1) (we don't need t0 until later)$/;"	l
+sw	assembler/loader.s	/^sw $v0, 0($a0)$/;"	l
+sw	assembler/loader.s	/^sw $v0, 2($a0)$/;"	l
+sw	assembler/loader.s	/^sw $v0, 4($a0)$/;"	l
+sw	assembler/loader.s	/^sw $v0, 6($a0)$/;"	l
+sw	assembler/loader.s	/^sw $v0, CONST_1_ADDR($zero)$/;"	l
+sw	assembler/loader.s	/^sw $v0, CONST_2_ADDR($zero)$/;"	l
+sys	assembler/asm.py	/^import sys$/;"	i
+while_end	assembler/f.s	/^ while_end:$/;"	l
+while_end	assembler/out-cleaned.s	/^ while_end: jmp while_end;do nothing$/;"	l
+while_end	assembler/out.s	/^ while_end:$/;"	l
+while_end	assembler/test.s	/^	while_end:$/;"	l
+while_top	assembler/f.s	/^while_top:$/;"	l
+while_top	assembler/out-cleaned.s	/^while_top: slti $t0, $a1, 1;test <= 0 (or < 1) (we don't need t0 until later)$/;"	l
+while_top	assembler/out.s	/^while_top:$/;"	l
+while_top	assembler/test.s	/^while_top:$/;"	l
