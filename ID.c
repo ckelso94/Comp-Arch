@@ -10,7 +10,7 @@ uint16_t control_unit(uint16_t instr)
 {	
 	uint8_t opcode;
 	uint8_t func;
-	opcode = instr & 0b1111000000000000 >> 12;
+	opcode = (instr & 0b1111000000000000) >> 12;
 	func = instr & 0b0000000000000111;
 	switch(opcode)
 	{
@@ -100,9 +100,9 @@ void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 	// How do you differeniate between R-Type instr without returning func?
 	//out_buf->func = (bin_val(ctrl_signals & 0b0000000000001000)<<2) + (bin_val(ctrl_signals & 0b0000000000000100)<<1) + bin_val(ctrl_signals & 0b0000000000000010);
 	
-	/*
+	
 	printf("ALU_src:\t%d\nslt_ctrl:\t%d\nskip:\t\t%d\nskip_value:\t%d\njump:\t\t%d\nmem_write:\t%d\nmem_to_reg:\t%d\nreg_dst:\t%d\nreg_write:\t%d\nALU_op:\t\t%d\n",
 			out_buf->ALU_src, out_buf->slt_ctrl, out_buf->skip, out_buf->skip_value, out_buf->jump, out_buf->mem_write, out_buf->mem_to_reg, out_buf->reg_dst, out_buf->reg_write, out_buf->ALU_op);
-			*/
+			
 }
 
