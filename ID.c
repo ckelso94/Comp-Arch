@@ -48,7 +48,7 @@ uint16_t control_unit(uint16_t instr)
 		case 0b0110: //slti
 			return 0b0101001000010000;
 		case 0b0111: //sne
-			return 0b0000000010010000;
+			return 0b0000000110010000;
 		case 0b1000: //addi
 			return 0b0101000000100000;
 		case 0b1001: //subi
