@@ -9,9 +9,9 @@
 ;the c preprocessor doesn't insert newlines, so we have to do it manually
 ;"manually" meaning `sed -i -e 's/(AT)/\n/g' out.s`
 ;still easier than manually doing this 16 bit move
-;also, ~s will need to be removed
+;also, s will need to be removed
 ;this makes it easier to use macros
-;this doesn't affect the code, so it's okay to use ~ in comments
+;this doesn't affect the code, so it's okay to use  in comments
 # 21 "test.s"
 ;where we can save registers if we need a temporary register
 
@@ -75,4 +75,4 @@ jmp while_end
 
  ;end of loop
  while_end:
-jmp while_end;do nothing
+;do nothing

@@ -4,12 +4,12 @@ prog.bin: combined.s
 test.out.s: test.s
 	cpp test.s test.out.s
 	sed -i -e 's/@/\n/g' test.out.s
-	sed -i -e 's/@/\n/g' test.out.s
+	sed -i -e 's/~//g' test.out.s
 
 loader.out.s: loader.s
 	cpp loader.s loader.out.s
 	sed -i -e 's/@/\n/g' loader.out.s
-	sed -i -e 's/@/\n/g' loader.out.s
+	sed -i -e 's/~//g' loader.out.s
 
 combined.s: test.out.s loader.out.s
 	cat loader.out.s > combined.s

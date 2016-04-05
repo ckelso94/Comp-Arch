@@ -5,7 +5,7 @@
 	ori r, r, 0x~B@\
 	slli r, r, 4@\
 	ori r, r, 0x~C@\
-	slli r, r, 4\
+	slli r, r, 4@\
 	ori r, r, 0x~D@\
 	slli r, r, 4@\
 

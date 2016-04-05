@@ -80,4 +80,4 @@ jmp while_end
 
 	;end of loop
 	while_end:
-jmp while_end;do nothing
+;do nothing
