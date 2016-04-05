@@ -1,5 +1,5 @@
 CC=gcc
-CCFLAGS=-Wall -Wextra -pedantic -g -O3 -std=c11
+CCFLAGS=-Wall -Wextra -pedantic -g -std=c11
 BIN=main.exe
 
 SRC=$(wildcard *.c)

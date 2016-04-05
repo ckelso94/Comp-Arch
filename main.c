@@ -94,8 +94,8 @@ int main(int argc, char** argv)
 
 	uint16_t PC;
 	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
-	uint16_t data_mem[1024];
-	for(int i = 0; i < 1024; i ++)
+	uint16_t data_mem[128];
+	for(int i = 0; i < 128; i ++)
 	{
 		data_mem[i] = 0;
 	}
@@ -139,6 +139,7 @@ int main(int argc, char** argv)
 		printf("%d\n",instr_mem[i]);
 	}
 
+	int nlqueued = 0;
 	//to actually pipeline, change the rightmost buffers from _read to _write
 	while(PC / 2 < prog_size)
 	{
@@ -156,9 +157,31 @@ int main(int argc, char** argv)
 			printf("reg[%d]:%d\n",i,reg_file[i]);
 		}
 
-		for(int i = 0; i < 0x20; i++)
+		nlqueued = 0;
+
+		for(int i = 0; i < 128; i++)
 		{
-			printf("mem[%d]:%d\n",i,data_mem[i]);
+			if(data_mem[i] != 0)
+			{
+				if(nlqueued)
+				{
+					printf("\n");
+					nlqueued = 0;
+				}
+				printf("mem[%d]:%d\n",i,data_mem[i]);
+			}
+			else
+			{
+				if(nlqueued == 0)
+				{
+					printf("0");
+					nlqueued = 1;
+				}
+			}
+		}
+		if(nlqueued == 1)
+		{
+			printf("\n");
 		}
 		printf("skip_next:%d\n",skip_next);
 

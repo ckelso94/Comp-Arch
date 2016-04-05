@@ -95,7 +95,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	out_buf->ALU_out = ALU(in_buf->rs, ALU_b, func);
 	
 	//skipping (branching)
-	//TODO fix skip_value to use the actual value
 	if(in_buf->skip && ((!in_buf->skip_value && out_buf->ALU_out == 0) ||//seq
 						(in_buf->skip_value && out_buf->ALU_out != 0)))//sne
 	{
@@ -123,6 +122,8 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	{
 		out_buf->next_PC = in_buf->PC;
 	}
+
+	printf("next PC:%d\n", out_buf->next_PC);
 
 	//passing rt forward
 	out_buf->rt_val = in_buf->rt;
