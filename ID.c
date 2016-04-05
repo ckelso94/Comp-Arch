@@ -10,7 +10,7 @@ uint16_t control_unit(uint16_t instr)
 {	
 	uint8_t opcode;
 	uint8_t func;
-	opcode = instr & 0b1111000000000000;
+	opcode = instr & 0b1111000000000000 >> 12;
 	func = instr & 0b0000000000000111;
 	switch(opcode)
 	{
@@ -90,16 +90,15 @@ void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 	out_buf->skip = bin_val(ctrl_signals & 0b0000000100000000);
 	out_buf->skip_value = bin_val(ctrl_signals & 0b0000000010000000);
 	out_buf->jump = bin_val(ctrl_signals & 0b0000000001000000);
-	out_buf->ALU_op = (bin_val(ctrl_signals & 0b0000000000100000)<<1) + bin_val(ctrl_signals & 0b0000000000010000);
+	//out_buf->ALU_op = (bin_val(ctrl_signals & 0b0000000000100000)<<1) + bin_val(ctrl_signals & 0b0000000000010000);
 	out_buf->mem_write = bin_val(ctrl_signals & 0b0000010000000000);
 	out_buf->mem_read = bin_val(ctrl_signals & 0b0000100000000000);
 	out_buf->mem_to_reg = bin_val(ctrl_signals & 0b0010000000000000);
 	out_buf->reg_dst = bin_val(ctrl_signals & 0b1000000000000000);
 	out_buf->reg_write = bin_val(ctrl_signals & 0b0001000000000000);
+	//ALU op is basically func now
+	out_buf->ALU_op = (ctrl_signals & 0b0000000000001110) >> 1;
 	// How do you differeniate between R-Type instr without returning func?
 	//out_buf->func = (bin_val(ctrl_signals & 0b0000000000001000)<<2) + (bin_val(ctrl_signals & 0b0000000000000100)<<1) + bin_val(ctrl_signals & 0b0000000000000010);
-
-
-	uint16_t opcode = (in_buf->instr & 0b1111000000000000) >> 12;
 }
 
