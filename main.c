@@ -93,7 +93,7 @@ int main(int argc, char** argv)
 	MEM_WB_Buffer mem_wb_write;
 
 	uint16_t PC;
-	uint16_t reg_file[8];
+	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
 	uint16_t data_mem[1024];
 	uint8_t skip_next = 0;
 
@@ -133,11 +133,11 @@ int main(int argc, char** argv)
 	//TODO see if endianness matters
 	for(int i = 0; i < prog_size; i++)
 	{
-		//printf("%d\n",instr_mem[i]);
+		printf("%d\n",instr_mem[i]);
 	}
 
 	//to actually pipeline, change the rightmost buffers from _read to _write
-	while(1)
+	while(PC / 2 < prog_size)
 	{
 		printf("PC: %d\n",PC);
 		IF_stage(PC, instr_mem, &if_id_read);
@@ -145,6 +145,11 @@ int main(int argc, char** argv)
 		EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);
 		MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_read);
 		WB_stage(&mem_wb_read, reg_file);
+
+		for(int i = 0; i < 8; i++)
+		{
+			printf("reg[%d]:%d\n",i,reg_file[i]);
+		}
 
 		/* also uncomment this for pipelining
 		if_id_read = if_id_write;
