@@ -36,35 +36,35 @@ uint16_t control_unit(uint16_t instr)
 					return 0b1001000000101110;
 			}
 		case 0b0001: //lw
-			return 0b011110000000000;
+			return 0b0111100000000000;
 		case 0b0010: //sw
-			return 0b010001000000000;
+			return 0b0100010000000000;
 		case 0b0011: //seq
-			return 0b000000010001000;
+			return 0b0000000100010000;
 		case 0b0100: //jmp
-			return 0b000000000111000;
+			return 0b0000000001110000;
 		case 0b0101: //slt
-			return 0b100100100010001;
+			return 0b1001001000100010;
 		case 0b0110: //slti
-			return 0b010100100001000;
+			return 0b0101001000010000;
 		case 0b0111: //sne
-			return 0b000000001001000;
+			return 0b0000000010010000;
 		case 0b1000: //addi
-			return 0b010100000010000;
+			return 0b0101000000100000;
 		case 0b1001: //subi
-			return 0b010100000010001;
+			return 0b0101000000100010;
 		case 0b1010: //slli
-			return 0b010100000010010;
+			return 0b0101000000100100;
 		case 0b1011: //srli
-			return 0b010100000010011;
+			return 0b0101000000100110;
 		case 0b1100: //andi
-			return 0b010100000010100;
+			return 0b0101000000101000;
 		case 0b1101: //ori
-			return 0b010100000010101;
+			return 0b0101000000101010;
 		case 0b1110: //xori
-			return 0b010100000010110;
+			return 0b0101000000101100;
 		case 0b1111: //nori
-			return 0b010100000010111;
+			return 0b0101000000101110;
 	}				
 }
 
