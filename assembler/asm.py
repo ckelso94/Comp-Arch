@@ -143,8 +143,8 @@ def main():
             if op in ALU_OPS:
                 func = ALU_FUNC[op]
         elif type == I:
-            rs = REGS[args[0]]
-            rt = REGS[args[1]]
+            rt = REGS[args[0]]
+            rs = REGS[args[1]]
             try:#if it's not a valid int, assume it's a label
                 const = int_base(args[2]);
             except:
