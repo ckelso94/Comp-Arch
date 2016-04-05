@@ -139,7 +139,7 @@ int main(int argc, char** argv)
 	//to actually pipeline, change the rightmost buffers from _read to _write
 	while(1)
 	{
-		printf("PC: %d",PC);
+		printf("PC: %d\n",PC);
 		IF_stage(PC, instr_mem, &if_id_read);
 		ID_stage(&if_id_read, reg_file, &id_exe_read);
 		EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);

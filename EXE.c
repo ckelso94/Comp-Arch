@@ -96,7 +96,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	else
 	{
 		*skip_next = 0;
-		//out_buf->next_PC = in_buf->PC;
 	}
 
 	//slt logic
@@ -119,6 +118,8 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	out_buf->rt = (in_buf->instr & 0x01C0) >> 6;//just the rt part
 	out_buf->rd = (in_buf->instr & 0x0038) >> 3;//just the rd part
 	
+	out_buf->next_PC = in_buf->PC;
+
 	//setting future control values
 	out_buf->mem_write = in_buf->mem_write;
 	out_buf->mem_to_reg = in_buf->mem_to_reg;
