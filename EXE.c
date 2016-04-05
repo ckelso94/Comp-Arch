@@ -63,19 +63,28 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 		out_buf->reg_dst = 0;
 		out_buf->reg_write = 0;
 		out_buf->mem_read = 0;
+		out_buf->next_PC = in_buf->PC;
 		*skip_next = 0;
 		return;
 	}
 
 	//see what value we need to feed into the ALU
 	uint16_t ALU_b;
-	if(in_buf->ALU_src == 0)//TODO use actual values
+	if(in_buf->ALU_src == 0)
 	{
 		ALU_b = in_buf->rt;
 	}
 	else
 	{
 		ALU_b = sign_extend_const(in_buf->instr);
+		if(!in_buf->mem_to_reg && !in_buf->mem_write)
+		{
+			ALU_b = sign_extend_const(in_buf->instr);
+		}
+		else
+		{
+			ALU_b = in_buf->instr & 0x3F;
+		}
 	}
 
 	//what the ALU should do
@@ -110,6 +119,10 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	{
 		out_buf->next_PC = in_buf->instr & 0x0FFF;//just get bottom 12 bits
 	}
+	else
+	{
+		out_buf->next_PC = in_buf->PC;
+	}
 
 	//passing rt forward
 	out_buf->rt_val = in_buf->rt;
@@ -117,8 +130,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	//passing the register addresses using in WB forward
 	out_buf->rt = (in_buf->instr & 0x01C0) >> 6;//just the rt part
 	out_buf->rd = (in_buf->instr & 0x0038) >> 3;//just the rd part
-	
-	out_buf->next_PC = in_buf->PC;
 
 	//setting future control values
 	out_buf->mem_write = in_buf->mem_write;

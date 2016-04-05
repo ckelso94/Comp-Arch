@@ -97,7 +97,7 @@ int main(int argc, char** argv)
 	uint16_t data_mem[1024];
 	for(int i = 0; i < 1024; i ++)
 	{
-		data_mem[i] = 1024 - i;
+		data_mem[i] = 0;
 	}
 	uint8_t skip_next = 0;
 
@@ -134,7 +134,6 @@ int main(int argc, char** argv)
 	free(sizes);
 	free(files);
 
-	//TODO see if endianness matters
 	for(int i = 0; i < prog_size; i++)
 	{
 		printf("%d\n",instr_mem[i]);
@@ -150,15 +149,18 @@ int main(int argc, char** argv)
 		MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_read);
 		WB_stage(&mem_wb_read, reg_file);
 
+		reg_file[0] = 0;//hard code $zero
+
 		for(int i = 0; i < 8; i++)
 		{
 			printf("reg[%d]:%d\n",i,reg_file[i]);
 		}
 
-		for(int i = 0; i < 8; i++)
+		for(int i = 0; i < 0x20; i++)
 		{
 			printf("mem[%d]:%d\n",i,data_mem[i]);
 		}
+		printf("skip_next:%d\n",skip_next);
 
 		/* also uncomment this for pipelining
 		if_id_read = if_id_write;
