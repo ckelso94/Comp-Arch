@@ -19,11 +19,11 @@
 	slli r, r, 4@\
 
 ;where we can save registers if we need a temporary register
-#define TEMP_ADDR 0x20
+#define TEMP_ADDR 0x0
 ;0x0100
-#define CONST_1_ADDR 0x22
+#define CONST_1_ADDR 0x2
 ;0xFF00
-#define CONST_2_ADDR 0x24
+#define CONST_2_ADDR 0x4
 
 ;while($a1 > 0) do {
 while_top:

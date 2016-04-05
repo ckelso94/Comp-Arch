@@ -10,11 +10,11 @@
 	slli r, r, 4@\
 
 ;where we can save registers if we need a temporary register
-#define TEMP_ADDR 0x20
+#define TEMP_ADDR 0x0
 
 ;some needed addresses for constants
-#define CONST_1_ADDR 0x22
-#define CONST_2_ADDR 0x24
+#define CONST_1_ADDR 0x2
+#define CONST_2_ADDR 0x4
 
 ;loading some constants into memory
 mov($v0,0,1,0,0)
@@ -40,7 +40,7 @@ sw $v0, 4($a0)
 mov($v0,0,0,F,0)
 sw $v0, 6($a0)
 mov($v0,0,0,F,F)
-sw $v0, 6($a0)
+sw $v0, 8($a0)
 
 ;still need to load v0 with its default value
 mov($v0,0,0,4,0)
