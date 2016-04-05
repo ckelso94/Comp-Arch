@@ -1,1 +1,2 @@
-andi $v0, $v1, 4
+sw $a0, 0($zero)
+lw $v0, 0($zero)

@@ -160,7 +160,7 @@ def main():
                 const = int_base(addr)
             except:
                 const = labels[addr]
-        elif type == L:#lw and sw are weird because they're like lw rs,const(rt)
+        elif type == L:#lw and sw are weird because they're like lw rt,const(rs)
             rt = REGS[args[0]]
             pred = args[1].split("(")
             rs = REGS[pred[1].strip(" ")[0:-1]]

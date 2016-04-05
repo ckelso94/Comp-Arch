@@ -4,4 +4,5 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "simple.s"
-andi $v0, $v1, 4
+sw $a0, 0($zero)
+lw $v0, 0($zero)

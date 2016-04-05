@@ -95,6 +95,10 @@ int main(int argc, char** argv)
 	uint16_t PC;
 	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
 	uint16_t data_mem[1024];
+	for(int i = 0; i < 1024; i ++)
+	{
+		data_mem[i] = 1024 - i;
+	}
 	uint8_t skip_next = 0;
 
 	long prog_size = 0;
@@ -139,7 +143,7 @@ int main(int argc, char** argv)
 	//to actually pipeline, change the rightmost buffers from _read to _write
 	while(PC / 2 < prog_size)
 	{
-		printf("PC: %d\n",PC);
+		printf("\nPC: %d\n",PC);
 		IF_stage(PC, instr_mem, &if_id_read);
 		ID_stage(&if_id_read, reg_file, &id_exe_read);
 		EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);
@@ -149,6 +153,11 @@ int main(int argc, char** argv)
 		for(int i = 0; i < 8; i++)
 		{
 			printf("reg[%d]:%d\n",i,reg_file[i]);
+		}
+
+		for(int i = 0; i < 8; i++)
+		{
+			printf("mem[%d]:%d\n",i,data_mem[i]);
 		}
 
 		/* also uncomment this for pipelining
