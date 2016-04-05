@@ -2,6 +2,79 @@
 #include <stdint.h>
 #include <stdio.h>
 
+/*return value:
+[RegDst(0),ALUSrc(1),MemToReg(2),RegWrite(3),MemRead(4),MemWrite(5),
+ Slt(6),Skip(7),SkipValue(8),Jump(9),ALUOp(10-11),Func(12-14),0(15)]
+*/
+uint16_t control_unit(uint16_t instr)
+{	
+	uint8_t opcode;
+	uint8_t func;
+	opcode = instr & 0b1111000000000000;
+	func = instr & 0b0000000000000111;
+	switch(opcode)
+	{
+		case 0b0000:
+			//R-Type
+			switch(func)
+			{
+				case 0b000: //add
+					return 0b1001000000100000;
+				case 0b001: //sub
+					return 0b1001000000100010;
+				case 0b010: //sll
+					return 0b1001000000100100;
+				case 0b011: //srl
+					return 0b1001000000100110;
+				case 0b100: //and
+					return 0b1001000000101000;
+				case 0b101: //or
+					return 0b1001000000101010;
+				case 0b110: //xor
+					return 0b1001000000101100;
+				case 0b111: //nor
+					return 0b1001000000101110;
+			}
+		case 0b0001: //lw
+			return 0b011110000000000;
+		case 0b0010: //sw
+			return 0b010001000000000;
+		case 0b0011: //seq
+			return 0b000000010001000;
+		case 0b0100: //jmp
+			return 0b000000000111000;
+		case 0b0101: //slt
+			return 0b100100100010001;
+		case 0b0110: //slti
+			return 0b010100100001000;
+		case 0b0111: //sne
+			return 0b000000001001000;
+		case 0b1000: //addi
+			return 0b010100000010000;
+		case 0b1001: //subi
+			return 0b010100000010001;
+		case 0b1010: //slli
+			return 0b010100000010010;
+		case 0b1011: //srli
+			return 0b010100000010011;
+		case 0b1100: //andi
+			return 0b010100000010100;
+		case 0b1101: //ori
+			return 0b010100000010101;
+		case 0b1110: //xori
+			return 0b010100000010110;
+		case 0b1111: //nori
+			return 0b010100000010111;
+	}				
+}
+
+uint8_t bin_val(uint16_t val)
+{
+	if(val>0){ return 1;}
+	else{ return 0;}
+}
+
+
 void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 {
 	printf("ID\n");
@@ -10,5 +83,23 @@ void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 	out_buf->instr = in_buf->instr;
 	out_buf->PC = in_buf->PC;
 
+	uint16_t ctrl_signals;
+	ctrl_signals = control_unit(in_buf->instr);
+	out_buf->ALU_src = bin_val(ctrl_signals & 0b0100000000000000);
+	out_buf->slt_ctrl = bin_val(ctrl_signals & 0b0000001000000000);
+	out_buf->skip = bin_val(ctrl_signals & 0b0000000100000000);
+	out_buf->skip_value = bin_val(ctrl_signals & 0b0000000010000000);
+	out_buf->jump = bin_val(ctrl_signals & 0b0000000001000000);
+	out_buf->ALU_op = (bin_val(ctrl_signals & 0b0000000000100000)<<1) + bin_val(ctrl_signals & 0b0000000000010000);
+	out_buf->mem_write = bin_val(ctrl_signals & 0b0000010000000000);
+	out_buf->mem_read = bin_val(ctrl_signals & 0b0000100000000000);
+	out_buf->mem_to_reg = bin_val(ctrl_signals & 0b0010000000000000);
+	out_buf->reg_dst = bin_val(ctrl_signals & 0b1000000000000000);
+	out_buf->reg_write = bin_val(ctrl_signals & 0b0001000000000000);
+	// How do you differeniate between R-Type instr without returning func?
+	//out_buf->func = (bin_val(ctrl_signals & 0b0000000000001000)<<2) + (bin_val(ctrl_signals & 0b0000000000000100)<<1) + bin_val(ctrl_signals & 0b0000000000000010);
+
+
 	uint16_t opcode = (in_buf->instr & 0b1111000000000000) >> 12;
 }
+
