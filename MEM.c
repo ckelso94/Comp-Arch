@@ -7,7 +7,7 @@ void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_
 	//writing to memory
 	if(in_buf->mem_write)
 	{
-		data_mem[in_buf->rt_val / 2] = in_buf->ALU_out;
+		data_mem[in_buf->ALU_out / 2] = in_buf->rt_val;
 	}
 
 	//reading from memory
