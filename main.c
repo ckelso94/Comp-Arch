@@ -137,17 +137,21 @@ int main(int argc, char** argv)
 	}
 
 	//to actually pipeline, change the rightmost buffers from _read to _write
-	IF_stage(PC, instr_mem, &if_id_read);
-	ID_stage(&if_id_read, reg_file, &id_exe_read);
-	EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);
-	MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_read);
-	WB_stage(&mem_wb_read, reg_file);
+	while(1)
+	{
+		printf("PC: %d",PC);
+		IF_stage(PC, instr_mem, &if_id_read);
+		ID_stage(&if_id_read, reg_file, &id_exe_read);
+		EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);
+		MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_read);
+		WB_stage(&mem_wb_read, reg_file);
 
-	/* also uncomment this for pipelining
-	if_id_read = if_id_write;
-	id_exe_read = id_exe_write;
-	exe_mem_read = exe_mem_write;
-	mem_wb_read = mem_wb_write;
-	*/
+		/* also uncomment this for pipelining
+		if_id_read = if_id_write;
+		id_exe_read = id_exe_write;
+		exe_mem_read = exe_mem_write;
+		mem_wb_read = mem_wb_write;
+		*/
+	}
 
 }

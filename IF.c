@@ -4,8 +4,6 @@
 
 void IF_stage(uint16_t PC, uint16_t *instr_mem, IF_ID_Buffer *out_buf)
 {
-	printf("IF\n");
-
 	//Access instruction stored at address held in PC
 	uint16_t offset_index = PC / 2;//byte index -> word index
 	out_buf->instr = instr_mem[offset_index];

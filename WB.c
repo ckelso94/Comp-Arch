@@ -40,8 +40,6 @@ uint8_t Mux_Reg_Dst(uint8_t reg_dst, uint8_t rt, uint8_t rd)
 
 void WB_stage(MEM_WB_Buffer *in_buf, uint16_t *reg_file)
 {
-	printf("WB\n");
-
 	uint16_t write_data = Mux_Mem_to_Reg(in_buf->mem_to_reg, in_buf->mem_data, in_buf->ALU_data);
 
 	uint8_t write_addr = Mux_Reg_Dst(in_buf->reg_dst, in_buf->rt, in_buf->rd);

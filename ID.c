@@ -77,7 +77,6 @@ uint8_t bin_val(uint16_t val)
 
 void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 {
-	printf("ID\n");
 	out_buf->rs = reg_file[(in_buf->instr & 0b0000111000000000) >> 9];
 	out_buf->rt = reg_file[(in_buf->instr & 0b0000000111000000) >> 6];
 	out_buf->instr = in_buf->instr;
@@ -100,5 +99,10 @@ void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 	out_buf->ALU_op = (ctrl_signals & 0b0000000000001110) >> 1;
 	// How do you differeniate between R-Type instr without returning func?
 	//out_buf->func = (bin_val(ctrl_signals & 0b0000000000001000)<<2) + (bin_val(ctrl_signals & 0b0000000000000100)<<1) + bin_val(ctrl_signals & 0b0000000000000010);
+	
+	/*
+	printf("ALU_src:\t%d\nslt_ctrl:\t%d\nskip:\t\t%d\nskip_value:\t%d\njump:\t\t%d\nmem_write:\t%d\nmem_to_reg:\t%d\nreg_dst:\t%d\nreg_write:\t%d\nALU_op:\t\t%d\n",
+			out_buf->ALU_src, out_buf->slt_ctrl, out_buf->skip, out_buf->skip_value, out_buf->jump, out_buf->mem_write, out_buf->mem_to_reg, out_buf->reg_dst, out_buf->reg_write, out_buf->ALU_op);
+			*/
 }
 

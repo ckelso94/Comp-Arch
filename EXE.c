@@ -55,7 +55,6 @@ uint16_t sign_extend_const(uint16_t instr)
 
 void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_buf)
 {
-	printf("EXE\n");
 	if(*skip_next)
 	{
 		//clearing control values to skip

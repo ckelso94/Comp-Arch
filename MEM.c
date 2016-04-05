@@ -4,7 +4,6 @@
 
 void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_Buffer *out_buf)
 {
-	printf("MEM\n");
 	//writing to memory
 	if(in_buf->mem_write)
 	{
