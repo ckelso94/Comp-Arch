@@ -20,9 +20,9 @@ void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_
 	//reading from memory
 	if(in_buf->mem_read)
 	{
-		fprintf(stderr, "out of bounds read\n");
 		if(in_buf->ALU_out / 2 > MEM_SIZE - 1)
 		{
+			fprintf(stderr, "out of bounds read\n");
 			assert(0);
 		}
 		out_buf->mem_data = data_mem[in_buf->ALU_out / 2];
