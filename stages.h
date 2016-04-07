@@ -2,6 +2,8 @@
 #define STAGES_H
 #include <stdint.h>
 
+#define MEM_SIZE 512
+
 typedef struct
 {
 	//the instruction, not the address

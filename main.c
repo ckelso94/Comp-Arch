@@ -94,8 +94,9 @@ int main(int argc, char** argv)
 
 	uint16_t PC;
 	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
-	uint16_t data_mem[128];
-	for(int i = 0; i < 128; i ++)
+	char** reg_names[] = {"$ze","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
+	uint16_t data_mem[MEM_SIZE];
+	for(int i = 0; i < MEM_SIZE; i ++)
 	{
 		data_mem[i] = 0;
 	}
@@ -154,12 +155,12 @@ int main(int argc, char** argv)
 
 		for(int i = 0; i < 8; i++)
 		{
-			printf("reg[%d]:%d\n",i,reg_file[i]);
+			printf("%s:%d\n",reg_names[i],reg_file[i]);
 		}
 
 		nlqueued = 0;
 
-		for(int i = 0; i < 128; i++)
+		for(int i = 0; i < MEM_SIZE; i++)
 		{
 			if(data_mem[i] != 0)
 			{

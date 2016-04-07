@@ -77,7 +77,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	else
 	{
 		ALU_b = sign_extend_const(in_buf->instr);
-		if(!in_buf->mem_to_reg && !in_buf->mem_write)
+		if(!in_buf->mem_read && !in_buf->mem_write)
 		{
 			ALU_b = sign_extend_const(in_buf->instr);
 		}
