@@ -64,7 +64,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 		out_buf->reg_write = 0;
 		out_buf->mem_read = 0;
 		out_buf->next_PC = in_buf->PC;
-		*skip_next = 0;
+		*skip_next -= 1;
 		return;
 	}
 
@@ -100,10 +100,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	{
 		//out_buf->next_PC = in_buf->PC + 2;
 		*skip_next = 1;
-	}
-	else
-	{
-		*skip_next = 0;
 	}
 
 	//slt logic
