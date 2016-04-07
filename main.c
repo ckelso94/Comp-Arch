@@ -158,13 +158,15 @@ int main(int argc, char** argv)
 			printf("%s:%d\n",reg_names[i],reg_file[i]);
 		}
 
+		//this code prints out nonzero values in memory
+		//Any series of 0s are represented by a single "0"
 		nlqueued = 0;
 
 		for(int i = 0; i < MEM_SIZE; i++)
 		{
 			if(data_mem[i] != 0)
 			{
-				if(nlqueued)
+				if(nlqueued)//need to print a new line after printing a 0
 				{
 					printf("\n");
 					nlqueued = 0;
@@ -173,14 +175,14 @@ int main(int argc, char** argv)
 			}
 			else
 			{
-				if(nlqueued == 0)
+				if(nlqueued == 0)//if we haven't printed a zero, print one
 				{
 					printf("0");
 					nlqueued = 1;
 				}
 			}
 		}
-		if(nlqueued == 1)
+		if(nlqueued == 1)//might need to print a newline if the last value in mem is 0
 		{
 			printf("\n");
 		}
