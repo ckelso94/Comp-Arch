@@ -27,6 +27,27 @@ uint16_t ALU(uint16_t a, uint16_t b, uint8_t func)
 	}
 }
 
+void forwarding_unit(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf, uint8_t *forward_a, uint8_t *forward_b)
+{
+	if(in_buf->rs == mem_read_buf->rd && mem_read_buf->reg_write == 1 && mem_read_buf->rd != 0)
+	{
+		*forward_a = 0x1;
+	}
+	else if(in_buf->rs == wb_read_buf->rd && wb_read_buf->reg_write == 1 && wb_read_buf->rd != 0)
+	{
+		*forward_a = 0x2;
+	}
+
+	if(in_buf->rt == mem_read_buf->rd && mem_read_buf->reg_write == 1 && mem_read_buf->rd != 0)
+	{
+		*forward_b = 0x1;
+	}
+	else if(in_buf->rt == wb_read_buf->rd && wb_read_buf->reg_write == 1 && wb_read_buf->rd != 0)
+	{
+		*forward_b = 0x2;
+	}
+}
+
 /*
 uint8_t ALU_ctrl(uint8_t ALU_op, uint8_t func)
 {
@@ -53,8 +74,11 @@ uint16_t sign_extend_const(uint16_t instr)
 }
 
 
-void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_buf)
+void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf)
 {
+	uint8_t forward_a = 0;
+	uint8_t forward_b = 0;
+
 	if(*skip_next)
 	{
 		//clearing control values to skip
@@ -70,6 +94,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 
 	//see what value we need to feed into the ALU
 	uint16_t ALU_b;
+	uint16_t ALU_a;
 	if(in_buf->ALU_src == 0)
 	{
 		ALU_b = in_buf->rt;
@@ -87,12 +112,56 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 		}
 	}
 
+	//determine whether we need to forward a value to ALU
+	forwarding_unit(in_buf, mem_read_buf, wb_read_buf, &forward_a, &forward_b);
+
+	//choose forwarded value or instruction value
+	if(forward_a == 0x0)
+	{
+		ALU_a = in_buf->rs;
+	}
+	else if(forward_a == 0x1)
+	{
+		ALU_a = mem_read_buf->ALU_out;
+	}
+	else
+	{
+		if(wb_read_buf->mem_to_reg == 1)
+		{
+			ALU_a = wb_read_buf->mem_data;
+		}
+		else
+		{
+			ALU_a = wb_read_buf->ALU_data;
+		}
+	}
+
+	if(forward_b == 0x0)
+	{
+		ALU_b = in_buf->rs;
+	}
+	else if(forward_b == 0x1)
+	{
+		ALU_b = mem_read_buf->ALU_out;
+	}
+	else
+	{
+		if(wb_read_buf->mem_to_reg == 1)
+		{
+			ALU_b = wb_read_buf->mem_data;
+		}
+		else
+		{
+			ALU_b = wb_read_buf->ALU_data;
+		}
+	}
+
 	//what the ALU should do
 	//uint8_t func = ALU_ctrl(in_buf->ALU_op, in_buf->instr & 0x3);//last three bits of instr are func
 	uint8_t func = in_buf->ALU_op;
 	
 	//actually do th math
-	out_buf->ALU_out = ALU(in_buf->rs, ALU_b, func);
+	out_buf->ALU_out = ALU(ALU_a, ALU_b, func);
 	
 	//skipping (branching)
 	if(in_buf->skip && ((!in_buf->skip_value && out_buf->ALU_out == 0) ||//seq

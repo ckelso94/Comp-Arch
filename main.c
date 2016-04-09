@@ -20,7 +20,9 @@ void EXE_test()
 	//other control bits don't matter
 	
 	EXE_MEM_Buffer out;
-	EXE_stage(&in, &skip_next, &out);
+	EXE_MEM_Buffer exe_mem_read;
+	MEM_WB_Buffer mem_wb_read;
+	EXE_stage(&in, &skip_next, &out, &exe_mem_read, &mem_wb_read);
 	printf("out:%d\n",out.ALU_out);
 	printf("new PC:%d\n",out.next_PC);
 }
@@ -141,14 +143,13 @@ int main(int argc, char** argv)
 	}
 
 	int nlqueued = 0;
-	//to actually pipeline, change the rightmost buffers from _read to _write
 	while(PC / 2 < prog_size)
 	{
 		printf("\nPC: %d\n",PC);
-		IF_stage(PC, instr_mem, &if_id_read);
-		ID_stage(&if_id_read, reg_file, &id_exe_read);
-		EXE_stage(&id_exe_read, &skip_next, &exe_mem_read);
-		MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_read);
+		IF_stage(PC, instr_mem, &if_id_write);
+		ID_stage(&if_id_read, reg_file, &id_exe_write);
+		EXE_stage(&id_exe_read, &skip_next, &exe_mem_write, &exe_mem_read, &mem_wb_read);
+		MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_write);
 		WB_stage(&mem_wb_read, reg_file);
 
 		reg_file[0] = 0;//hard code $zero
@@ -188,12 +189,10 @@ int main(int argc, char** argv)
 		}
 		printf("skip_next:%d\n",skip_next);
 
-		/* also uncomment this for pipelining
 		if_id_read = if_id_write;
 		id_exe_read = id_exe_write;
 		exe_mem_read = exe_mem_write;
 		mem_wb_read = mem_wb_write;
-		*/
 	}
 
 }
