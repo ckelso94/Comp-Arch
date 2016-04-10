@@ -200,8 +200,4 @@ def main():
             f.write(bytes([hex & 0x00FF]))
             f.write(bytes([(hex & 0xFF00) >> 8]))
 
-    with open(outfilename, "ab") as f:
-        for _ in range(10):#write 5 nops, probably can be reduced
-            f.write(bytes([0x00]))
-
 main()
