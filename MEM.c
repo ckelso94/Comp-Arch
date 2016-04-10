@@ -5,7 +5,7 @@
 
 void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_buf)
 {
-	printf("aluout:%d\nrt_val:%d\n",in_buf->ALU_out, in_buf->rt_val);
+	//printf("aluout:%d\nrt_val:%d\n",in_buf->ALU_out, in_buf->rt_val);
 	//writing to memory
 	if(in_buf->mem_write)
 	{

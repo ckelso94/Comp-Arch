@@ -7,10 +7,10 @@
 //prints contents of a register file
 void print_reg(uint16_t *reg_file)
 {
-	static char *reg_names[] = {"$ze","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
+	static char *reg_names[] = {"$zero","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
 	for(int i = 0; i < 8; i++)
 	{
-		printf("%s:%d\n",reg_names[i],reg_file[i]);
+		printf("%s:\t%d\n",reg_names[i],reg_file[i]);
 	}
 }
 
@@ -37,6 +37,41 @@ void print_mem(uint16_t *data_mem)
 	{
 		printf("%d zero values omitted\n", num_zero);
 	}
+}
+
+void print_if_id(IF_ID_Buffer *buf)
+{
+	printf("IF ID Buffer\n");
+	printf("instr:\t\t%d\n",buf->instr);
+	printf("PC:\t\t%d\n", buf->PC);
+}
+
+void print_id_exe(ID_EXE_Buffer *buf)
+{
+	printf("ID EXE Buffer\n");
+	printf("rs:\t\t%d\n", buf->rs);
+	printf("rt:\t\t%d\n", buf->rt);
+	printf("instr:\t\t%d\n", buf->instr);
+	printf("PC:\t\t%d\n", buf->PC);
+}
+
+void print_exe_mem(EXE_MEM_Buffer *buf)
+{
+	printf("EXE MEM Buffer\n");
+	printf("ALU_out:\t%d\n", buf->ALU_out);
+	printf("rt_val:\t\t%d\n", buf->rt_val);
+	printf("rt:\t\t%d\n", buf->rt);
+	printf("rd:\t\t%d\n", buf->rd);
+	printf("next_PC:\t%d\n", buf->next_PC);
+}
+
+void print_mem_wb(MEM_WB_Buffer *buf)
+{
+	printf("MEM WB Buffer\n");
+	printf("mem_data:\t%d\n", buf->mem_data);
+	printf("ALU_data:\t%d\n", buf->ALU_data);
+	printf("rt:\t\t%d\n", buf->rt);
+	printf("rd:\t\t%d\n", buf->rd);
 }
 
 int main(int argc, char** argv)
@@ -109,7 +144,7 @@ int main(int argc, char** argv)
 
 	while(PC / 2 < (prog_size + num_nops))
 	{
-		printf("\nPC: %d\n",PC);
+		printf("\n---------------------\n");
 		IF_stage(PC, instr_mem, &if_id_write);
 		PC += 2;
 		ID_stage(&if_id_read, reg_file, &id_exe_write);
@@ -119,8 +154,24 @@ int main(int argc, char** argv)
 
 		reg_file[0] = 0;//hard code $zero
 
+		printf("Old buffers:\n");
+		print_if_id(&if_id_read);
+		print_id_exe(&id_exe_read);
+		print_exe_mem(&exe_mem_read);
+		print_mem_wb(&mem_wb_read);
+
+
+		printf("\nNew buffers:\n");
+		print_if_id(&if_id_write);
+		print_id_exe(&id_exe_write);
+		print_exe_mem(&exe_mem_write);
+		print_mem_wb(&mem_wb_write);
+		printf("\n");
+
 		print_reg(reg_file);
+		printf("\n");
 		print_mem(data_mem);
+		printf("\n");
 
 		printf("skip_next:%d\n",skip_next);
 
