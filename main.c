@@ -3,81 +3,39 @@
 #include <stdlib.h>
 #include "stages.h"
 
-void EXE_test()
+
+//prints contents of a register file
+void print_reg(uint16_t *reg_file)
 {
-	ID_EXE_Buffer in;
-	uint8_t skip_next = 0;
-	in.rs = 0x0005;
-	in.rt = 0x0004;
-	in.instr = 0x0002;
-	in.PC = 0x0006;
-	in.ALU_src = 1;
-	in.slt_ctrl = 0;
-	in.skip = 0;
-	in.skip_value = 0;
-	in.jump = 0;
-	in.ALU_op = 0x00;
-	uint16_t PC = 0;
-	//other control bits don't matter
-	
-	EXE_MEM_Buffer out;
-	EXE_MEM_Buffer exe_mem_read;
-	MEM_WB_Buffer mem_wb_read;
-	EXE_stage(&in, &PC, &skip_next, &out, &exe_mem_read, &mem_wb_read);
-	printf("out:%d\n",out.ALU_out);
-	printf("new PC:%d\n",out.next_PC);
-}
-
-void IF_test()
-{
-	IF_ID_Buffer out;
-	uint16_t instr_mem[] = {0x0, 0x5, 0x3};
-	uint16_t PC = 4;
-	IF_stage(PC, instr_mem, &out);
-	printf("instr: %d\n", out.instr);
-	printf("PC: %d\n", out.PC);
-}
-
-void MEM_test()
-{
-	EXE_MEM_Buffer in;
-	in.ALU_out = 4;
-	in.rt_val = 2;
-	in.next_PC = 10;
-	in.mem_write = 1;
-	in.mem_read = 1;
-
-	uint16_t data[] = {9,8,7,6,5,4,3,2,1,0};
-
-	MEM_WB_Buffer out;
-	MEM_stage(&in, data, &out);
-
-	printf("mem data:%d\n",out.mem_data);
-	printf("alu data:%d\n",out.ALU_data);
-	for(int i = 0; i < 10; i++)
+	static char *reg_names[] = {"$ze","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
+	for(int i = 0; i < 8; i++)
 	{
-		printf("mem[%d]:%d\n",i,data[i]);
+		printf("%s:%d\n",reg_names[i],reg_file[i]);
 	}
 }
 
-void WB_test()
+void print_mem(uint16_t *data_mem)
 {
-	MEM_WB_Buffer in;
-	in.mem_data = 15;
-	in.ALU_data = 10;
-	in.rt = 6;
-	in.rd = 2;
-	in.mem_to_reg = 1;
-	in.reg_dst = 1;
-	in.reg_write = 1;
-
-	uint16_t reg_file[] = {7,6,5,4,3,2,1,0};
-
-	WB_stage(&in, reg_file);
-
-	for(int i = 0; i < 8; i++)
+	uint16_t num_zero = 0;
+	for(int i = 0; i < MEM_SIZE; i++)
 	{
-		printf("reg[%d]:%d\n",i,reg_file[i]);
+		if(data_mem[i] != 0)
+		{
+			if(num_zero > 0)
+			{
+				printf("%d zero values omitted\n", num_zero);
+			}
+			printf("mem[%d]:%d\n",i,data_mem[i]);
+			num_zero = 0;
+		}
+		else
+		{
+			num_zero++;
+		}
+	}
+	if(num_zero > 0)
+	{
+		printf("%d zero values omitted\n", num_zero);
 	}
 }
 
@@ -96,7 +54,6 @@ int main(int argc, char** argv)
 
 	uint16_t PC;
 	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
-	char *reg_names[] = {"$ze","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
 	uint16_t data_mem[MEM_SIZE];
 	for(int i = 0; i < MEM_SIZE; i ++)
 	{
@@ -114,7 +71,7 @@ int main(int argc, char** argv)
 		files[i-1] = fopen(argv[i], "r");
 		if(files[i-1] == NULL)
 		{
-			fprintf(stderr, "a.out not found\n");
+			fprintf(stderr, "binary not found\n");
 			return EXIT_FAILURE;
 		}
 		fseek(files[i-1], 0, SEEK_END);
@@ -124,9 +81,9 @@ int main(int argc, char** argv)
 		rewind(files[i-1]);
 	}
 
-	uint8_t numNops = 5;//extra padding at end
+	uint8_t num_nops = 5;//extra padding at end
 
-	uint16_t *instr_mem = malloc((prog_size + numNops) * sizeof(uint16_t));
+	uint16_t *instr_mem = malloc((prog_size + num_nops) * sizeof(uint16_t));
 
 	long current = 0;//offset of where to insert each file into instr_mem
 	for(int i = 0; i < argc - 1; i++)
@@ -140,7 +97,7 @@ int main(int argc, char** argv)
 	free(files);
 
 	//inserting padding at end
-	for(int i = prog_size; i < prog_size + numNops; i++)
+	for(int i = prog_size; i < prog_size + num_nops; i++)
 	{
 		instr_mem[i] = 0;
 	}
@@ -150,8 +107,7 @@ int main(int argc, char** argv)
 		printf("%d\n",instr_mem[i]);
 	}
 
-	int nlqueued = 0;
-	while(PC / 2 < (prog_size + numNops))
+	while(PC / 2 < (prog_size + num_nops))
 	{
 		printf("\nPC: %d\n",PC);
 		IF_stage(PC, instr_mem, &if_id_write);
@@ -163,39 +119,9 @@ int main(int argc, char** argv)
 
 		reg_file[0] = 0;//hard code $zero
 
-		for(int i = 0; i < 8; i++)
-		{
-			printf("%s:%d\n",reg_names[i],reg_file[i]);
-		}
+		print_reg(reg_file);
+		print_mem(data_mem);
 
-		//this code prints out nonzero values in memory
-		//Any series of 0s are represented by a single "0"
-		nlqueued = 0;
-
-		for(int i = 0; i < MEM_SIZE; i++)
-		{
-			if(data_mem[i] != 0)
-			{
-				if(nlqueued)//need to print a new line after printing a 0
-				{
-					printf("\n");
-					nlqueued = 0;
-				}
-				printf("mem[%d]:%d\n",i,data_mem[i]);
-			}
-			else
-			{
-				if(nlqueued == 0)//if we haven't printed a zero, print one
-				{
-					printf("0");
-					nlqueued = 1;
-				}
-			}
-		}
-		if(nlqueued == 1)//might need to print a newline if the last value in mem is 0
-		{
-			printf("\n");
-		}
 		printf("skip_next:%d\n",skip_next);
 
 		if_id_read = if_id_write;
