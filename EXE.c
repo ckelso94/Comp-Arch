@@ -79,7 +79,7 @@ uint16_t sign_extend_const(uint16_t instr)
 }
 
 
-void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf)
+void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_Buffer *out_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf)
 {
 	uint8_t forward_a = 0;
 	uint8_t forward_b = 0;
@@ -183,14 +183,16 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_bu
 	//jumping
 	if(in_buf->jump)
 	{
-		out_buf->next_PC = in_buf->instr & 0x0FFF;//just get bottom 12 bits
+		//out_buf->next_PC = in_buf->instr & 0x0FFF;//just get bottom 12 bits
+		*PC = in_buf->instr & 0x0FFF;//just get bottom 12 bits
+		*skip_next = 2;//flush 2 instructions
 	}
 	else
 	{
-		out_buf->next_PC = in_buf->PC;
+		//out_buf->next_PC = in_buf->PC;
 	}
 
-	printf("next PC:%d\n", out_buf->next_PC);
+	//printf("next PC:%d\n", out_buf->next_PC);
 
 	//passing rt forward
 	out_buf->rt_val = in_buf->rt;

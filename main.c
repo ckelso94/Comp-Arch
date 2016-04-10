@@ -17,12 +17,13 @@ void EXE_test()
 	in.skip_value = 0;
 	in.jump = 0;
 	in.ALU_op = 0x00;
+	uint16_t PC = 0;
 	//other control bits don't matter
 	
 	EXE_MEM_Buffer out;
 	EXE_MEM_Buffer exe_mem_read;
 	MEM_WB_Buffer mem_wb_read;
-	EXE_stage(&in, &skip_next, &out, &exe_mem_read, &mem_wb_read);
+	EXE_stage(&in, &PC, &skip_next, &out, &exe_mem_read, &mem_wb_read);
 	printf("out:%d\n",out.ALU_out);
 	printf("new PC:%d\n",out.next_PC);
 }
@@ -49,8 +50,7 @@ void MEM_test()
 	uint16_t data[] = {9,8,7,6,5,4,3,2,1,0};
 
 	MEM_WB_Buffer out;
-	uint16_t PC;
-	MEM_stage(&in, &PC, data, &out);
+	MEM_stage(&in, data, &out);
 
 	printf("mem data:%d\n",out.mem_data);
 	printf("alu data:%d\n",out.ALU_data);
@@ -96,7 +96,7 @@ int main(int argc, char** argv)
 
 	uint16_t PC;
 	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
-	char** reg_names[] = {"$ze","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
+	char *reg_names[] = {"$ze","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
 	uint16_t data_mem[MEM_SIZE];
 	for(int i = 0; i < MEM_SIZE; i ++)
 	{
@@ -124,7 +124,9 @@ int main(int argc, char** argv)
 		rewind(files[i-1]);
 	}
 
-	uint16_t *instr_mem = malloc(prog_size * sizeof(uint16_t));
+	uint8_t numNops = 5;//extra padding at end
+
+	uint16_t *instr_mem = malloc((prog_size + numNops) * sizeof(uint16_t));
 
 	long current = 0;//offset of where to insert each file into instr_mem
 	for(int i = 0; i < argc - 1; i++)
@@ -137,6 +139,12 @@ int main(int argc, char** argv)
 	free(sizes);
 	free(files);
 
+	//inserting padding at end
+	for(int i = prog_size; i < prog_size + numNops; i++)
+	{
+		instr_mem[i] = 0;
+	}
+
 	for(int i = 0; i < prog_size; i++)
 	{
 		printf("%d\n",instr_mem[i]);
@@ -147,9 +155,10 @@ int main(int argc, char** argv)
 	{
 		printf("\nPC: %d\n",PC);
 		IF_stage(PC, instr_mem, &if_id_write);
+		PC += 2;
 		ID_stage(&if_id_read, reg_file, &id_exe_write);
-		EXE_stage(&id_exe_read, &skip_next, &exe_mem_write, &exe_mem_read, &mem_wb_read);
-		MEM_stage(&exe_mem_read, &PC, data_mem, &mem_wb_write);
+		EXE_stage(&id_exe_read, &PC, &skip_next, &exe_mem_write, &exe_mem_read, &mem_wb_read);
+		MEM_stage(&exe_mem_read, data_mem, &mem_wb_write);
 		WB_stage(&mem_wb_read, reg_file);
 
 		reg_file[0] = 0;//hard code $zero

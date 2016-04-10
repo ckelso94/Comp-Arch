@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_Buffer *out_buf)
+void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_buf)
 {
 	printf("aluout:%d\nrt_val:%d\n",in_buf->ALU_out, in_buf->rt_val);
 	//writing to memory
@@ -33,7 +33,7 @@ void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_
 	}
 	
 	//writing to PC
-	*PC = in_buf->next_PC;
+	//*PC = in_buf->next_PC;
 
 	//passing stuff forward
 	out_buf->ALU_data = in_buf->ALU_out;

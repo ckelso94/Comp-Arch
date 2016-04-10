@@ -57,8 +57,8 @@ typedef struct
 //PC is just a pointer, we need it to possible modify the PC value across stages
 void IF_stage(uint16_t PC, uint16_t *instr_mem, IF_ID_Buffer *out_buf);
 void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf);
-void EXE_stage(ID_EXE_Buffer *in_buf, uint8_t *skip_next, EXE_MEM_Buffer *out_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf);
-void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *PC, uint16_t *data_mem, MEM_WB_Buffer *out_buf);
+void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_Buffer *out_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf);
+void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_buf);
 void WB_stage(MEM_WB_Buffer *in_buf, uint16_t *reg_file);
 
 #endif
