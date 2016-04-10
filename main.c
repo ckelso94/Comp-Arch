@@ -151,7 +151,7 @@ int main(int argc, char** argv)
 	}
 
 	int nlqueued = 0;
-	while(PC / 2 < prog_size)
+	while(PC / 2 < (prog_size + numNops))
 	{
 		printf("\nPC: %d\n",PC);
 		IF_stage(PC, instr_mem, &if_id_write);
