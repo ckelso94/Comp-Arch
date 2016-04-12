@@ -14,7 +14,6 @@ void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_bu
 			assert(0);
 		}
 		data_mem[in_buf->ALU_out / 2] = in_buf->rt_val;
-		printf("rt value:%d\n",in_buf->rt_val);
 	}
 
 	//reading from memory

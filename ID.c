@@ -46,7 +46,7 @@ uint16_t control_unit(uint16_t instr)
 		case 0b0101: //slt
 			return 0b1001001000100010;
 		case 0b0110: //slti
-			return 0b0101001000010000;
+			return 0b0101001000010010;
 		case 0b0111: //sne
 			return 0b0000000110010000;
 		case 0b1000: //addi

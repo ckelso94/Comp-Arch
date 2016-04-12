@@ -7,7 +7,6 @@
 	ori r, r, 0x~C@\
 	slli r, r, 4@\
 	ori r, r, 0x~D@\
-	slli r, r, 4@\
 
 ;where we can save registers if we need a temporary register
 #define TEMP_ADDR 0x0
@@ -15,12 +14,15 @@
 ;some needed addresses for constants
 #define CONST_1_ADDR 0x2
 #define CONST_2_ADDR 0x4
+#define CONST_3_ADDR 0x6
 
 ;loading some constants into memory
 mov($v0,0,1,0,0)
 sw $v0, CONST_1_ADDR($zero)
 mov($v0,F,F,0,0)
 sw $v0, CONST_2_ADDR($zero)
+mov($v0,0,0,F,F)
+sw $v0, CONST_3_ADDR($zero)
 
 ;loading default values in registers
 mov($v1,1,0,1,0)

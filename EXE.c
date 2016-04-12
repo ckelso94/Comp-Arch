@@ -51,7 +51,6 @@ void forwarding_unit(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB
 	{
 		*forward_b = 0x2;
 	}
-	printf("%d %d %d %d %d %d %d %d %d\n", in_buf->rt, wb_read_buf->rt, wb_read_buf->reg_write, wb_read_buf->rt, in_buf->ALU_src, in_buf->mem_write, wb_read_buf->reg_dst, rsaddr, rtaddr); 
 
 }
 
@@ -109,8 +108,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 	uint16_t ALU_a;
 	//determine whether we need to forward a value to ALU
 	forwarding_unit(in_buf, mem_read_buf, wb_read_buf, &forward_a, &forward_b, rsaddr, out_buf->rt);
-
-	printf("fa: %d\nfb: %d\n",forward_a, forward_b);
 
 	//choose forwarded value or instruction value
 	if(forward_a == 0x0)
@@ -206,7 +203,7 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 	//slt logic
 	if(in_buf->slt_ctrl == 1)
 	{
-		out_buf->ALU_out &= 0x8000;//get sign bit
+		printf("a: %d b: %d func: %d alu out: %d\n", ALU_a, ALU_b, func, out_buf->ALU_out);
 		out_buf->ALU_out >>= 15;//shift all the way down
 	}
 
@@ -222,7 +219,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 		//out_buf->next_PC = in_buf->PC;
 	}
 
-	//printf("next PC:%d\n", out_buf->next_PC);
 
 	//passing rt forward
 	if(dontusert == 0)

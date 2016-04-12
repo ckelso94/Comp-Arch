@@ -4,20 +4,12 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "test.s"
-;the (AT) here just means that a newline goes here
-;Don't put the actual at symbol in the comments
-;the c preprocessor doesn't insert newlines, so we have to do it manually
-;"manually" meaning `sed -i -e 's/(AT)/\n/g' out.s`
-;still easier than manually doing this 16 bit move
-;also, s will need to be removed
-;this makes it easier to use macros
-;this doesn't affect the code, so it's okay to use  in comments
-# 21 "test.s"
-;where we can save registers if we need a temporary register
 
 ;0x0100
 
 ;0xFF00
+
+;0x00FF
 
 
 ;while($a1 > 0) do {
@@ -54,15 +46,15 @@ jmp while_end
 
  else_body:
  lw $v0, 0x0($zero);restore $vo from if statement
-  ;$v1 = $v2 * 4
-  slli $v1, $v2, 2
+  ;$v2 = $v2 * 4
+  slli $v2, $v2, 2
   ;$v3 = $v3 ^ $v2
   xor $v3, $v3, $v2
 
   ;Mem[$a0] = 0x00FF
   sw $v0, 0x0($zero);save $v0
-  lw $v0, 0x4($zero);load const 1 from address (put in memory by simulator)
-  sw $v0, 0($a0);save 0xFF00 to memory
+  lw $v0, 0x6($zero);load const 1 from address (put in memory by simulator)
+  sw $v0, 0($a0);save 0x00FF to memory
   lw $v0, 0x0($zero);restore $v0
 
  if_end:
