@@ -88,14 +88,14 @@ int main(int argc, char** argv)
 	MEM_WB_Buffer mem_wb_write;
 
 	uint16_t PC;
-	uint16_t reg_file[8] = {0,1,2,3,4,5,6,7};
+	uint16_t reg_file[8] = {0,11,22,33,44,55,66,77};
 	uint16_t data_mem[MEM_SIZE];
 	for(int i = 0; i < MEM_SIZE; i ++)
 	{
 		data_mem[i] = 0;
 	}
 	uint8_t skip_next = 0;
-
+	uint8_t load_hazard = 0;
 	long prog_size = 0;
 	FILE **files = (FILE **) malloc((argc-1) * sizeof(FILE *));
 	int *sizes = (int *) malloc((argc-1) * sizeof(int));
@@ -145,12 +145,16 @@ int main(int argc, char** argv)
 	while(PC / 2 < (prog_size + num_nops))
 	{
 		printf("\n---------------------\n");
+		WB_stage(&mem_wb_read, reg_file);
 		IF_stage(PC, instr_mem, &if_id_write);
 		PC += 2;
-		ID_stage(&if_id_read, reg_file, &id_exe_write);
+		ID_stage(&if_id_read, &id_exe_read, reg_file, &load_hazard, &id_exe_write);
+		if(load_hazard)
+		{
+			PC -= 2;
+		}
 		EXE_stage(&id_exe_read, &PC, &skip_next, &exe_mem_write, &exe_mem_read, &mem_wb_read);
 		MEM_stage(&exe_mem_read, data_mem, &mem_wb_write);
-		WB_stage(&mem_wb_read, reg_file);
 
 		reg_file[0] = 0;//hard code $zero
 
@@ -175,10 +179,15 @@ int main(int argc, char** argv)
 
 		printf("skip_next:%d\n",skip_next);
 
-		if_id_read = if_id_write;
+		if(!load_hazard)
+		{
+			if_id_read = if_id_write;
+		}
 		id_exe_read = id_exe_write;
 		exe_mem_read = exe_mem_write;
 		mem_wb_read = mem_wb_write;
+
+		load_hazard = 0;
 	}
 
 }

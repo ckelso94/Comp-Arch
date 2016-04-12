@@ -27,30 +27,32 @@ uint16_t ALU(uint16_t a, uint16_t b, uint8_t func)
 	}
 }
 
-void forwarding_unit(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf, uint8_t *forward_a, uint8_t *forward_b)
+void forwarding_unit(ID_EXE_Buffer *in_buf, EXE_MEM_Buffer *mem_read_buf, MEM_WB_Buffer *wb_read_buf, uint8_t *forward_a, uint8_t *forward_b, uint8_t rsaddr, uint8_t rtaddr)
 {
 	//Dependency exists, the register file will be written to, and destination is not $zero register
-	if((in_buf->rs == mem_read_buf->rd && mem_read_buf->reg_write == 1 && mem_read_buf->rd != 0 && mem_read_buf->reg_dst == 1) || 
-	   (in_buf->rs == mem_read_buf->rt && mem_read_buf->reg_write == 1 && mem_read_buf->rt != 0 && mem_read_buf->reg_dst == 0))
+	if((rsaddr == mem_read_buf->rd && mem_read_buf->reg_write == 1 && mem_read_buf->rd != 0 && mem_read_buf->reg_dst == 1) || 
+	   (rsaddr == mem_read_buf->rt && mem_read_buf->reg_write == 1 && mem_read_buf->rt != 0 && mem_read_buf->reg_dst == 0))
 	{
 		*forward_a = 0x1;
 	}
-	else if((in_buf->rs == wb_read_buf->rd && wb_read_buf->reg_write == 1 && wb_read_buf->rd != 0 && wb_read_buf->reg_dst == 1) ||
-		(in_buf->rs == wb_read_buf->rt && wb_read_buf->reg_write == 1 && wb_read_buf->rt != 0 && wb_read_buf->reg_dst == 0))
+	else if((rsaddr == wb_read_buf->rd && wb_read_buf->reg_write == 1 && wb_read_buf->rd != 0 && wb_read_buf->reg_dst == 1) ||
+		(rsaddr == wb_read_buf->rt && wb_read_buf->reg_write == 1 && wb_read_buf->rt != 0 && wb_read_buf->reg_dst == 0))
 	{
 		*forward_a = 0x2;
 	}
 
-	if((in_buf->rt == mem_read_buf->rd && mem_read_buf->reg_write == 1 && mem_read_buf->rd != 0 && in_buf->ALU_src == 0 && mem_read_buf->reg_dst == 1) ||
-	   (in_buf->rt == mem_read_buf->rt && mem_read_buf->reg_write == 1 && mem_read_buf->rt != 0 && in_buf->ALU_src == 0 && mem_read_buf->reg_dst == 0))
+	if((rtaddr == mem_read_buf->rd && mem_read_buf->reg_write == 1 && mem_read_buf->rd != 0 && in_buf->ALU_src == 0 && mem_read_buf->reg_dst == 1) ||
+	   (rtaddr == mem_read_buf->rt && mem_read_buf->reg_write == 1 && mem_read_buf->rt != 0 && (in_buf->ALU_src == 0 || in_buf->mem_write == 1) && mem_read_buf->reg_dst == 0))
 	{
 		*forward_b = 0x1;
 	}
-	else if((in_buf->rt == wb_read_buf->rd && wb_read_buf->reg_write == 1 && wb_read_buf->rd != 0 && in_buf->ALU_src == 0 && wb_read_buf->reg_dst == 1) ||
-		(in_buf->rt == wb_read_buf->rt && wb_read_buf->reg_write == 1 && wb_read_buf->rt != 0 && in_buf->ALU_src == 0 && wb_read_buf->reg_dst == 0))
+	else if((rtaddr == wb_read_buf->rd && wb_read_buf->reg_write == 1 && wb_read_buf->rd != 0 && in_buf->ALU_src == 0 && wb_read_buf->reg_dst == 1) ||
+		    (rtaddr == wb_read_buf->rt && wb_read_buf->reg_write == 1 && wb_read_buf->rt != 0 && (in_buf->ALU_src == 0 || in_buf->mem_write == 1) && wb_read_buf->reg_dst == 0))
 	{
 		*forward_b = 0x2;
 	}
+	printf("%d %d %d %d %d %d %d %d %d\n", in_buf->rt, wb_read_buf->rt, wb_read_buf->reg_write, wb_read_buf->rt, in_buf->ALU_src, in_buf->mem_write, wb_read_buf->reg_dst, rsaddr, rtaddr); 
+
 }
 
 /*
@@ -97,10 +99,18 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 		return;
 	}
 
+	//passing the register addresses using in WB forward
+	out_buf->rt = (in_buf->instr & 0x01C0) >> 6;//just the rt part
+	out_buf->rd = (in_buf->instr & 0x0038) >> 3;//just the rd part
+
+	uint8_t rsaddr = (in_buf->instr & 0x0E00) >> 9;
+
 	uint16_t ALU_b;
 	uint16_t ALU_a;
 	//determine whether we need to forward a value to ALU
-	forwarding_unit(in_buf, mem_read_buf, wb_read_buf, &forward_a, &forward_b);
+	forwarding_unit(in_buf, mem_read_buf, wb_read_buf, &forward_a, &forward_b, rsaddr, out_buf->rt);
+
+	printf("fa: %d\nfb: %d\n",forward_a, forward_b);
 
 	//choose forwarded value or instruction value
 	if(forward_a == 0x0)
@@ -123,7 +133,9 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 		}
 	}
 
-	if(forward_b == 0x0)
+	uint8_t dontusert = 0;
+
+	if(forward_b == 0x0 || in_buf->mem_write == 1)
 	{
 		if(in_buf->ALU_src == 0)
 		{
@@ -155,6 +167,24 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 		else
 		{
 			ALU_b = wb_read_buf->ALU_data;
+		}
+	}
+
+	if(forward_b == 1 && in_buf->mem_write)
+	{
+		out_buf->rt_val = mem_read_buf->ALU_out;
+		dontusert = 1;
+	}
+	else if(forward_b == 2 && in_buf->mem_write)
+	{
+		dontusert = 1;
+		if(wb_read_buf->mem_to_reg == 1)
+		{
+			out_buf->rt_val = wb_read_buf->mem_data;
+		}
+		else
+		{
+			out_buf->rt_val = wb_read_buf->ALU_data;
 		}
 	}
 
@@ -195,11 +225,10 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 	//printf("next PC:%d\n", out_buf->next_PC);
 
 	//passing rt forward
-	out_buf->rt_val = in_buf->rt;
-
-	//passing the register addresses using in WB forward
-	out_buf->rt = (in_buf->instr & 0x01C0) >> 6;//just the rt part
-	out_buf->rd = (in_buf->instr & 0x0038) >> 3;//just the rd part
+	if(dontusert == 0)
+	{
+		out_buf->rt_val = in_buf->rt;
+	}
 
 	//setting future control values
 	out_buf->mem_write = in_buf->mem_write;

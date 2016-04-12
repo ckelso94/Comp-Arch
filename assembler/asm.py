@@ -127,63 +127,69 @@ def main():
     for line in lines:
         # get the opcode and the arguments
         op = line.split(" ")[0]
-        args = [arg.strip(" ") for arg in line[len(op)::].strip(" \n\r").split(",")]
-        opcode, type = op_encode(op)
+        nop = False;
+        if op == "nop":
+            nop = True;
+        else:
+            args = [arg.strip(" ") for arg in line[len(op)::].strip(" \n\r").split(",")]
+            opcode, type = op_encode(op)
 
-        #look at the arguments, figure out what's rs,rt,etc
-        rs = 0
-        rt = 0
-        rd = 0
-        const = 0
-        func = 0
-        if type == R:
-            rs = REGS[args[1]]
-            rt = REGS[args[2]]
-            rd = REGS[args[0]]
-            if op in ALU_OPS:
-                func = ALU_FUNC[op]
-        elif type == I:
-            rt = REGS[args[0]]
-            rs = REGS[args[1]]
-            try:#if it's not a valid int, assume it's a label
-                const = int_base(args[2]);
-            except:
-                const = 0#we don't want to use labels with I instructions, and this lets us use I-type for sne and seq
-        elif type == J:
-            try:#if it's not a valid int, assume it's a label
-                #this weird stuff with n is to ignore whitespace
-                n = 1
-                addr = line.split(" ")[n]
-                while not addr:
-                    n += 1
+            #look at the arguments, figure out what's rs,rt,etc
+            rs = 0
+            rt = 0
+            rd = 0
+            const = 0
+            func = 0
+            if type == R:
+                rs = REGS[args[1]]
+                rt = REGS[args[2]]
+                rd = REGS[args[0]]
+                if op in ALU_OPS:
+                    func = ALU_FUNC[op]
+            elif type == I:
+                rt = REGS[args[0]]
+                rs = REGS[args[1]]
+                try:#if it's not a valid int, assume it's a label
+                    const = int_base(args[2]);
+                except:
+                    const = 0#we don't want to use labels with I instructions, and this lets us use I-type for sne and seq
+            elif type == J:
+                try:#if it's not a valid int, assume it's a label
+                    #this weird stuff with n is to ignore whitespace
+                    n = 1
                     addr = line.split(" ")[n]
-                const = int_base(addr)
-            except:
-                const = labels[addr]
-        elif type == L:#lw and sw are weird because they're like lw rt,const(rs)
-            rt = REGS[args[0]]
-            pred = args[1].split("(")
-            rs = REGS[pred[1].strip(" ")[0:-1]]
-            try:#if it's not a valid int, assume it's a label
-                const = int_base(pred[0].strip(" "))
-            except:
-                const = labels[pred[0].strip(" ")]
+                    while not addr:
+                        n += 1
+                        addr = line.split(" ")[n]
+                    const = int_base(addr)
+                except:
+                    const = labels[addr]
+            elif type == L:#lw and sw are weird because they're like lw rt,const(rs)
+                rt = REGS[args[0]]
+                pred = args[1].split("(")
+                rs = REGS[pred[1].strip(" ")[0:-1]]
+                try:#if it's not a valid int, assume it's a label
+                    const = int_base(pred[0].strip(" "))
+                except:
+                    const = labels[pred[0].strip(" ")]
 
-        #cut everything to the correct size
-        opcode &= 0xF
-        rs &= 0x7
-        rt &= 0x7
-        rd &= 0x7
-        func &= 0x7
-        if type == I:
-            const &= 0x3F
-        elif type == J:
-            const &= 0xFFF
+            #cut everything to the correct size
+            opcode &= 0xF
+            rs &= 0x7
+            rt &= 0x7
+            rd &= 0x7
+            func &= 0x7
+            if type == I:
+                const &= 0x3F
+            elif type == J:
+                const &= 0xFFF
 
-        #pack everything together
-        hex = opcode << 12
+            #pack everything together
+            hex = opcode << 12
 
-        if type == R:
+        if nop:
+            hex = 0;
+        elif type == R:
             hex |= rs << 9
             hex |= rt << 6
             hex |= rd << 3

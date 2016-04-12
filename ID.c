@@ -75,7 +75,7 @@ uint8_t bin_val(uint16_t val)
 }
 
 
-void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
+void ID_stage(IF_ID_Buffer *in_buf, ID_EXE_Buffer *old_out, uint16_t *reg_file, uint8_t *load_hazard, ID_EXE_Buffer *out_buf)
 {
 	out_buf->rs = reg_file[(in_buf->instr & 0b0000111000000000) >> 9];
 	out_buf->rt = reg_file[(in_buf->instr & 0b0000000111000000) >> 6];
@@ -89,7 +89,6 @@ void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 	out_buf->skip = bin_val(ctrl_signals & 0b0000000100000000);
 	out_buf->skip_value = bin_val(ctrl_signals & 0b0000000010000000);
 	out_buf->jump = bin_val(ctrl_signals & 0b0000000001000000);
-	//out_buf->ALU_op = (bin_val(ctrl_signals & 0b0000000000100000)<<1) + bin_val(ctrl_signals & 0b0000000000010000);
 	out_buf->mem_write = bin_val(ctrl_signals & 0b0000010000000000);
 	out_buf->mem_read = bin_val(ctrl_signals & 0b0000100000000000);
 	out_buf->mem_to_reg = bin_val(ctrl_signals & 0b0010000000000000);
@@ -97,13 +96,16 @@ void ID_stage(IF_ID_Buffer *in_buf, uint16_t *reg_file, ID_EXE_Buffer *out_buf)
 	out_buf->reg_write = bin_val(ctrl_signals & 0b0001000000000000);
 	//ALU op is basically func now
 	out_buf->ALU_op = (ctrl_signals & 0b0000000000001110) >> 1;
-	// How do you differeniate between R-Type instr without returning func?
-	//out_buf->func = (bin_val(ctrl_signals & 0b0000000000001000)<<2) + (bin_val(ctrl_signals & 0b0000000000000100)<<1) + bin_val(ctrl_signals & 0b0000000000000010);
-	
-	
-	//printf("instr: %d\n", in_buf->instr);
-	//printf("ALU_src:\t%d\nslt_ctrl:\t%d\nskip:\t\t%d\nskip_value:\t%d\njump:\t\t%d\nmem_write:\t%d\nmem_to_reg:\t%d\nreg_dst:\t%d\nreg_write:\t%d\nALU_op:\t\t%d\n",
-			//out_buf->ALU_src, out_buf->slt_ctrl, out_buf->skip, out_buf->skip_value, out_buf->jump, out_buf->mem_write, out_buf->mem_to_reg, out_buf->reg_dst, out_buf->reg_write, out_buf->ALU_op);
-			
+
+	if(old_out->mem_read == 1 && out_buf->jump == 0 && 
+			(old_out->rt == out_buf->rs ||
+			 old_out->rt == out_buf->rt && (out_buf->ALU_src == 0 || out_buf->mem_write == 1)))
+	{
+		*load_hazard = 1;
+		out_buf->skip = 0;
+		out_buf->jump = 0;
+		out_buf->mem_write = 0;
+		out_buf->reg_write = 0;
+	}
 }
 

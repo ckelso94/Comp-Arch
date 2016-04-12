@@ -5,7 +5,6 @@
 
 void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_buf)
 {
-	//printf("aluout:%d\nrt_val:%d\n",in_buf->ALU_out, in_buf->rt_val);
 	//writing to memory
 	if(in_buf->mem_write)
 	{
@@ -15,6 +14,7 @@ void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_bu
 			assert(0);
 		}
 		data_mem[in_buf->ALU_out / 2] = in_buf->rt_val;
+		printf("rt value:%d\n",in_buf->rt_val);
 	}
 
 	//reading from memory
@@ -32,9 +32,6 @@ void MEM_stage(EXE_MEM_Buffer *in_buf, uint16_t *data_mem, MEM_WB_Buffer *out_bu
 		out_buf->mem_data = 0xBEEF;
 	}
 	
-	//writing to PC
-	//*PC = in_buf->next_PC;
-
 	//passing stuff forward
 	out_buf->ALU_data = in_buf->ALU_out;
 	out_buf->rt = in_buf->rt;

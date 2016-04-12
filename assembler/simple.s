@@ -1,6 +1,3 @@
-addi $v0, $zero, 0
-addi $v1, $zero, 0
-loop:
-addi $v0, $v0, 1
-jmp loop
-addi $v1, $zero, 10
+addi $v2, $zero, 4
+addi $v1, $v2, 10
+add $v3, $v1, $v2
