@@ -1,0 +1,10676 @@
+1,55c1,2
+< hello world
+< 28481
+< 12608
+< 16438
+< 36863
+< 7488
+< 8256
+< 4162
+< 21320
+< 28736
+< 16420
+< 4160
+< 45635
+< 1109
+< 8256
+< 4164
+< 11328
+< 4160
+< 16434
+< 4160
+< 42690
+< 2278
+< 8256
+< 4166
+< 11328
+< 4160
+< 36226
+< 16384
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		0
+< PC:		0
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		0
+< PC:		0
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		0
+< next_PC:	0
+< MEM WB Buffer
+< mem_data:	23856
+< ALU_data:	43549
+< rt:		254
+< rd:		127
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		28481
+< PC:		2
+---
+> instr:		4162
+> PC:		270
+58,60c5,7
+< rt:		0
+< instr:		0
+< PC:		0
+---
+> rt:		64
+> instr:		8256
+> PC:		268
+63,64c10,11
+< rt_val:		0
+< rt:		0
+---
+> rt_val:		64
+> rt:		1
+66c13
+< next_PC:	0
+---
+> next_PC:	262
+68,70c15,17
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+---
+> mem_data:	257
+> ALU_data:	16
+> rt:		5
+80c27
+< $a1:	5
+---
+> $a1:	4
+86c33,39
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+99,100c52,53
+< instr:		28481
+< PC:		2
+---
+> instr:		4162
+> PC:		270
+103,105c56,58
+< rt:		0
+< instr:		0
+< PC:		0
+---
+> rt:		64
+> instr:		8256
+> PC:		268
+108,109c61,62
+< rt_val:		0
+< rt:		0
+---
+> rt_val:		64
+> rt:		1
+111c64
+< next_PC:	0
+---
+> next_PC:	262
+113,115c66,68
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+---
+> mem_data:	257
+> ALU_data:	16
+> rt:		5
+120,121c73,74
+< instr:		12608
+< PC:		4
+---
+> instr:		21320
+> PC:		272
+123,126c76,79
+< rs:		5
+< rt:		0
+< instr:		28481
+< PC:		2
+---
+> rs:		0
+> rt:		64
+> instr:		4162
+> PC:		270
+129,130c82,83
+< rt_val:		0
+< rt:		0
+---
+> rt_val:		64
+> rt:		1
+132c85
+< next_PC:	0
+---
+> next_PC:	262
+136c89
+< rt:		0
+---
+> rt:		1
+144c97
+< $t0:	0
+---
+> $t0:	257
+146c99
+< $a1:	5
+---
+> $a1:	4
+152c105,111
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+163d121
+< a: 5 b: 1 func: 1 alu out: 4
+166,167c124,125
+< instr:		12608
+< PC:		4
+---
+> instr:		21320
+> PC:		272
+169,172c127,130
+< rs:		5
+< rt:		0
+< instr:		28481
+< PC:		2
+---
+> rs:		0
+> rt:		64
+> instr:		4162
+> PC:		270
+175,176c133,134
+< rt_val:		0
+< rt:		0
+---
+> rt_val:		64
+> rt:		1
+178c136
+< next_PC:	0
+---
+> next_PC:	262
+182c140
+< rt:		0
+---
+> rt:		1
+187,188c145,146
+< instr:		16438
+< PC:		6
+---
+> instr:		28736
+> PC:		274
+190,193c148,151
+< rs:		0
+< rt:		0
+< instr:		12608
+< PC:		4
+---
+> rs:		64
+> rt:		257
+> instr:		21320
+> PC:		272
+195,197c153,155
+< ALU_out:	0
+< rt_val:		0
+< rt:		5
+---
+> ALU_out:	2
+> rt_val:		64
+> rt:		1
+199c157
+< next_PC:	0
+---
+> next_PC:	262
+203c161
+< rt:		0
+---
+> rt:		1
+211c169
+< $t0:	0
+---
+> $t0:	257
+213c171
+< $a1:	5
+---
+> $a1:	4
+215c173
+< 1 zero values omitted
+---
+> mem[0]:64
+219c177,183
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+229a194
+> a: 2 b: 257 func: 1 alu out: 65281
+232,233c197,198
+< instr:		16438
+< PC:		6
+---
+> instr:		21320
+> PC:		272
+235,238c200,203
+< rs:		0
+< rt:		0
+< instr:		12608
+< PC:		4
+---
+> rs:		64
+> rt:		257
+> instr:		21320
+> PC:		272
+240,242c205,207
+< ALU_out:	0
+< rt_val:		0
+< rt:		5
+---
+> ALU_out:	2
+> rt_val:		64
+> rt:		1
+244c209
+< next_PC:	0
+---
+> next_PC:	262
+248c213
+< rt:		0
+---
+> rt:		1
+253,254c218,219
+< instr:		36863
+< PC:		8
+---
+> instr:		28736
+> PC:		274
+256,259c221,224
+< rs:		0
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rs:		64
+> rt:		257
+> instr:		21320
+> PC:		272
+261,262c226,227
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		257
+264,265c229,230
+< rd:		0
+< next_PC:	0
+---
+> rd:		1
+> next_PC:	262
+267,269c232,234
+< mem_data:	48879
+< ALU_data:	0
+< rt:		5
+---
+> mem_data:	256
+> ALU_data:	2
+> rt:		1
+277c242
+< $t0:	0
+---
+> $t0:	257
+279c244
+< $a1:	5
+---
+> $a1:	4
+281c246
+< 1 zero values omitted
+---
+> mem[0]:64
+285c250,256
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+293c264
+< skip_next:1
+---
+> skip_next:0
+295a267
+> a: 256 b: 257 func: 1 alu out: 65535
+298,299c270,271
+< instr:		36863
+< PC:		8
+---
+> instr:		28736
+> PC:		274
+301,304c273,276
+< rs:		0
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rs:		64
+> rt:		257
+> instr:		21320
+> PC:		272
+306,307c278,279
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		257
+309,310c281,282
+< rd:		0
+< next_PC:	0
+---
+> rd:		1
+> next_PC:	262
+312,314c284,286
+< mem_data:	48879
+< ALU_data:	0
+< rt:		5
+---
+> mem_data:	256
+> ALU_data:	2
+> rt:		1
+319,320c291,292
+< instr:		7488
+< PC:		10
+---
+> instr:		16676
+> PC:		276
+322,325c294,297
+< rs:		5
+< rt:		5
+< instr:		36863
+< PC:		8
+---
+> rs:		0
+> rt:		256
+> instr:		28736
+> PC:		274
+327,328c299,300
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		257
+330,331c302,303
+< rd:		0
+< next_PC:	6
+---
+> rd:		1
+> next_PC:	262
+334c306
+< ALU_data:	0
+---
+> ALU_data:	1
+336c308
+< rd:		0
+---
+> rd:		1
+339c311
+< $v0:	64
+---
+> $v0:	256
+343c315
+< $t0:	0
+---
+> $t0:	257
+345c317
+< $a1:	5
+---
+> $a1:	4
+347c319
+< 1 zero values omitted
+---
+> mem[0]:64
+351c323,329
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+364,365c342,343
+< instr:		7488
+< PC:		10
+---
+> instr:		16676
+> PC:		276
+367,370c345,348
+< rs:		5
+< rt:		5
+< instr:		36863
+< PC:		8
+---
+> rs:		0
+> rt:		256
+> instr:		28736
+> PC:		274
+372,373c350,351
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		257
+375,376c353,354
+< rd:		0
+< next_PC:	6
+---
+> rd:		1
+> next_PC:	262
+379c357
+< ALU_data:	0
+---
+> ALU_data:	1
+381c359
+< rd:		0
+---
+> rd:		1
+385,386c363,364
+< instr:		8256
+< PC:		12
+---
+> instr:		4160
+> PC:		278
+388,391c366,369
+< rs:		16
+< rt:		0
+< instr:		7488
+< PC:		10
+---
+> rs:		0
+> rt:		240
+> instr:		16676
+> PC:		276
+393,397c371,375
+< ALU_out:	4
+< rt_val:		5
+< rt:		7
+< rd:		7
+< next_PC:	6
+---
+> ALU_out:	1
+> rt_val:		256
+> rt:		1
+> rd:		0
+> next_PC:	262
+400c378
+< ALU_data:	0
+---
+> ALU_data:	1
+402c380
+< rd:		0
+---
+> rd:		1
+405c383
+< $v0:	64
+---
+> $v0:	256
+409c387
+< $t0:	0
+---
+> $t0:	257
+411c389
+< $a1:	5
+---
+> $a1:	4
+413c391
+< 1 zero values omitted
+---
+> mem[0]:64
+417c395,401
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+425c409
+< skip_next:0
+---
+> skip_next:1
+430,431c414,415
+< instr:		8256
+< PC:		12
+---
+> instr:		4160
+> PC:		278
+433,436c417,420
+< rs:		16
+< rt:		0
+< instr:		7488
+< PC:		10
+---
+> rs:		0
+> rt:		240
+> instr:		16676
+> PC:		276
+438,442c422,426
+< ALU_out:	4
+< rt_val:		5
+< rt:		7
+< rd:		7
+< next_PC:	6
+---
+> ALU_out:	1
+> rt_val:		256
+> rt:		1
+> rd:		0
+> next_PC:	262
+445c429
+< ALU_data:	0
+---
+> ALU_data:	1
+447c431
+< rd:		0
+---
+> rd:		1
+451,452c435,436
+< instr:		4162
+< PC:		14
+---
+> instr:		45635
+> PC:		280
+455,457c439,441
+< rt:		64
+< instr:		8256
+< PC:		12
+---
+> rt:		1
+> instr:		4160
+> PC:		278
+459,461c443,445
+< ALU_out:	16
+< rt_val:		0
+< rt:		5
+---
+> ALU_out:	1
+> rt_val:		256
+> rt:		1
+463c447
+< next_PC:	6
+---
+> next_PC:	276
+466,468c450,452
+< ALU_data:	4
+< rt:		7
+< rd:		7
+---
+> ALU_data:	1
+> rt:		1
+> rd:		0
+471c455
+< $v0:	64
+---
+> $v0:	1
+475c459
+< $t0:	0
+---
+> $t0:	257
+477c461
+< $a1:	5
+---
+> $a1:	4
+479c463
+< 1 zero values omitted
+---
+> mem[0]:64
+483c467,473
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+496,497c486,487
+< instr:		8256
+< PC:		12
+---
+> instr:		45635
+> PC:		280
+500,502c490,492
+< rt:		64
+< instr:		8256
+< PC:		12
+---
+> rt:		1
+> instr:		4160
+> PC:		278
+504,506c494,496
+< ALU_out:	16
+< rt_val:		0
+< rt:		5
+---
+> ALU_out:	1
+> rt_val:		256
+> rt:		1
+508c498
+< next_PC:	6
+---
+> next_PC:	276
+511,513c501,503
+< ALU_data:	4
+< rt:		7
+< rd:		7
+---
+> ALU_data:	1
+> rt:		1
+> rd:		0
+517,518c507,508
+< instr:		4162
+< PC:		14
+---
+> instr:		1109
+> PC:		282
+520,523c510,513
+< rs:		0
+< rt:		64
+< instr:		8256
+< PC:		12
+---
+> rs:		1
+> rt:		1
+> instr:		45635
+> PC:		280
+526c516
+< rt_val:		64
+---
+> rt_val:		1
+529c519
+< next_PC:	6
+---
+> next_PC:	276
+531,533c521,523
+< mem_data:	0
+< ALU_data:	16
+< rt:		5
+---
+> mem_data:	48879
+> ALU_data:	1
+> rt:		1
+537c527
+< $v0:	64
+---
+> $v0:	1
+541c531
+< $t0:	0
+---
+> $t0:	257
+545c535
+< 1 zero values omitted
+---
+> mem[0]:64
+549c539,545
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+562,563c558,559
+< instr:		4162
+< PC:		14
+---
+> instr:		45635
+> PC:		280
+565,568c561,564
+< rs:		0
+< rt:		64
+< instr:		8256
+< PC:		12
+---
+> rs:		1
+> rt:		1
+> instr:		45635
+> PC:		280
+571c567
+< rt_val:		64
+---
+> rt_val:		1
+574c570
+< next_PC:	6
+---
+> next_PC:	276
+576,578c572,574
+< mem_data:	0
+< ALU_data:	16
+< rt:		5
+---
+> mem_data:	48879
+> ALU_data:	1
+> rt:		1
+583,584c579,580
+< instr:		21320
+< PC:		16
+---
+> instr:		1109
+> PC:		282
+586,589c582,585
+< rs:		0
+< rt:		64
+< instr:		4162
+< PC:		14
+---
+> rs:		1
+> rt:		1
+> instr:		45635
+> PC:		280
+592c588
+< rt_val:		64
+---
+> rt_val:		1
+595c591
+< next_PC:	6
+---
+> next_PC:	276
+597c593
+< mem_data:	48879
+---
+> mem_data:	64
+603c599
+< $v0:	64
+---
+> $v0:	1
+607c603
+< $t0:	0
+---
+> $t0:	257
+611c607
+< 1 zero values omitted
+---
+> mem[0]:64
+615c611,617
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+628,629c630,631
+< instr:		21320
+< PC:		16
+---
+> instr:		1109
+> PC:		282
+631,634c633,636
+< rs:		0
+< rt:		64
+< instr:		4162
+< PC:		14
+---
+> rs:		1
+> rt:		1
+> instr:		45635
+> PC:		280
+637c639
+< rt_val:		64
+---
+> rt_val:		1
+640c642
+< next_PC:	6
+---
+> next_PC:	276
+642c644
+< mem_data:	48879
+---
+> mem_data:	64
+649,650c651,652
+< instr:		28736
+< PC:		18
+---
+> instr:		8256
+> PC:		284
+652,655c654,657
+< rs:		64
+< rt:		0
+< instr:		21320
+< PC:		16
+---
+> rs:		4112
+> rt:		64
+> instr:		1109
+> PC:		282
+657,658c659,660
+< ALU_out:	2
+< rt_val:		64
+---
+> ALU_out:	8
+> rt_val:		1
+661c663
+< next_PC:	6
+---
+> next_PC:	276
+673c675
+< $t0:	0
+---
+> $t0:	257
+681c683,689
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+692d699
+< a: 2 b: 0 func: 1 alu out: 2
+695,696c702,703
+< instr:		21320
+< PC:		16
+---
+> instr:		8256
+> PC:		284
+698,701c705,708
+< rs:		64
+< rt:		0
+< instr:		21320
+< PC:		16
+---
+> rs:		4112
+> rt:		64
+> instr:		1109
+> PC:		282
+703,704c710,711
+< ALU_out:	2
+< rt_val:		64
+---
+> ALU_out:	8
+> rt_val:		1
+707c714
+< next_PC:	6
+---
+> next_PC:	276
+716,717c723,724
+< instr:		28736
+< PC:		18
+---
+> instr:		4164
+> PC:		286
+719,722c726,729
+< rs:		64
+< rt:		0
+< instr:		21320
+< PC:		16
+---
+> rs:		0
+> rt:		64
+> instr:		8256
+> PC:		284
+724,728c731,735
+< ALU_out:	0
+< rt_val:		0
+< rt:		5
+< rd:		1
+< next_PC:	6
+---
+> ALU_out:	4120
+> rt_val:		64
+> rt:		1
+> rd:		2
+> next_PC:	276
+730,731c737,738
+< mem_data:	256
+< ALU_data:	2
+---
+> mem_data:	48879
+> ALU_data:	8
+740c747
+< $t0:	0
+---
+> $t0:	257
+748c755,761
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+759d771
+< a: 256 b: 0 func: 1 alu out: 256
+762,763c774,775
+< instr:		28736
+< PC:		18
+---
+> instr:		4164
+> PC:		286
+765,768c777,780
+< rs:		64
+< rt:		0
+< instr:		21320
+< PC:		16
+---
+> rs:		0
+> rt:		64
+> instr:		8256
+> PC:		284
+770,774c782,786
+< ALU_out:	0
+< rt_val:		0
+< rt:		5
+< rd:		1
+< next_PC:	6
+---
+> ALU_out:	4120
+> rt_val:		64
+> rt:		1
+> rd:		2
+> next_PC:	276
+776,777c788,789
+< mem_data:	256
+< ALU_data:	2
+---
+> mem_data:	48879
+> ALU_data:	8
+783,784c795,796
+< instr:		16420
+< PC:		20
+---
+> instr:		11328
+> PC:		288
+787,789c799,801
+< rt:		256
+< instr:		28736
+< PC:		18
+---
+> rt:		8
+> instr:		4164
+> PC:		286
+792,795c804,807
+< rt_val:		0
+< rt:		5
+< rd:		1
+< next_PC:	6
+---
+> rt_val:		8
+> rt:		1
+> rd:		0
+> next_PC:	276
+798,800c810,812
+< ALU_data:	0
+< rt:		5
+< rd:		1
+---
+> ALU_data:	4120
+> rt:		1
+> rd:		2
+803c815
+< $v0:	256
+---
+> $v0:	8
+807c819
+< $t0:	0
+---
+> $t0:	257
+815c827,833
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+828,829c846,847
+< instr:		16420
+< PC:		20
+---
+> instr:		11328
+> PC:		288
+832,834c850,852
+< rt:		256
+< instr:		28736
+< PC:		18
+---
+> rt:		8
+> instr:		4164
+> PC:		286
+837,840c855,858
+< rt_val:		0
+< rt:		5
+< rd:		1
+< next_PC:	6
+---
+> rt_val:		8
+> rt:		1
+> rd:		0
+> next_PC:	276
+843,845c861,863
+< ALU_data:	0
+< rt:		5
+< rd:		1
+---
+> ALU_data:	4120
+> rt:		1
+> rd:		2
+850c868
+< PC:		22
+---
+> PC:		290
+852,855c870,873
+< rs:		0
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rs:		16
+> rt:		8
+> instr:		11328
+> PC:		288
+857,858c875,876
+< ALU_out:	0
+< rt_val:		256
+---
+> ALU_out:	4
+> rt_val:		8
+861c879
+< next_PC:	6
+---
+> next_PC:	276
+865,866c883,884
+< rt:		5
+< rd:		1
+---
+> rt:		1
+> rd:		0
+869,870c887,888
+< $v0:	256
+< $v1:	4112
+---
+> $v0:	8
+> $v1:	4120
+873c891
+< $t0:	0
+---
+> $t0:	257
+877c895
+< mem[0]:64
+---
+> mem[0]:8
+881c899,905
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+894,895c918,919
+< instr:		4160
+< PC:		22
+---
+> instr:		11328
+> PC:		288
+897,900c921,924
+< rs:		0
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rs:		16
+> rt:		8
+> instr:		11328
+> PC:		288
+902,903c926,927
+< ALU_out:	0
+< rt_val:		256
+---
+> ALU_out:	4
+> rt_val:		8
+906c930
+< next_PC:	6
+---
+> next_PC:	276
+910,911c934,935
+< rt:		5
+< rd:		1
+---
+> rt:		1
+> rd:		0
+915,919d938
+< instr:		45635
+< PC:		24
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+921c940,945
+< PC:		22
+---
+> PC:		290
+> ID EXE Buffer
+> rs:		16
+> rt:		8
+> instr:		11328
+> PC:		288
+923,927c947,951
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	6
+---
+> ALU_out:	16
+> rt_val:		8
+> rt:		1
+> rd:		0
+> next_PC:	276
+929,930c953,954
+< mem_data:	48879
+< ALU_data:	0
+---
+> mem_data:	65280
+> ALU_data:	4
+935,936c959,960
+< $v0:	0
+< $v1:	4112
+---
+> $v0:	8
+> $v1:	4120
+939c963
+< $t0:	0
+---
+> $t0:	257
+943c967
+< mem[0]:64
+---
+> mem[0]:8
+947c971,977
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+955c985
+< skip_next:2
+---
+> skip_next:0
+960,964d989
+< instr:		45635
+< PC:		24
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+966c991,996
+< PC:		22
+---
+> PC:		290
+> ID EXE Buffer
+> rs:		16
+> rt:		8
+> instr:		11328
+> PC:		288
+968,1300c998,1000
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	6
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		1
+< rd:		0
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		4160
+< PC:		38
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		45635
+< PC:		24
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	22
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+< rd:		4
+< 
+< $zero:	0
+< $v0:	0
+< $v1:	4112
+< $v2:	15
+< $v3:	240
+< $t0:	0
+< $a0:	16
+< $a1:	4
+< 
+< mem[0]:64
+< mem[1]:256
+< mem[2]:65280
+< mem[3]:255
+< 12 zero values omitted
+< mem[16]:257
+< mem[17]:272
+< mem[18]:17
+< mem[19]:240
+< mem[20]:255
+< 491 zero values omitted
+< 
+< skip_next:1
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		45635
+< PC:		24
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		45635
+< PC:		24
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	22
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+< rd:		4
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		4160
+< PC:		38
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		45635
+< PC:		24
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+< rd:		4
+< 
+< $zero:	0
+< $v0:	0
+< $v1:	4112
+< $v2:	15
+< $v3:	240
+< $t0:	0
+< $a0:	16
+< $a1:	4
+< 
+< mem[0]:64
+< mem[1]:256
+< mem[2]:65280
+< mem[3]:255
+< 12 zero values omitted
+< mem[16]:257
+< mem[17]:272
+< mem[18]:17
+< mem[19]:240
+< mem[20]:255
+< 491 zero values omitted
+< 
+< skip_next:0
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		4160
+< PC:		38
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		45635
+< PC:		24
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+< rd:		4
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		42690
+< PC:		40
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		4160
+< PC:		38
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		1
+< rd:		0
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+< rd:		4
+< 
+< $zero:	0
+< $v0:	0
+< $v1:	4112
+< $v2:	15
+< $v3:	240
+< $t0:	0
+< $a0:	16
+< $a1:	4
+< 
+< mem[0]:64
+< mem[1]:256
+< mem[2]:65280
+< mem[3]:255
+< 12 zero values omitted
+< mem[16]:257
+< mem[17]:272
+< mem[18]:17
+< mem[19]:240
+< mem[20]:255
+< 491 zero values omitted
+< 
+< skip_next:0
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		42690
+< PC:		40
+< ID EXE Buffer
+< rs:		0
+< rt:		0
+< instr:		4160
+< PC:		38
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		1
+< rd:		0
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		0
+< rd:		4
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		2278
+< PC:		42
+< ID EXE Buffer
+< rs:		15
+< rt:		15
+< instr:		42690
+< PC:		40
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		1
+< rd:		0
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		1
+< rd:		0
+< 
+< $zero:	0
+< $v0:	0
+< $v1:	4112
+< $v2:	15
+< $v3:	240
+< $t0:	0
+< $a0:	16
+< $a1:	4
+< 
+< mem[0]:64
+< mem[1]:256
+< mem[2]:65280
+< mem[3]:255
+< 12 zero values omitted
+< mem[16]:257
+< mem[17]:272
+< mem[18]:17
+< mem[19]:240
+< mem[20]:255
+< 491 zero values omitted
+< 
+< skip_next:0
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		2278
+< PC:		42
+< ID EXE Buffer
+< rs:		15
+< rt:		15
+< instr:		42690
+< PC:		40
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		0
+< rt:		1
+< rd:		0
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	0
+< rt:		1
+< rd:		0
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		8256
+< PC:		44
+< ID EXE Buffer
+< rs:		240
+< rt:		15
+< instr:		2278
+< PC:		42
+< EXE MEM Buffer
+< ALU_out:	60
+< rt_val:		15
+< rt:		3
+< rd:		0
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	64
+< ALU_data:	0
+< rt:		1
+< rd:		0
+< 
+< $zero:	0
+< $v0:	0
+< $v1:	4112
+< $v2:	15
+< $v3:	240
+< $t0:	0
+< $a0:	16
+< $a1:	4
+< 
+< mem[0]:64
+< mem[1]:256
+< mem[2]:65280
+< mem[3]:255
+< 12 zero values omitted
+< mem[16]:257
+< mem[17]:272
+< mem[18]:17
+< mem[19]:240
+< mem[20]:255
+< 491 zero values omitted
+< 
+< skip_next:0
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		8256
+< PC:		44
+< ID EXE Buffer
+< rs:		240
+< rt:		15
+< instr:		2278
+< PC:		42
+< EXE MEM Buffer
+< ALU_out:	60
+< rt_val:		15
+< rt:		3
+---
+> ALU_out:	16
+> rt_val:		8
+> rt:		1
+1302c1002
+< next_PC:	24
+---
+> next_PC:	276
+1304,1305c1004,1005
+< mem_data:	64
+< ALU_data:	0
+---
+> mem_data:	65280
+> ALU_data:	4
+1311,1312c1011,1012
+< instr:		4166
+< PC:		46
+---
+> instr:		16690
+> PC:		292
+1315,1317c1015,1017
+< rt:		64
+< instr:		8256
+< PC:		44
+---
+> rt:		65280
+> instr:		4160
+> PC:		290
+1319,1323c1019,1023
+< ALU_out:	204
+< rt_val:		15
+< rt:		3
+< rd:		4
+< next_PC:	24
+---
+> ALU_out:	16
+> rt_val:		65280
+> rt:		1
+> rd:		0
+> next_PC:	276
+1326,1327c1026,1027
+< ALU_data:	60
+< rt:		3
+---
+> ALU_data:	16
+> rt:		1
+1331,1332c1031,1032
+< $v0:	64
+< $v1:	4112
+---
+> $v0:	65280
+> $v1:	4120
+1335c1035
+< $t0:	0
+---
+> $t0:	257
+1339c1039
+< mem[0]:64
+---
+> mem[0]:8
+1343c1043,1049
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:257
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1356,1378c1062,1063
+< instr:		4166
+< PC:		46
+< ID EXE Buffer
+< rs:		0
+< rt:		64
+< instr:		8256
+< PC:		44
+< EXE MEM Buffer
+< ALU_out:	204
+< rt_val:		15
+< rt:		3
+< rd:		4
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	60
+< rt:		3
+< rd:		0
+< 
+< New buffers:
+< IF ID Buffer
+< instr:		11328
+< PC:		48
+---
+> instr:		16690
+> PC:		292
+1381,1383c1066,1068
+< rt:		64
+< instr:		4166
+< PC:		46
+---
+> rt:		65280
+> instr:		4160
+> PC:		290
+1385,1386c1070,1071
+< ALU_out:	0
+< rt_val:		64
+---
+> ALU_out:	16
+> rt_val:		65280
+1389c1074
+< next_PC:	24
+---
+> next_PC:	276
+1392,1431c1077
+< ALU_data:	204
+< rt:		3
+< rd:		4
+< 
+< $zero:	0
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	240
+< $t0:	0
+< $a0:	16
+< $a1:	4
+< 
+< mem[0]:64
+< mem[1]:256
+< mem[2]:65280
+< mem[3]:255
+< 12 zero values omitted
+< mem[16]:257
+< mem[17]:272
+< mem[18]:17
+< mem[19]:240
+< mem[20]:255
+< 491 zero values omitted
+< 
+< skip_next:0
+< 
+< ---------------------
+< Old buffers:
+< IF ID Buffer
+< instr:		11328
+< PC:		48
+< ID EXE Buffer
+< rs:		0
+< rt:		64
+< instr:		4166
+< PC:		46
+< EXE MEM Buffer
+< ALU_out:	0
+< rt_val:		64
+---
+> ALU_data:	16
+1434,1439d1079
+< next_PC:	24
+< MEM WB Buffer
+< mem_data:	48879
+< ALU_data:	204
+< rt:		3
+< rd:		4
+1444c1084
+< PC:		50
+---
+> PC:		294
+1446,1449c1086,1089
+< rs:		16
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		240
+> instr:		16690
+> PC:		292
+1451,1452c1091,1092
+< ALU_out:	6
+< rt_val:		64
+---
+> ALU_out:	0
+> rt_val:		65280
+1455c1095
+< next_PC:	24
+---
+> next_PC:	276
+1458c1098
+< ALU_data:	0
+---
+> ALU_data:	16
+1463,1467c1103,1107
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	65280
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1471c1111
+< mem[0]:64
+---
+> mem[0]:8
+1475c1115,1121
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1488,1489c1134,1135
+< instr:		11328
+< PC:		48
+---
+> instr:		4160
+> PC:		294
+1491,1494c1137,1140
+< rs:		16
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		240
+> instr:		16690
+> PC:		292
+1496,1497c1142,1143
+< ALU_out:	6
+< rt_val:		64
+---
+> ALU_out:	0
+> rt_val:		65280
+1500c1146
+< next_PC:	24
+---
+> next_PC:	276
+1503c1149
+< ALU_data:	0
+---
+> ALU_data:	16
+1509,1510c1155,1156
+< instr:		4160
+< PC:		50
+---
+> instr:		42690
+> PC:		296
+1512,1515c1158,1161
+< rs:		16
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		65280
+> instr:		4160
+> PC:		294
+1517,1521c1163,1167
+< ALU_out:	16
+< rt_val:		64
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	276
+1523,1524c1169,1170
+< mem_data:	255
+< ALU_data:	6
+---
+> mem_data:	8
+> ALU_data:	0
+1529,1533c1175,1179
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	65280
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1537c1183
+< mem[0]:64
+---
+> mem[0]:8
+1541c1187,1193
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1549c1201
+< skip_next:0
+---
+> skip_next:2
+1554,1555c1206,1207
+< instr:		4160
+< PC:		50
+---
+> instr:		42690
+> PC:		296
+1557,1560c1209,1212
+< rs:		16
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		65280
+> instr:		4160
+> PC:		294
+1562,1566c1214,1218
+< ALU_out:	16
+< rt_val:		64
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	276
+1568,1569c1220,1221
+< mem_data:	255
+< ALU_data:	6
+---
+> mem_data:	8
+> ALU_data:	0
+1576c1228
+< PC:		52
+---
+> PC:		308
+1578,1581c1230,1233
+< rs:		0
+< rt:		255
+< instr:		4160
+< PC:		50
+---
+> rs:		15
+> rt:		15
+> instr:		42690
+> PC:		296
+1583,1587c1235,1239
+< ALU_out:	16
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	294
+1590,1592c1242,1244
+< ALU_data:	16
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+1595,1599c1247,1251
+< $v0:	255
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1603c1255
+< mem[0]:64
+---
+> mem[0]:8
+1607c1259,1265
+< 12 zero values omitted
+---
+> 4 zero values omitted
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1615c1273
+< skip_next:0
+---
+> skip_next:1
+1621c1279
+< PC:		52
+---
+> PC:		308
+1623,1626c1281,1284
+< rs:		0
+< rt:		255
+< instr:		4160
+< PC:		50
+---
+> rs:		15
+> rt:		15
+> instr:		42690
+> PC:		296
+1628,1632c1286,1290
+< ALU_out:	16
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	294
+1635,1637c1293,1295
+< ALU_data:	16
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+1641,1642c1299,1300
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+1647c1305
+< PC:		52
+---
+> PC:		308
+1649,1653c1307,1311
+< ALU_out:	0
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	296
+1656,1658c1314,1316
+< ALU_data:	16
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+1661,1665c1319,1323
+< $v0:	255
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1669c1327
+< mem[0]:64
+---
+> mem[0]:8
+1674,1675c1332,1337
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1688,1689c1350,1351
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+1694c1356
+< PC:		52
+---
+> PC:		308
+1696,1700c1358,1362
+< ALU_out:	0
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	296
+1703,1705c1365,1367
+< ALU_data:	16
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+1710c1372
+< PC:		56
+---
+> PC:		312
+1713,1715c1375,1377
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		240
+> instr:		16640
+> PC:		310
+1721c1383
+< next_PC:	24
+---
+> next_PC:	296
+1723,1726c1385,1388
+< mem_data:	64
+< ALU_data:	0
+< rt:		1
+< rd:		0
+---
+> mem_data:	48879
+> ALU_data:	240
+> rt:		4
+> rd:		6
+1729,1733c1391,1395
+< $v0:	255
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1737c1399
+< mem[0]:64
+---
+> mem[0]:8
+1742,1743c1404,1409
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1757c1423
+< PC:		56
+---
+> PC:		312
+1760,1762c1426,1428
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		240
+> instr:		16640
+> PC:		310
+1768c1434
+< next_PC:	24
+---
+> next_PC:	296
+1770,1773c1436,1439
+< mem_data:	64
+< ALU_data:	0
+< rt:		1
+< rd:		0
+---
+> mem_data:	48879
+> ALU_data:	240
+> rt:		4
+> rd:		6
+1778c1444
+< PC:		58
+---
+> PC:		314
+1783c1449
+< PC:		56
+---
+> PC:		312
+1785,1787c1451,1453
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+1789c1455
+< next_PC:	24
+---
+> next_PC:	296
+1797,1801c1463,1467
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1805c1471
+< mem[0]:64
+---
+> mem[0]:8
+1810,1811c1476,1481
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1825c1495
+< PC:		58
+---
+> PC:		314
+1830c1500
+< PC:		56
+---
+> PC:		312
+1832,1834c1502,1504
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+1836c1506
+< next_PC:	24
+---
+> next_PC:	296
+1846c1516
+< PC:		2
+---
+> PC:		258
+1851c1521
+< PC:		58
+---
+> PC:		314
+1853,1855c1523,1525
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+1857c1527
+< next_PC:	56
+---
+> next_PC:	312
+1860,1861c1530,1531
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+1865,1869c1535,1539
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1873c1543
+< mem[0]:64
+---
+> mem[0]:8
+1878,1879c1548,1553
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1893c1567
+< PC:		2
+---
+> PC:		258
+1898c1572
+< PC:		58
+---
+> PC:		314
+1900,1902c1574,1576
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+1904c1578
+< next_PC:	56
+---
+> next_PC:	312
+1907,1908c1581,1582
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+1914c1588
+< PC:		4
+---
+> PC:		260
+1917c1591
+< rt:		0
+---
+> rt:		257
+1919c1593
+< PC:		2
+---
+> PC:		258
+1921,1923c1595,1597
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+1925c1599
+< next_PC:	58
+---
+> next_PC:	314
+1928,1929c1602,1603
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+1933,1937c1607,1611
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+1941c1615
+< mem[0]:64
+---
+> mem[0]:8
+1946,1947c1620,1625
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+1962c1640
+< PC:		4
+---
+> PC:		260
+1965c1643
+< rt:		0
+---
+> rt:		257
+1967c1645
+< PC:		2
+---
+> PC:		258
+1969,1971c1647,1649
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+1973c1651
+< next_PC:	58
+---
+> next_PC:	314
+1976,1977c1654,1655
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+1982,1983c1660,1661
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+1986c1664
+< rt:		0
+---
+> rt:		257
+1988c1666
+< PC:		4
+---
+> PC:		260
+1991c1669
+< rt_val:		0
+---
+> rt_val:		257
+1994c1672
+< next_PC:	58
+---
+> next_PC:	314
+1997,1998c1675,1676
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+2002,2006c1680,1684
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+2010c1688
+< mem[0]:64
+---
+> mem[0]:8
+2015,2016c1693,1698
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2029,2030c1711,1712
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+2033c1715
+< rt:		0
+---
+> rt:		257
+2035c1717
+< PC:		4
+---
+> PC:		260
+2038c1720
+< rt_val:		0
+---
+> rt_val:		257
+2041c1723
+< next_PC:	58
+---
+> next_PC:	314
+2044,2045c1726,1727
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+2051c1733
+< PC:		8
+---
+> PC:		264
+2054,2056c1736,1738
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		240
+> instr:		16694
+> PC:		262
+2059c1741
+< rt_val:		0
+---
+> rt_val:		257
+2062c1744
+< next_PC:	58
+---
+> next_PC:	314
+2070,2074c1752,1756
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	257
+2078c1760
+< mem[0]:64
+---
+> mem[0]:8
+2083,2084c1765,1770
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2098c1784
+< PC:		8
+---
+> PC:		264
+2101,2103c1787,1789
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		240
+> instr:		16694
+> PC:		262
+2106c1792
+< rt_val:		0
+---
+> rt_val:		257
+2109c1795
+< next_PC:	58
+---
+> next_PC:	314
+2119c1805
+< PC:		10
+---
+> PC:		266
+2124c1810
+< PC:		8
+---
+> PC:		264
+2127c1813
+< rt_val:		0
+---
+> rt_val:		257
+2130c1816
+< next_PC:	6
+---
+> next_PC:	262
+2138,2141c1824,1827
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+2146c1832
+< mem[0]:64
+---
+> mem[0]:8
+2151,2152c1837,1842
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2166c1856
+< PC:		10
+---
+> PC:		266
+2171c1861
+< PC:		8
+---
+> PC:		264
+2174c1864
+< rt_val:		0
+---
+> rt_val:		257
+2177c1867
+< next_PC:	6
+---
+> next_PC:	262
+2187c1877
+< PC:		12
+---
+> PC:		268
+2192c1882
+< PC:		10
+---
+> PC:		266
+2198c1888
+< next_PC:	6
+---
+> next_PC:	262
+2206,2209c1896,1899
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+2214c1904
+< mem[0]:64
+---
+> mem[0]:8
+2219,2220c1909,1914
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2234c1928
+< PC:		12
+---
+> PC:		268
+2239c1933
+< PC:		10
+---
+> PC:		266
+2245c1939
+< next_PC:	6
+---
+> next_PC:	262
+2255c1949
+< PC:		14
+---
+> PC:		270
+2258c1952
+< rt:		64
+---
+> rt:		8
+2260c1954
+< PC:		12
+---
+> PC:		268
+2266c1960
+< next_PC:	6
+---
+> next_PC:	262
+2274,2277c1968,1971
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+2282c1976
+< mem[0]:64
+---
+> mem[0]:8
+2287,2288c1981,1986
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2302c2000
+< PC:		12
+---
+> PC:		268
+2305c2003
+< rt:		64
+---
+> rt:		8
+2307c2005
+< PC:		12
+---
+> PC:		268
+2313c2011
+< next_PC:	6
+---
+> next_PC:	262
+2323c2021
+< PC:		14
+---
+> PC:		270
+2326c2024
+< rt:		64
+---
+> rt:		8
+2328c2026
+< PC:		12
+---
+> PC:		268
+2331c2029
+< rt_val:		64
+---
+> rt_val:		8
+2334c2032
+< next_PC:	6
+---
+> next_PC:	262
+2336c2034
+< mem_data:	0
+---
+> mem_data:	272
+2342,2345c2040,2043
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+2350c2048
+< mem[0]:64
+---
+> mem[0]:8
+2355,2356c2053,2058
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2370c2072
+< PC:		14
+---
+> PC:		270
+2373c2075
+< rt:		64
+---
+> rt:		8
+2375c2077
+< PC:		12
+---
+> PC:		268
+2378c2080
+< rt_val:		64
+---
+> rt_val:		8
+2381c2083
+< next_PC:	6
+---
+> next_PC:	262
+2383c2085
+< mem_data:	0
+---
+> mem_data:	272
+2391c2093
+< PC:		16
+---
+> PC:		272
+2394c2096
+< rt:		64
+---
+> rt:		8
+2396c2098
+< PC:		14
+---
+> PC:		270
+2399c2101
+< rt_val:		64
+---
+> rt_val:		8
+2402c2104
+< next_PC:	6
+---
+> next_PC:	262
+2410,2414c2112,2116
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2418c2120
+< mem[0]:64
+---
+> mem[0]:8
+2423,2424c2125,2130
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2438c2144
+< PC:		16
+---
+> PC:		272
+2441c2147
+< rt:		64
+---
+> rt:		8
+2443c2149
+< PC:		14
+---
+> PC:		270
+2446c2152
+< rt_val:		64
+---
+> rt_val:		8
+2449c2155
+< next_PC:	6
+---
+> next_PC:	262
+2459c2165
+< PC:		18
+---
+> PC:		274
+2461,2462c2167,2168
+< rs:		64
+< rt:		0
+---
+> rs:		8
+> rt:		272
+2464c2170
+< PC:		16
+---
+> PC:		272
+2467c2173
+< rt_val:		64
+---
+> rt_val:		8
+2470c2176
+< next_PC:	6
+---
+> next_PC:	262
+2478,2482c2184,2188
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2486c2192
+< mem[0]:64
+---
+> mem[0]:8
+2491,2492c2197,2202
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2503c2213
+< a: 2 b: 0 func: 1 alu out: 2
+---
+> a: 2 b: 272 func: 1 alu out: 65266
+2507,2510c2217,2220
+< PC:		16
+< ID EXE Buffer
+< rs:		64
+< rt:		0
+---
+> PC:		272
+> ID EXE Buffer
+> rs:		8
+> rt:		272
+2512c2222
+< PC:		16
+---
+> PC:		272
+2515c2225
+< rt_val:		64
+---
+> rt_val:		8
+2518c2228
+< next_PC:	6
+---
+> next_PC:	262
+2528c2238
+< PC:		18
+---
+> PC:		274
+2530,2531c2240,2241
+< rs:		64
+< rt:		0
+---
+> rs:		8
+> rt:		272
+2533c2243
+< PC:		16
+---
+> PC:		272
+2535,2536c2245,2246
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		272
+2539c2249
+< next_PC:	6
+---
+> next_PC:	262
+2547,2551c2257,2261
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2555c2265
+< mem[0]:64
+---
+> mem[0]:8
+2560,2561c2270,2275
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2572c2286
+< a: 256 b: 0 func: 1 alu out: 256
+---
+> a: 256 b: 272 func: 1 alu out: 65520
+2576c2290
+< PC:		18
+---
+> PC:		274
+2578,2579c2292,2293
+< rs:		64
+< rt:		0
+---
+> rs:		8
+> rt:		272
+2581c2295
+< PC:		16
+---
+> PC:		272
+2583,2584c2297,2298
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		272
+2587c2301
+< next_PC:	6
+---
+> next_PC:	262
+2596,2597c2310,2311
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+2602c2316
+< PC:		18
+---
+> PC:		274
+2604,2605c2318,2319
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		272
+2608c2322
+< next_PC:	6
+---
+> next_PC:	262
+2611c2325
+< ALU_data:	0
+---
+> ALU_data:	1
+2617,2620c2331,2334
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2624c2338
+< mem[0]:64
+---
+> mem[0]:8
+2629,2630c2343,2348
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2643,2644c2361,2362
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+2649c2367
+< PC:		18
+---
+> PC:		274
+2651,2652c2369,2370
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		272
+2655c2373
+< next_PC:	6
+---
+> next_PC:	262
+2658c2376
+< ALU_data:	0
+---
+> ALU_data:	1
+2665c2383
+< PC:		22
+---
+> PC:		278
+2668,2670c2386,2388
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		240
+> instr:		16676
+> PC:		276
+2672c2390
+< ALU_out:	0
+---
+> ALU_out:	1
+2676c2394
+< next_PC:	6
+---
+> next_PC:	262
+2679c2397
+< ALU_data:	0
+---
+> ALU_data:	1
+2685,2688c2403,2406
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2692c2410
+< mem[0]:64
+---
+> mem[0]:8
+2697,2698c2415,2420
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2706c2428
+< skip_next:0
+---
+> skip_next:1
+2712c2434
+< PC:		22
+---
+> PC:		278
+2715,2717c2437,2439
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		240
+> instr:		16676
+> PC:		276
+2719c2441
+< ALU_out:	0
+---
+> ALU_out:	1
+2723c2445
+< next_PC:	6
+---
+> next_PC:	262
+2726c2448
+< ALU_data:	0
+---
+> ALU_data:	1
+2733c2455
+< PC:		24
+---
+> PC:		280
+2736c2458
+< rt:		0
+---
+> rt:		1
+2738c2460
+< PC:		22
+---
+> PC:		278
+2740,2744c2462,2466
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	6
+---
+> ALU_out:	1
+> rt_val:		256
+> rt:		1
+> rd:		0
+> next_PC:	276
+2747c2469
+< ALU_data:	0
+---
+> ALU_data:	1
+2752,2756c2474,2478
+< $v0:	0
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2760c2482
+< mem[0]:64
+---
+> mem[0]:8
+2765,2766c2487,2492
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2774c2500
+< skip_next:2
+---
+> skip_next:0
+2780c2506
+< PC:		24
+---
+> PC:		280
+2783c2509
+< rt:		0
+---
+> rt:		1
+2785c2511
+< PC:		22
+---
+> PC:		278
+2787,2791c2513,2517
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	6
+---
+> ALU_out:	1
+> rt_val:		256
+> rt:		1
+> rd:		0
+> next_PC:	276
+2794c2520
+< ALU_data:	0
+---
+> ALU_data:	1
+2800,2801c2526,2527
+< instr:		4160
+< PC:		38
+---
+> instr:		1109
+> PC:		282
+2803,2804c2529,2530
+< rs:		0
+< rt:		0
+---
+> rs:		1
+> rt:		1
+2806c2532
+< PC:		24
+---
+> PC:		280
+2809,2812c2535,2538
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	22
+---
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+2815,2817c2541,2543
+< ALU_data:	0
+< rt:		0
+< rd:		4
+---
+> ALU_data:	1
+> rt:		1
+> rd:		0
+2820,2824c2546,2550
+< $v0:	0
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2828c2554
+< mem[0]:64
+---
+> mem[0]:8
+2833,2834c2559,2564
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2842c2572
+< skip_next:1
+---
+> skip_next:0
+2848c2578
+< PC:		24
+---
+> PC:		280
+2850,2851c2580,2581
+< rs:		0
+< rt:		0
+---
+> rs:		1
+> rt:		1
+2853c2583
+< PC:		24
+---
+> PC:		280
+2856,2859c2586,2589
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	22
+---
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+2862,2864c2592,2594
+< ALU_data:	0
+< rt:		0
+< rd:		4
+---
+> ALU_data:	1
+> rt:		1
+> rd:		0
+2868,2869c2598,2599
+< instr:		4160
+< PC:		38
+---
+> instr:		1109
+> PC:		282
+2871,2872c2601,2602
+< rs:		0
+< rt:		0
+---
+> rs:		1
+> rt:		1
+2874c2604
+< PC:		24
+---
+> PC:		280
+2877,2880c2607,2610
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	24
+---
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+2882c2612
+< mem_data:	48879
+---
+> mem_data:	8
+2884,2885c2614,2615
+< rt:		0
+< rd:		4
+---
+> rt:		1
+> rd:		0
+2888,2892c2618,2622
+< $v0:	0
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2896c2626
+< mem[0]:64
+---
+> mem[0]:8
+2901,2902c2631,2636
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2915,2916c2649,2650
+< instr:		4160
+< PC:		38
+---
+> instr:		1109
+> PC:		282
+2918,2919c2652,2653
+< rs:		0
+< rt:		0
+---
+> rs:		1
+> rt:		1
+2921c2655
+< PC:		24
+---
+> PC:		280
+2924,2927c2658,2661
+< rt_val:		0
+< rt:		0
+< rd:		4
+< next_PC:	24
+---
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+2929c2663
+< mem_data:	48879
+---
+> mem_data:	8
+2931,2932c2665,2666
+< rt:		0
+< rd:		4
+---
+> rt:		1
+> rd:		0
+2936,2937c2670,2671
+< instr:		42690
+< PC:		40
+---
+> instr:		8256
+> PC:		284
+2939,2942c2673,2676
+< rs:		0
+< rt:		0
+< instr:		4160
+< PC:		38
+---
+> rs:		4120
+> rt:		8
+> instr:		1109
+> PC:		282
+2944,2945c2678,2679
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		1
+2948c2682
+< next_PC:	24
+---
+> next_PC:	276
+2952,2953c2686,2687
+< rt:		0
+< rd:		4
+---
+> rt:		1
+> rd:		0
+2956,2960c2690,2766
+< $v0:	0
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+> $a0:	18
+> $a1:	3
+> 
+> mem[0]:8
+> mem[1]:256
+> mem[2]:65280
+> mem[3]:255
+> 4 zero values omitted
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+> mem[16]:257
+> mem[17]:272
+> mem[18]:17
+> mem[19]:240
+> mem[20]:255
+> 491 zero values omitted
+> 
+> skip_next:0
+> 
+> ---------------------
+> Old buffers:
+> IF ID Buffer
+> instr:		8256
+> PC:		284
+> ID EXE Buffer
+> rs:		4120
+> rt:		8
+> instr:		1109
+> PC:		282
+> EXE MEM Buffer
+> ALU_out:	1
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+> MEM WB Buffer
+> mem_data:	48879
+> ALU_data:	0
+> rt:		1
+> rd:		0
+> 
+> New buffers:
+> IF ID Buffer
+> instr:		4164
+> PC:		286
+> ID EXE Buffer
+> rs:		0
+> rt:		8
+> instr:		8256
+> PC:		284
+> EXE MEM Buffer
+> ALU_out:	4121
+> rt_val:		8
+> rt:		1
+> rd:		2
+> next_PC:	276
+> MEM WB Buffer
+> mem_data:	48879
+> ALU_data:	1
+> rt:		1
+> rd:		0
+> 
+> $zero:	0
+> $v0:	8
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+2964c2770
+< mem[0]:64
+---
+> mem[0]:8
+2969,2970c2775,2780
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+2983,2984c2793,2794
+< instr:		42690
+< PC:		40
+---
+> instr:		4164
+> PC:		286
+2987,2989c2797,2799
+< rt:		0
+< instr:		4160
+< PC:		38
+---
+> rt:		8
+> instr:		8256
+> PC:		284
+2991,2992c2801,2802
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	4121
+> rt_val:		8
+2994,2995c2804,2805
+< rd:		0
+< next_PC:	24
+---
+> rd:		2
+> next_PC:	276
+2998,3000c2808,2810
+< ALU_data:	0
+< rt:		0
+< rd:		4
+---
+> ALU_data:	1
+> rt:		1
+> rd:		0
+3004,3005c2814,2815
+< instr:		2278
+< PC:		42
+---
+> instr:		11328
+> PC:		288
+3007,3010c2817,2820
+< rs:		60
+< rt:		60
+< instr:		42690
+< PC:		40
+---
+> rs:		0
+> rt:		1
+> instr:		4164
+> PC:		286
+3013c2823
+< rt_val:		0
+---
+> rt_val:		1
+3016c2826
+< next_PC:	24
+---
+> next_PC:	276
+3019c2829
+< ALU_data:	0
+---
+> ALU_data:	4121
+3021c2831
+< rd:		0
+---
+> rd:		2
+3024,3028c2834,2838
+< $v0:	0
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4120
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3032c2842
+< mem[0]:64
+---
+> mem[0]:8
+3037,3038c2847,2852
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3051,3052c2865,2866
+< instr:		2278
+< PC:		42
+---
+> instr:		11328
+> PC:		288
+3054,3057c2868,2871
+< rs:		60
+< rt:		60
+< instr:		42690
+< PC:		40
+---
+> rs:		0
+> rt:		1
+> instr:		4164
+> PC:		286
+3060c2874
+< rt_val:		0
+---
+> rt_val:		1
+3063c2877
+< next_PC:	24
+---
+> next_PC:	276
+3066c2880
+< ALU_data:	0
+---
+> ALU_data:	4121
+3068c2882
+< rd:		0
+---
+> rd:		2
+3072,3073c2886,2887
+< instr:		8256
+< PC:		44
+---
+> instr:		4160
+> PC:		290
+3075,3078c2889,2892
+< rs:		204
+< rt:		60
+< instr:		2278
+< PC:		42
+---
+> rs:		18
+> rt:		1
+> instr:		11328
+> PC:		288
+3080,3082c2894,2896
+< ALU_out:	240
+< rt_val:		60
+< rt:		3
+---
+> ALU_out:	4
+> rt_val:		1
+> rt:		1
+3084c2898
+< next_PC:	24
+---
+> next_PC:	276
+3086c2900
+< mem_data:	64
+---
+> mem_data:	48879
+3092,3096c2906,2910
+< $v0:	0
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3100c2914
+< mem[0]:64
+---
+> mem[0]:1
+3105,3106c2919,2924
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3119,3120c2937,2938
+< instr:		8256
+< PC:		44
+---
+> instr:		11328
+> PC:		288
+3122,3125c2940,2943
+< rs:		204
+< rt:		60
+< instr:		2278
+< PC:		42
+---
+> rs:		18
+> rt:		1
+> instr:		11328
+> PC:		288
+3127,3129c2945,2947
+< ALU_out:	240
+< rt_val:		60
+< rt:		3
+---
+> ALU_out:	4
+> rt_val:		1
+> rt:		1
+3131c2949
+< next_PC:	24
+---
+> next_PC:	276
+3133c2951
+< mem_data:	64
+---
+> mem_data:	48879
+3140,3141c2958,2959
+< instr:		4166
+< PC:		46
+---
+> instr:		4160
+> PC:		290
+3143,3146c2961,2964
+< rs:		0
+< rt:		64
+< instr:		8256
+< PC:		44
+---
+> rs:		18
+> rt:		1
+> instr:		11328
+> PC:		288
+3148,3152c2966,2970
+< ALU_out:	60
+< rt_val:		60
+< rt:		3
+< rd:		4
+< next_PC:	24
+---
+> ALU_out:	18
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+3154,3156c2972,2974
+< mem_data:	48879
+< ALU_data:	240
+< rt:		3
+---
+> mem_data:	65280
+> ALU_data:	4
+> rt:		1
+3160,3164c2978,2982
+< $v0:	64
+< $v1:	4112
+< $v2:	60
+< $v3:	204
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3168c2986
+< mem[0]:64
+---
+> mem[0]:1
+3173,3174c2991,2996
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3187,3188c3009,3010
+< instr:		4166
+< PC:		46
+---
+> instr:		4160
+> PC:		290
+3190,3193c3012,3015
+< rs:		0
+< rt:		64
+< instr:		8256
+< PC:		44
+---
+> rs:		18
+> rt:		1
+> instr:		11328
+> PC:		288
+3195,3199c3017,3021
+< ALU_out:	60
+< rt_val:		60
+< rt:		3
+< rd:		4
+< next_PC:	24
+---
+> ALU_out:	18
+> rt_val:		1
+> rt:		1
+> rd:		0
+> next_PC:	276
+3201,3203c3023,3025
+< mem_data:	48879
+< ALU_data:	240
+< rt:		3
+---
+> mem_data:	65280
+> ALU_data:	4
+> rt:		1
+3208,3209c3030,3031
+< instr:		11328
+< PC:		48
+---
+> instr:		16690
+> PC:		292
+3212,3214c3034,3036
+< rt:		64
+< instr:		4166
+< PC:		46
+---
+> rt:		65280
+> instr:		4160
+> PC:		290
+3216,3217c3038,3039
+< ALU_out:	0
+< rt_val:		64
+---
+> ALU_out:	18
+> rt_val:		65280
+3220c3042
+< next_PC:	24
+---
+> next_PC:	276
+3223,3225c3045,3047
+< ALU_data:	60
+< rt:		3
+< rd:		4
+---
+> ALU_data:	18
+> rt:		1
+> rd:		0
+3228,3232c3050,3054
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	204
+< $t0:	0
+---
+> $v0:	65280
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3236c3058
+< mem[0]:64
+---
+> mem[0]:1
+3241,3242c3063,3068
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:272
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3255,3256c3081,3082
+< instr:		11328
+< PC:		48
+---
+> instr:		16690
+> PC:		292
+3259,3261c3085,3087
+< rt:		64
+< instr:		4166
+< PC:		46
+---
+> rt:		65280
+> instr:		4160
+> PC:		290
+3263,3264c3089,3090
+< ALU_out:	0
+< rt_val:		64
+---
+> ALU_out:	18
+> rt_val:		65280
+3267c3093
+< next_PC:	24
+---
+> next_PC:	276
+3270,3272c3096,3098
+< ALU_data:	60
+< rt:		3
+< rd:		4
+---
+> ALU_data:	18
+> rt:		1
+> rd:		0
+3277c3103
+< PC:		50
+---
+> PC:		294
+3279,3282c3105,3108
+< rs:		18
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		240
+> instr:		16690
+> PC:		292
+3284,3285c3110,3111
+< ALU_out:	6
+< rt_val:		64
+---
+> ALU_out:	0
+> rt_val:		65280
+3288c3114
+< next_PC:	24
+---
+> next_PC:	276
+3291c3117
+< ALU_data:	0
+---
+> ALU_data:	18
+3296,3300c3122,3126
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	65280
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3304c3130
+< mem[0]:64
+---
+> mem[0]:1
+3309,3310c3135,3140
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3323,3324c3153,3154
+< instr:		11328
+< PC:		48
+---
+> instr:		4160
+> PC:		294
+3326,3329c3156,3159
+< rs:		18
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		240
+> instr:		16690
+> PC:		292
+3331,3332c3161,3162
+< ALU_out:	6
+< rt_val:		64
+---
+> ALU_out:	0
+> rt_val:		65280
+3335c3165
+< next_PC:	24
+---
+> next_PC:	276
+3338c3168
+< ALU_data:	0
+---
+> ALU_data:	18
+3344,3345c3174,3175
+< instr:		4160
+< PC:		50
+---
+> instr:		42690
+> PC:		296
+3347,3350c3177,3180
+< rs:		18
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		65280
+> instr:		4160
+> PC:		294
+3352,3356c3182,3186
+< ALU_out:	18
+< rt_val:		64
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	276
+3358,3359c3188,3189
+< mem_data:	255
+< ALU_data:	6
+---
+> mem_data:	1
+> ALU_data:	0
+3364,3368c3194,3198
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	65280
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3372c3202
+< mem[0]:64
+---
+> mem[0]:1
+3377,3378c3207,3212
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3386c3220
+< skip_next:0
+---
+> skip_next:2
+3391,3392c3225,3226
+< instr:		4160
+< PC:		50
+---
+> instr:		42690
+> PC:		296
+3394,3397c3228,3231
+< rs:		18
+< rt:		64
+< instr:		11328
+< PC:		48
+---
+> rs:		0
+> rt:		65280
+> instr:		4160
+> PC:		294
+3399,3403c3233,3237
+< ALU_out:	18
+< rt_val:		64
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	276
+3405,3406c3239,3240
+< mem_data:	255
+< ALU_data:	6
+---
+> mem_data:	1
+> ALU_data:	0
+3413c3247
+< PC:		52
+---
+> PC:		308
+3415,3418c3249,3252
+< rs:		0
+< rt:		255
+< instr:		4160
+< PC:		50
+---
+> rs:		15
+> rt:		15
+> instr:		42690
+> PC:		296
+3420,3424c3254,3258
+< ALU_out:	18
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	294
+3427,3429c3261,3263
+< ALU_data:	18
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+3432,3436c3266,3270
+< $v0:	255
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3440c3274
+< mem[0]:64
+---
+> mem[0]:1
+3445,3446c3279,3284
+< mem[8]:255
+< 7 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3454c3292
+< skip_next:0
+---
+> skip_next:1
+3460c3298
+< PC:		52
+---
+> PC:		308
+3462,3465c3300,3303
+< rs:		0
+< rt:		255
+< instr:		4160
+< PC:		50
+---
+> rs:		15
+> rt:		15
+> instr:		42690
+> PC:		296
+3467,3471c3305,3309
+< ALU_out:	18
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	294
+3474,3476c3312,3314
+< ALU_data:	18
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+3480,3481c3318,3319
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+3486c3324
+< PC:		52
+---
+> PC:		308
+3488,3492c3326,3330
+< ALU_out:	0
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	296
+3495,3497c3333,3335
+< ALU_data:	18
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+3500,3504c3338,3342
+< $v0:	255
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3508c3346
+< mem[0]:64
+---
+> mem[0]:1
+3513,3515c3351,3356
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3528,3529c3369,3370
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+3534c3375
+< PC:		52
+---
+> PC:		308
+3536,3540c3377,3381
+< ALU_out:	0
+< rt_val:		255
+< rt:		1
+< rd:		0
+< next_PC:	24
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+> rd:		6
+> next_PC:	296
+3543,3545c3384,3386
+< ALU_data:	18
+< rt:		1
+< rd:		0
+---
+> ALU_data:	240
+> rt:		4
+> rd:		6
+3550c3391
+< PC:		56
+---
+> PC:		312
+3553,3555c3394,3396
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		240
+> instr:		16640
+> PC:		310
+3561c3402
+< next_PC:	24
+---
+> next_PC:	296
+3563,3566c3404,3407
+< mem_data:	64
+< ALU_data:	0
+< rt:		1
+< rd:		0
+---
+> mem_data:	48879
+> ALU_data:	240
+> rt:		4
+> rd:		6
+3569,3573c3410,3414
+< $v0:	255
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3577c3418
+< mem[0]:64
+---
+> mem[0]:1
+3582,3584c3423,3428
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3598c3442
+< PC:		56
+---
+> PC:		312
+3601,3603c3445,3447
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		240
+> instr:		16640
+> PC:		310
+3609c3453
+< next_PC:	24
+---
+> next_PC:	296
+3611,3614c3455,3458
+< mem_data:	64
+< ALU_data:	0
+< rt:		1
+< rd:		0
+---
+> mem_data:	48879
+> ALU_data:	240
+> rt:		4
+> rd:		6
+3619c3463
+< PC:		58
+---
+> PC:		314
+3624c3468
+< PC:		56
+---
+> PC:		312
+3626,3628c3470,3472
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+3630c3474
+< next_PC:	24
+---
+> next_PC:	296
+3638,3642c3482,3486
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3646c3490
+< mem[0]:64
+---
+> mem[0]:1
+3651,3653c3495,3500
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3667c3514
+< PC:		58
+---
+> PC:		314
+3672c3519
+< PC:		56
+---
+> PC:		312
+3674,3676c3521,3523
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+3678c3525
+< next_PC:	24
+---
+> next_PC:	296
+3688c3535
+< PC:		2
+---
+> PC:		258
+3693c3540
+< PC:		58
+---
+> PC:		314
+3695,3697c3542,3544
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+3699c3546
+< next_PC:	56
+---
+> next_PC:	312
+3702,3703c3549,3550
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+3707,3711c3554,3558
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3715c3562
+< mem[0]:64
+---
+> mem[0]:1
+3720,3722c3567,3572
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3736c3586
+< PC:		2
+---
+> PC:		258
+3741c3591
+< PC:		58
+---
+> PC:		314
+3743,3745c3593,3595
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+3747c3597
+< next_PC:	56
+---
+> next_PC:	312
+3750,3751c3600,3601
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+3757c3607
+< PC:		4
+---
+> PC:		260
+3760c3610
+< rt:		0
+---
+> rt:		272
+3762c3612
+< PC:		2
+---
+> PC:		258
+3764,3766c3614,3616
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+3768c3618
+< next_PC:	58
+---
+> next_PC:	314
+3771,3772c3621,3622
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+3776,3780c3626,3630
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3784c3634
+< mem[0]:64
+---
+> mem[0]:1
+3789,3791c3639,3644
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3806c3659
+< PC:		4
+---
+> PC:		260
+3809c3662
+< rt:		0
+---
+> rt:		272
+3811c3664
+< PC:		2
+---
+> PC:		258
+3813,3815c3666,3668
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+3817c3670
+< next_PC:	58
+---
+> next_PC:	314
+3820,3821c3673,3674
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+3826,3827c3679,3680
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+3830c3683
+< rt:		0
+---
+> rt:		272
+3832c3685
+< PC:		4
+---
+> PC:		260
+3835c3688
+< rt_val:		0
+---
+> rt_val:		272
+3838c3691
+< next_PC:	58
+---
+> next_PC:	314
+3841,3842c3694,3695
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+3846,3850c3699,3703
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3854c3707
+< mem[0]:64
+---
+> mem[0]:1
+3859,3861c3712,3717
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3874,3875c3730,3731
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+3878c3734
+< rt:		0
+---
+> rt:		272
+3880c3736
+< PC:		4
+---
+> PC:		260
+3883c3739
+< rt_val:		0
+---
+> rt_val:		272
+3886c3742
+< next_PC:	58
+---
+> next_PC:	314
+3889,3890c3745,3746
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+3896c3752
+< PC:		8
+---
+> PC:		264
+3899,3901c3755,3757
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		240
+> instr:		16694
+> PC:		262
+3904c3760
+< rt_val:		0
+---
+> rt_val:		272
+3907c3763
+< next_PC:	58
+---
+> next_PC:	314
+3915,3919c3771,3775
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	272
+3923c3779
+< mem[0]:64
+---
+> mem[0]:1
+3928,3930c3784,3789
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+3944c3803
+< PC:		8
+---
+> PC:		264
+3947,3949c3806,3808
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		240
+> instr:		16694
+> PC:		262
+3952c3811
+< rt_val:		0
+---
+> rt_val:		272
+3955c3814
+< next_PC:	58
+---
+> next_PC:	314
+3965c3824
+< PC:		10
+---
+> PC:		266
+3970c3829
+< PC:		8
+---
+> PC:		264
+3973c3832
+< rt_val:		0
+---
+> rt_val:		272
+3976c3835
+< next_PC:	6
+---
+> next_PC:	262
+3984,3987c3843,3846
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+3992c3851
+< mem[0]:64
+---
+> mem[0]:1
+3997,3999c3856,3861
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4013c3875
+< PC:		10
+---
+> PC:		266
+4018c3880
+< PC:		8
+---
+> PC:		264
+4021c3883
+< rt_val:		0
+---
+> rt_val:		272
+4024c3886
+< next_PC:	6
+---
+> next_PC:	262
+4034c3896
+< PC:		12
+---
+> PC:		268
+4039c3901
+< PC:		10
+---
+> PC:		266
+4045c3907
+< next_PC:	6
+---
+> next_PC:	262
+4053,4056c3915,3918
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+4061c3923
+< mem[0]:64
+---
+> mem[0]:1
+4066,4068c3928,3933
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4082c3947
+< PC:		12
+---
+> PC:		268
+4087c3952
+< PC:		10
+---
+> PC:		266
+4093c3958
+< next_PC:	6
+---
+> next_PC:	262
+4103c3968
+< PC:		14
+---
+> PC:		270
+4106c3971
+< rt:		64
+---
+> rt:		1
+4108c3973
+< PC:		12
+---
+> PC:		268
+4114c3979
+< next_PC:	6
+---
+> next_PC:	262
+4122,4125c3987,3990
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+4130c3995
+< mem[0]:64
+---
+> mem[0]:1
+4135,4137c4000,4005
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4151c4019
+< PC:		12
+---
+> PC:		268
+4154c4022
+< rt:		64
+---
+> rt:		1
+4156c4024
+< PC:		12
+---
+> PC:		268
+4162c4030
+< next_PC:	6
+---
+> next_PC:	262
+4172c4040
+< PC:		14
+---
+> PC:		270
+4175c4043
+< rt:		64
+---
+> rt:		1
+4177c4045
+< PC:		12
+---
+> PC:		268
+4180c4048
+< rt_val:		64
+---
+> rt_val:		1
+4183c4051
+< next_PC:	6
+---
+> next_PC:	262
+4185c4053
+< mem_data:	0
+---
+> mem_data:	17
+4191,4194c4059,4062
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+4199c4067
+< mem[0]:64
+---
+> mem[0]:1
+4204,4206c4072,4077
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4220c4091
+< PC:		14
+---
+> PC:		270
+4223c4094
+< rt:		64
+---
+> rt:		1
+4225c4096
+< PC:		12
+---
+> PC:		268
+4228c4099
+< rt_val:		64
+---
+> rt_val:		1
+4231c4102
+< next_PC:	6
+---
+> next_PC:	262
+4233c4104
+< mem_data:	0
+---
+> mem_data:	17
+4241c4112
+< PC:		16
+---
+> PC:		272
+4244c4115
+< rt:		64
+---
+> rt:		1
+4246c4117
+< PC:		14
+---
+> PC:		270
+4249c4120
+< rt_val:		64
+---
+> rt_val:		1
+4252c4123
+< next_PC:	6
+---
+> next_PC:	262
+4260,4264c4131,4135
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4268c4139
+< mem[0]:64
+---
+> mem[0]:1
+4273,4275c4144,4149
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4289c4163
+< PC:		16
+---
+> PC:		272
+4292c4166
+< rt:		64
+---
+> rt:		1
+4294c4168
+< PC:		14
+---
+> PC:		270
+4297c4171
+< rt_val:		64
+---
+> rt_val:		1
+4300c4174
+< next_PC:	6
+---
+> next_PC:	262
+4310c4184
+< PC:		18
+---
+> PC:		274
+4312,4313c4186,4187
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		17
+4315c4189
+< PC:		16
+---
+> PC:		272
+4318c4192
+< rt_val:		64
+---
+> rt_val:		1
+4321c4195
+< next_PC:	6
+---
+> next_PC:	262
+4329,4333c4203,4207
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4337c4211
+< mem[0]:64
+---
+> mem[0]:1
+4342,4344c4216,4221
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4355c4232
+< a: 2 b: 0 func: 1 alu out: 2
+---
+> a: 2 b: 17 func: 1 alu out: 65521
+4359c4236
+< PC:		16
+---
+> PC:		272
+4361,4362c4238,4239
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		17
+4364c4241
+< PC:		16
+---
+> PC:		272
+4367c4244
+< rt_val:		64
+---
+> rt_val:		1
+4370c4247
+< next_PC:	6
+---
+> next_PC:	262
+4380c4257
+< PC:		18
+---
+> PC:		274
+4382,4383c4259,4260
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		17
+4385c4262
+< PC:		16
+---
+> PC:		272
+4387,4388c4264,4265
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		17
+4391c4268
+< next_PC:	6
+---
+> next_PC:	262
+4399,4403c4276,4280
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4407c4284
+< mem[0]:64
+---
+> mem[0]:1
+4412,4414c4289,4294
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4425c4305
+< a: 256 b: 0 func: 1 alu out: 256
+---
+> a: 256 b: 17 func: 1 alu out: 239
+4429c4309
+< PC:		18
+---
+> PC:		274
+4431,4432c4311,4312
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		17
+4434c4314
+< PC:		16
+---
+> PC:		272
+4436,4437c4316,4317
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		17
+4440c4320
+< next_PC:	6
+---
+> next_PC:	262
+4449,4450c4329,4330
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+4455c4335
+< PC:		18
+---
+> PC:		274
+4458c4338
+< rt_val:		0
+---
+> rt_val:		17
+4461c4341
+< next_PC:	6
+---
+> next_PC:	262
+4464c4344
+< ALU_data:	0
+---
+> ALU_data:	1
+4470,4473c4350,4353
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4477c4357
+< mem[0]:64
+---
+> mem[0]:1
+4482,4484c4362,4367
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4497,4498c4380,4381
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+4503c4386
+< PC:		18
+---
+> PC:		274
+4506c4389
+< rt_val:		0
+---
+> rt_val:		17
+4509c4392
+< next_PC:	6
+---
+> next_PC:	262
+4512c4395
+< ALU_data:	0
+---
+> ALU_data:	1
+4519c4402
+< PC:		22
+---
+> PC:		278
+4522,4524c4405,4407
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		240
+> instr:		16676
+> PC:		276
+4530c4413
+< next_PC:	6
+---
+> next_PC:	262
+4539,4542c4422,4425
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4546c4429
+< mem[0]:64
+---
+> mem[0]:1
+4551,4553c4434,4439
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4567c4453
+< PC:		22
+---
+> PC:		278
+4570,4572c4456,4458
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		240
+> instr:		16676
+> PC:		276
+4578c4464
+< next_PC:	6
+---
+> next_PC:	262
+4588c4474
+< PC:		24
+---
+> PC:		280
+4593c4479
+< PC:		22
+---
+> PC:		278
+4595,4597c4481,4483
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+4599c4485
+< next_PC:	6
+---
+> next_PC:	262
+4608,4611c4494,4497
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4615c4501
+< mem[0]:64
+---
+> mem[0]:1
+4620,4622c4506,4511
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4636c4525
+< PC:		24
+---
+> PC:		280
+4641c4530
+< PC:		22
+---
+> PC:		278
+4643,4645c4532,4534
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+4647c4536
+< next_PC:	6
+---
+> next_PC:	262
+4657c4546
+< PC:		38
+---
+> PC:		294
+4662c4551
+< PC:		24
+---
+> PC:		280
+4664,4666c4553,4555
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+4668c4557
+< next_PC:	22
+---
+> next_PC:	278
+4671,4672c4560,4561
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+4677,4680c4566,4569
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4684c4573
+< mem[0]:64
+---
+> mem[0]:1
+4689,4691c4578,4583
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4705c4597
+< PC:		24
+---
+> PC:		280
+4710c4602
+< PC:		24
+---
+> PC:		280
+4712,4714c4604,4606
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+4716c4608
+< next_PC:	22
+---
+> next_PC:	278
+4719,4720c4611,4612
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+4726c4618
+< PC:		38
+---
+> PC:		294
+4731c4623
+< PC:		24
+---
+> PC:		280
+4733,4735c4625,4627
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+4737c4629
+< next_PC:	24
+---
+> next_PC:	280
+4740,4741c4632,4633
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+4746,4749c4638,4641
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4753c4645
+< mem[0]:64
+---
+> mem[0]:1
+4758,4760c4650,4655
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4774c4669
+< PC:		38
+---
+> PC:		294
+4779c4674
+< PC:		24
+---
+> PC:		280
+4781,4783c4676,4678
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	240
+> rt_val:		240
+> rt:		4
+4785c4680
+< next_PC:	24
+---
+> next_PC:	280
+4788,4789c4683,4684
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+4795c4690
+< PC:		40
+---
+> PC:		296
+4800c4695
+< PC:		38
+---
+> PC:		294
+4806c4701
+< next_PC:	24
+---
+> next_PC:	280
+4809,4810c4704,4705
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+4815,4818c4710,4713
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4822c4717
+< mem[0]:64
+---
+> mem[0]:1
+4827,4829c4722,4727
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4843c4741
+< PC:		40
+---
+> PC:		296
+4848c4746
+< PC:		38
+---
+> PC:		294
+4854c4752
+< next_PC:	24
+---
+> next_PC:	280
+4857,4858c4755,4756
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	240
+> rt:		4
+4864c4762
+< PC:		42
+---
+> PC:		298
+4866,4867c4764,4765
+< rs:		240
+< rt:		240
+---
+> rs:		15
+> rt:		15
+4869c4767
+< PC:		40
+---
+> PC:		296
+4875c4773
+< next_PC:	24
+---
+> next_PC:	280
+4884,4887c4782,4785
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4891c4789
+< mem[0]:64
+---
+> mem[0]:1
+4896,4898c4794,4799
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4912c4813
+< PC:		42
+---
+> PC:		298
+4914,4915c4815,4816
+< rs:		240
+< rt:		240
+---
+> rs:		15
+> rt:		15
+4917c4818
+< PC:		40
+---
+> PC:		296
+4923c4824
+< next_PC:	24
+---
+> next_PC:	280
+4933c4834
+< PC:		44
+---
+> PC:		300
+4935,4936c4836,4837
+< rs:		60
+< rt:		240
+---
+> rs:		240
+> rt:		15
+4938c4839
+< PC:		42
+---
+> PC:		298
+4940,4941c4841,4842
+< ALU_out:	960
+< rt_val:		240
+---
+> ALU_out:	60
+> rt_val:		15
+4944c4845
+< next_PC:	24
+---
+> next_PC:	280
+4946c4847
+< mem_data:	64
+---
+> mem_data:	1
+4950,4956c4851,4857
+< 
+< $zero:	0
+< $v0:	0
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> 
+> $zero:	0
+> $v0:	0
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+4960c4861
+< mem[0]:64
+---
+> mem[0]:1
+4965,4967c4866,4871
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+4981c4885
+< PC:		44
+---
+> PC:		300
+4983,4984c4887,4888
+< rs:		60
+< rt:		240
+---
+> rs:		240
+> rt:		15
+4986c4890
+< PC:		42
+---
+> PC:		298
+4988,4989c4892,4893
+< ALU_out:	960
+< rt_val:		240
+---
+> ALU_out:	60
+> rt_val:		15
+4992c4896
+< next_PC:	24
+---
+> next_PC:	280
+4994c4898
+< mem_data:	64
+---
+> mem_data:	1
+5002c4906
+< PC:		46
+---
+> PC:		302
+5005c4909
+< rt:		64
+---
+> rt:		1
+5007c4911
+< PC:		44
+---
+> PC:		300
+5009,5010c4913,4914
+< ALU_out:	1020
+< rt_val:		240
+---
+> ALU_out:	204
+> rt_val:		15
+5013c4917
+< next_PC:	24
+---
+> next_PC:	280
+5016c4920
+< ALU_data:	960
+---
+> ALU_data:	60
+5021,5025c4925,4929
+< $v0:	64
+< $v1:	4112
+< $v2:	240
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	15
+> $v3:	240
+> $t0:	17
+5029c4933
+< mem[0]:64
+---
+> mem[0]:1
+5034,5036c4938,4943
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5050c4957
+< PC:		46
+---
+> PC:		302
+5053c4960
+< rt:		64
+---
+> rt:		1
+5055c4962
+< PC:		44
+---
+> PC:		300
+5057,5058c4964,4965
+< ALU_out:	1020
+< rt_val:		240
+---
+> ALU_out:	204
+> rt_val:		15
+5061c4968
+< next_PC:	24
+---
+> next_PC:	280
+5064c4971
+< ALU_data:	960
+---
+> ALU_data:	60
+5071c4978
+< PC:		48
+---
+> PC:		304
+5074c4981
+< rt:		64
+---
+> rt:		1
+5076c4983
+< PC:		46
+---
+> PC:		302
+5079c4986
+< rt_val:		64
+---
+> rt_val:		1
+5082c4989
+< next_PC:	24
+---
+> next_PC:	280
+5085c4992
+< ALU_data:	1020
+---
+> ALU_data:	204
+5090,5094c4997,5001
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	60
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	240
+> $t0:	17
+5098c5005
+< mem[0]:64
+---
+> mem[0]:1
+5103,5105c5010,5015
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5119c5029
+< PC:		48
+---
+> PC:		304
+5122c5032
+< rt:		64
+---
+> rt:		1
+5124c5034
+< PC:		46
+---
+> PC:		302
+5127c5037
+< rt_val:		64
+---
+> rt_val:		1
+5130c5040
+< next_PC:	24
+---
+> next_PC:	280
+5133c5043
+< ALU_data:	1020
+---
+> ALU_data:	204
+5140c5050
+< PC:		50
+---
+> PC:		306
+5143c5053
+< rt:		64
+---
+> rt:		1
+5145c5055
+< PC:		48
+---
+> PC:		304
+5148c5058
+< rt_val:		64
+---
+> rt_val:		1
+5151c5061
+< next_PC:	24
+---
+> next_PC:	280
+5159,5163c5069,5073
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5167c5077
+< mem[0]:64
+---
+> mem[0]:1
+5172,5174c5082,5087
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5188c5101
+< PC:		48
+---
+> PC:		304
+5191c5104
+< rt:		64
+---
+> rt:		1
+5193c5106
+< PC:		48
+---
+> PC:		304
+5196c5109
+< rt_val:		64
+---
+> rt_val:		1
+5199c5112
+< next_PC:	24
+---
+> next_PC:	280
+5209c5122
+< PC:		50
+---
+> PC:		306
+5212c5125
+< rt:		64
+---
+> rt:		1
+5214c5127
+< PC:		48
+---
+> PC:		304
+5217c5130
+< rt_val:		64
+---
+> rt_val:		1
+5220c5133
+< next_PC:	24
+---
+> next_PC:	280
+5228,5232c5141,5145
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5236c5149
+< mem[0]:64
+---
+> mem[0]:1
+5241,5243c5154,5159
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5257c5173
+< PC:		50
+---
+> PC:		306
+5260c5176
+< rt:		64
+---
+> rt:		1
+5262c5178
+< PC:		48
+---
+> PC:		304
+5265c5181
+< rt_val:		64
+---
+> rt_val:		1
+5268c5184
+< next_PC:	24
+---
+> next_PC:	280
+5278c5194
+< PC:		52
+---
+> PC:		308
+5283c5199
+< PC:		50
+---
+> PC:		306
+5289c5205
+< next_PC:	24
+---
+> next_PC:	280
+5298,5301c5214,5217
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5305c5221
+< mem[0]:64
+---
+> mem[0]:1
+5310,5312c5226,5231
+< mem[8]:255
+< mem[9]:255
+< 6 zero values omitted
+---
+> mem[8]:65280
+> mem[9]:65280
+> mem[10]:17
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5326c5245
+< PC:		52
+---
+> PC:		308
+5331c5250
+< PC:		50
+---
+> PC:		306
+5337c5256
+< next_PC:	24
+---
+> next_PC:	280
+5346,5347c5265,5266
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+5352c5271
+< PC:		52
+---
+> PC:		308
+5358c5277
+< next_PC:	24
+---
+> next_PC:	280
+5367,5370c5286,5289
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5374c5293
+< mem[0]:64
+---
+> mem[0]:1
+5379,5380c5298,5299
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5382c5301,5303
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5395,5396c5316,5317
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+5401c5322
+< PC:		52
+---
+> PC:		308
+5407c5328
+< next_PC:	24
+---
+> next_PC:	280
+5417c5338
+< PC:		56
+---
+> PC:		312
+5420,5422c5341,5343
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		204
+> instr:		16640
+> PC:		310
+5428c5349
+< next_PC:	24
+---
+> next_PC:	280
+5430c5351
+< mem_data:	64
+---
+> mem_data:	1
+5437,5440c5358,5361
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5444c5365
+< mem[0]:64
+---
+> mem[0]:1
+5449,5450c5370,5371
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5452c5373,5375
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5466c5389
+< PC:		56
+---
+> PC:		312
+5469,5471c5392,5394
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		204
+> instr:		16640
+> PC:		310
+5477c5400
+< next_PC:	24
+---
+> next_PC:	280
+5479c5402
+< mem_data:	64
+---
+> mem_data:	1
+5487c5410
+< PC:		58
+---
+> PC:		314
+5492c5415
+< PC:		56
+---
+> PC:		312
+5494,5496c5417,5419
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+5498c5421
+< next_PC:	24
+---
+> next_PC:	280
+5506,5510c5429,5433
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5514c5437
+< mem[0]:64
+---
+> mem[0]:1
+5519,5520c5442,5443
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5522c5445,5447
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5536c5461
+< PC:		58
+---
+> PC:		314
+5541c5466
+< PC:		56
+---
+> PC:		312
+5543,5545c5468,5470
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+5547c5472
+< next_PC:	24
+---
+> next_PC:	280
+5557c5482
+< PC:		2
+---
+> PC:		258
+5562c5487
+< PC:		58
+---
+> PC:		314
+5564,5566c5489,5491
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+5568c5493
+< next_PC:	56
+---
+> next_PC:	312
+5571,5572c5496,5497
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+5576,5580c5501,5505
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5584c5509
+< mem[0]:64
+---
+> mem[0]:1
+5589,5590c5514,5515
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5592c5517,5519
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5606c5533
+< PC:		2
+---
+> PC:		258
+5611c5538
+< PC:		58
+---
+> PC:		314
+5613,5615c5540,5542
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+5617c5544
+< next_PC:	56
+---
+> next_PC:	312
+5620,5621c5547,5548
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+5627c5554
+< PC:		4
+---
+> PC:		260
+5630c5557
+< rt:		0
+---
+> rt:		17
+5632c5559
+< PC:		2
+---
+> PC:		258
+5634,5636c5561,5563
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+5638c5565
+< next_PC:	58
+---
+> next_PC:	314
+5641,5642c5568,5569
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+5646,5650c5573,5577
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5654c5581
+< mem[0]:64
+---
+> mem[0]:1
+5659,5660c5586,5587
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5662c5589,5591
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5677c5606
+< PC:		4
+---
+> PC:		260
+5680c5609
+< rt:		0
+---
+> rt:		17
+5682c5611
+< PC:		2
+---
+> PC:		258
+5684,5686c5613,5615
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+5688c5617
+< next_PC:	58
+---
+> next_PC:	314
+5691,5692c5620,5621
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+5697,5698c5626,5627
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+5701c5630
+< rt:		0
+---
+> rt:		17
+5703c5632
+< PC:		4
+---
+> PC:		260
+5706c5635
+< rt_val:		0
+---
+> rt_val:		17
+5709c5638
+< next_PC:	58
+---
+> next_PC:	314
+5712,5713c5641,5642
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+5717,5721c5646,5650
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5725c5654
+< mem[0]:64
+---
+> mem[0]:1
+5730,5731c5659,5660
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5733c5662,5664
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5746,5747c5677,5678
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+5750c5681
+< rt:		0
+---
+> rt:		17
+5752c5683
+< PC:		4
+---
+> PC:		260
+5755c5686
+< rt_val:		0
+---
+> rt_val:		17
+5758c5689
+< next_PC:	58
+---
+> next_PC:	314
+5761,5762c5692,5693
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+5768c5699
+< PC:		8
+---
+> PC:		264
+5771,5773c5702,5704
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		204
+> instr:		16694
+> PC:		262
+5776c5707
+< rt_val:		0
+---
+> rt_val:		17
+5779c5710
+< next_PC:	58
+---
+> next_PC:	314
+5787,5791c5718,5722
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	17
+5795c5726
+< mem[0]:64
+---
+> mem[0]:1
+5800,5801c5731,5732
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5803c5734,5736
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5817c5750
+< PC:		8
+---
+> PC:		264
+5820,5822c5753,5755
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		204
+> instr:		16694
+> PC:		262
+5825c5758
+< rt_val:		0
+---
+> rt_val:		17
+5828c5761
+< next_PC:	58
+---
+> next_PC:	314
+5838c5771
+< PC:		10
+---
+> PC:		266
+5843c5776
+< PC:		8
+---
+> PC:		264
+5846c5779
+< rt_val:		0
+---
+> rt_val:		17
+5849c5782
+< next_PC:	6
+---
+> next_PC:	262
+5857,5860c5790,5793
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+5865c5798
+< mem[0]:64
+---
+> mem[0]:1
+5870,5871c5803,5804
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5873c5806,5808
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5887c5822
+< PC:		10
+---
+> PC:		266
+5892c5827
+< PC:		8
+---
+> PC:		264
+5895c5830
+< rt_val:		0
+---
+> rt_val:		17
+5898c5833
+< next_PC:	6
+---
+> next_PC:	262
+5908c5843
+< PC:		12
+---
+> PC:		268
+5913c5848
+< PC:		10
+---
+> PC:		266
+5919c5854
+< next_PC:	6
+---
+> next_PC:	262
+5927,5930c5862,5865
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+5935c5870
+< mem[0]:64
+---
+> mem[0]:1
+5940,5941c5875,5876
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+5943c5878,5880
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+5957c5894
+< PC:		12
+---
+> PC:		268
+5962c5899
+< PC:		10
+---
+> PC:		266
+5968c5905
+< next_PC:	6
+---
+> next_PC:	262
+5978c5915
+< PC:		14
+---
+> PC:		270
+5981c5918
+< rt:		64
+---
+> rt:		1
+5983c5920
+< PC:		12
+---
+> PC:		268
+5989c5926
+< next_PC:	6
+---
+> next_PC:	262
+5997,6000c5934,5937
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+6005c5942
+< mem[0]:64
+---
+> mem[0]:1
+6010,6011c5947,5948
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6013c5950,5952
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6027c5966
+< PC:		12
+---
+> PC:		268
+6030c5969
+< rt:		64
+---
+> rt:		1
+6032c5971
+< PC:		12
+---
+> PC:		268
+6038c5977
+< next_PC:	6
+---
+> next_PC:	262
+6048c5987
+< PC:		14
+---
+> PC:		270
+6051c5990
+< rt:		64
+---
+> rt:		1
+6053c5992
+< PC:		12
+---
+> PC:		268
+6056c5995
+< rt_val:		64
+---
+> rt_val:		1
+6059c5998
+< next_PC:	6
+---
+> next_PC:	262
+6061c6000
+< mem_data:	0
+---
+> mem_data:	240
+6067,6070c6006,6009
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+6075c6014
+< mem[0]:64
+---
+> mem[0]:1
+6080,6081c6019,6020
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6083c6022,6024
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6097c6038
+< PC:		14
+---
+> PC:		270
+6100c6041
+< rt:		64
+---
+> rt:		1
+6102c6043
+< PC:		12
+---
+> PC:		268
+6105c6046
+< rt_val:		64
+---
+> rt_val:		1
+6108c6049
+< next_PC:	6
+---
+> next_PC:	262
+6110c6051
+< mem_data:	0
+---
+> mem_data:	240
+6118c6059
+< PC:		16
+---
+> PC:		272
+6121c6062
+< rt:		64
+---
+> rt:		1
+6123c6064
+< PC:		14
+---
+> PC:		270
+6126c6067
+< rt_val:		64
+---
+> rt_val:		1
+6129c6070
+< next_PC:	6
+---
+> next_PC:	262
+6137,6141c6078,6082
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6145c6086
+< mem[0]:64
+---
+> mem[0]:1
+6150,6151c6091,6092
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6153c6094,6096
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6167c6110
+< PC:		16
+---
+> PC:		272
+6170c6113
+< rt:		64
+---
+> rt:		1
+6172c6115
+< PC:		14
+---
+> PC:		270
+6175c6118
+< rt_val:		64
+---
+> rt_val:		1
+6178c6121
+< next_PC:	6
+---
+> next_PC:	262
+6188c6131
+< PC:		18
+---
+> PC:		274
+6190,6191c6133,6134
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		240
+6193c6136
+< PC:		16
+---
+> PC:		272
+6196c6139
+< rt_val:		64
+---
+> rt_val:		1
+6199c6142
+< next_PC:	6
+---
+> next_PC:	262
+6207,6211c6150,6154
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6215c6158
+< mem[0]:64
+---
+> mem[0]:1
+6220,6221c6163,6164
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6223c6166,6168
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6234c6179
+< a: 2 b: 0 func: 1 alu out: 2
+---
+> a: 2 b: 240 func: 1 alu out: 65298
+6238c6183
+< PC:		16
+---
+> PC:		272
+6240,6241c6185,6186
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		240
+6243c6188
+< PC:		16
+---
+> PC:		272
+6246c6191
+< rt_val:		64
+---
+> rt_val:		1
+6249c6194
+< next_PC:	6
+---
+> next_PC:	262
+6259c6204
+< PC:		18
+---
+> PC:		274
+6261,6262c6206,6207
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		240
+6264c6209
+< PC:		16
+---
+> PC:		272
+6266,6267c6211,6212
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		240
+6270c6215
+< next_PC:	6
+---
+> next_PC:	262
+6278,6282c6223,6227
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6286c6231
+< mem[0]:64
+---
+> mem[0]:1
+6291,6292c6236,6237
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6294c6239,6241
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6305c6252
+< a: 256 b: 0 func: 1 alu out: 256
+---
+> a: 256 b: 240 func: 1 alu out: 16
+6309c6256
+< PC:		18
+---
+> PC:		274
+6311,6312c6258,6259
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		240
+6314c6261
+< PC:		16
+---
+> PC:		272
+6316,6317c6263,6264
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		240
+6320c6267
+< next_PC:	6
+---
+> next_PC:	262
+6329,6330c6276,6277
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+6335c6282
+< PC:		18
+---
+> PC:		274
+6338c6285
+< rt_val:		0
+---
+> rt_val:		240
+6341c6288
+< next_PC:	6
+---
+> next_PC:	262
+6344c6291
+< ALU_data:	0
+---
+> ALU_data:	1
+6350,6353c6297,6300
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6357c6304
+< mem[0]:64
+---
+> mem[0]:1
+6362,6363c6309,6310
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6365c6312,6314
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6378,6379c6327,6328
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+6384c6333
+< PC:		18
+---
+> PC:		274
+6387c6336
+< rt_val:		0
+---
+> rt_val:		240
+6390c6339
+< next_PC:	6
+---
+> next_PC:	262
+6393c6342
+< ALU_data:	0
+---
+> ALU_data:	1
+6400c6349
+< PC:		22
+---
+> PC:		278
+6403,6405c6352,6354
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		204
+> instr:		16676
+> PC:		276
+6411c6360
+< next_PC:	6
+---
+> next_PC:	262
+6420,6423c6369,6372
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6427c6376
+< mem[0]:64
+---
+> mem[0]:1
+6432,6433c6381,6382
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6435c6384,6386
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6449c6400
+< PC:		22
+---
+> PC:		278
+6452,6454c6403,6405
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		204
+> instr:		16676
+> PC:		276
+6460c6411
+< next_PC:	6
+---
+> next_PC:	262
+6470c6421
+< PC:		24
+---
+> PC:		280
+6475c6426
+< PC:		22
+---
+> PC:		278
+6477,6479c6428,6430
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+6481c6432
+< next_PC:	6
+---
+> next_PC:	262
+6490,6493c6441,6444
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6497c6448
+< mem[0]:64
+---
+> mem[0]:1
+6502,6503c6453,6454
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6505c6456,6458
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6519c6472
+< PC:		24
+---
+> PC:		280
+6524c6477
+< PC:		22
+---
+> PC:		278
+6526,6528c6479,6481
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+6530c6483
+< next_PC:	6
+---
+> next_PC:	262
+6540c6493
+< PC:		38
+---
+> PC:		294
+6545c6498
+< PC:		24
+---
+> PC:		280
+6547,6549c6500,6502
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+6551c6504
+< next_PC:	22
+---
+> next_PC:	278
+6554,6555c6507,6508
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+6560,6563c6513,6516
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6567c6520
+< mem[0]:64
+---
+> mem[0]:1
+6572,6573c6525,6526
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6575c6528,6530
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6589c6544
+< PC:		24
+---
+> PC:		280
+6594c6549
+< PC:		24
+---
+> PC:		280
+6596,6598c6551,6553
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+6600c6555
+< next_PC:	22
+---
+> next_PC:	278
+6603,6604c6558,6559
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+6610c6565
+< PC:		38
+---
+> PC:		294
+6615c6570
+< PC:		24
+---
+> PC:		280
+6617,6619c6572,6574
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+6621c6576
+< next_PC:	24
+---
+> next_PC:	280
+6624,6625c6579,6580
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+6630,6633c6585,6588
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6637c6592
+< mem[0]:64
+---
+> mem[0]:1
+6642,6643c6597,6598
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6645c6600,6602
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6659c6616
+< PC:		38
+---
+> PC:		294
+6664c6621
+< PC:		24
+---
+> PC:		280
+6666,6668c6623,6625
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	204
+> rt_val:		204
+> rt:		4
+6670c6627
+< next_PC:	24
+---
+> next_PC:	280
+6673,6674c6630,6631
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+6680c6637
+< PC:		40
+---
+> PC:		296
+6685c6642
+< PC:		38
+---
+> PC:		294
+6691c6648
+< next_PC:	24
+---
+> next_PC:	280
+6694,6695c6651,6652
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+6700,6703c6657,6660
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6707c6664
+< mem[0]:64
+---
+> mem[0]:1
+6712,6713c6669,6670
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6715c6672,6674
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6729c6688
+< PC:		40
+---
+> PC:		296
+6734c6693
+< PC:		38
+---
+> PC:		294
+6740c6699
+< next_PC:	24
+---
+> next_PC:	280
+6743,6744c6702,6703
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	204
+> rt:		4
+6750c6709
+< PC:		42
+---
+> PC:		298
+6752,6753c6711,6712
+< rs:		960
+< rt:		960
+---
+> rs:		60
+> rt:		60
+6755c6714
+< PC:		40
+---
+> PC:		296
+6761c6720
+< next_PC:	24
+---
+> next_PC:	280
+6770,6773c6729,6732
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6777c6736
+< mem[0]:64
+---
+> mem[0]:1
+6782,6783c6741,6742
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6785c6744,6746
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6799c6760
+< PC:		42
+---
+> PC:		298
+6801,6802c6762,6763
+< rs:		960
+< rt:		960
+---
+> rs:		60
+> rt:		60
+6804c6765
+< PC:		40
+---
+> PC:		296
+6810c6771
+< next_PC:	24
+---
+> next_PC:	280
+6820c6781
+< PC:		44
+---
+> PC:		300
+6822,6823c6783,6784
+< rs:		1020
+< rt:		960
+---
+> rs:		204
+> rt:		60
+6825c6786
+< PC:		42
+---
+> PC:		298
+6827,6828c6788,6789
+< ALU_out:	3840
+< rt_val:		960
+---
+> ALU_out:	240
+> rt_val:		60
+6831c6792
+< next_PC:	24
+---
+> next_PC:	280
+6833c6794
+< mem_data:	64
+---
+> mem_data:	1
+6840,6843c6801,6804
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6847c6808
+< mem[0]:64
+---
+> mem[0]:1
+6852,6853c6813,6814
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6855c6816,6818
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6869c6832
+< PC:		44
+---
+> PC:		300
+6871,6872c6834,6835
+< rs:		1020
+< rt:		960
+---
+> rs:		204
+> rt:		60
+6874c6837
+< PC:		42
+---
+> PC:		298
+6876,6877c6839,6840
+< ALU_out:	3840
+< rt_val:		960
+---
+> ALU_out:	240
+> rt_val:		60
+6880c6843
+< next_PC:	24
+---
+> next_PC:	280
+6882c6845
+< mem_data:	64
+---
+> mem_data:	1
+6890c6853
+< PC:		46
+---
+> PC:		302
+6893c6856
+< rt:		64
+---
+> rt:		1
+6895c6858
+< PC:		44
+---
+> PC:		300
+6897,6898c6860,6861
+< ALU_out:	3324
+< rt_val:		960
+---
+> ALU_out:	60
+> rt_val:		60
+6901c6864
+< next_PC:	24
+---
+> next_PC:	280
+6904c6867
+< ALU_data:	3840
+---
+> ALU_data:	240
+6909,6913c6872,6876
+< $v0:	64
+< $v1:	4112
+< $v2:	960
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	60
+> $v3:	204
+> $t0:	240
+6917c6880
+< mem[0]:64
+---
+> mem[0]:1
+6922,6923c6885,6886
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6925c6888,6890
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+6939c6904
+< PC:		46
+---
+> PC:		302
+6942c6907
+< rt:		64
+---
+> rt:		1
+6944c6909
+< PC:		44
+---
+> PC:		300
+6946,6947c6911,6912
+< ALU_out:	3324
+< rt_val:		960
+---
+> ALU_out:	60
+> rt_val:		60
+6950c6915
+< next_PC:	24
+---
+> next_PC:	280
+6953c6918
+< ALU_data:	3840
+---
+> ALU_data:	240
+6960c6925
+< PC:		48
+---
+> PC:		304
+6963c6928
+< rt:		64
+---
+> rt:		1
+6965c6930
+< PC:		46
+---
+> PC:		302
+6968c6933
+< rt_val:		64
+---
+> rt_val:		1
+6971c6936
+< next_PC:	24
+---
+> next_PC:	280
+6974c6939
+< ALU_data:	3324
+---
+> ALU_data:	60
+6979,6983c6944,6948
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	1020
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	204
+> $t0:	240
+6987c6952
+< mem[0]:64
+---
+> mem[0]:1
+6992,6993c6957,6958
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+6995c6960,6962
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+7009c6976
+< PC:		48
+---
+> PC:		304
+7012c6979
+< rt:		64
+---
+> rt:		1
+7014c6981
+< PC:		46
+---
+> PC:		302
+7017c6984
+< rt_val:		64
+---
+> rt_val:		1
+7020c6987
+< next_PC:	24
+---
+> next_PC:	280
+7023c6990
+< ALU_data:	3324
+---
+> ALU_data:	60
+7030c6997
+< PC:		50
+---
+> PC:		306
+7033c7000
+< rt:		64
+---
+> rt:		1
+7035c7002
+< PC:		48
+---
+> PC:		304
+7038c7005
+< rt_val:		64
+---
+> rt_val:		1
+7041c7008
+< next_PC:	24
+---
+> next_PC:	280
+7049,7053c7016,7020
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7057c7024
+< mem[0]:64
+---
+> mem[0]:1
+7062,7063c7029,7030
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7065c7032,7034
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+7079c7048
+< PC:		48
+---
+> PC:		304
+7082c7051
+< rt:		64
+---
+> rt:		1
+7084c7053
+< PC:		48
+---
+> PC:		304
+7087c7056
+< rt_val:		64
+---
+> rt_val:		1
+7090c7059
+< next_PC:	24
+---
+> next_PC:	280
+7100c7069
+< PC:		50
+---
+> PC:		306
+7103c7072
+< rt:		64
+---
+> rt:		1
+7105c7074
+< PC:		48
+---
+> PC:		304
+7108c7077
+< rt_val:		64
+---
+> rt_val:		1
+7111c7080
+< next_PC:	24
+---
+> next_PC:	280
+7119,7123c7088,7092
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7127c7096
+< mem[0]:64
+---
+> mem[0]:1
+7132,7133c7101,7102
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7135c7104,7106
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+7149c7120
+< PC:		50
+---
+> PC:		306
+7152c7123
+< rt:		64
+---
+> rt:		1
+7154c7125
+< PC:		48
+---
+> PC:		304
+7157c7128
+< rt_val:		64
+---
+> rt_val:		1
+7160c7131
+< next_PC:	24
+---
+> next_PC:	280
+7170c7141
+< PC:		52
+---
+> PC:		308
+7175c7146
+< PC:		50
+---
+> PC:		306
+7181c7152
+< next_PC:	24
+---
+> next_PC:	280
+7190,7193c7161,7164
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7197c7168
+< mem[0]:64
+---
+> mem[0]:1
+7202,7203c7173,7174
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7205c7176,7178
+< 5 zero values omitted
+---
+> mem[11]:240
+> mem[12]:255
+> 3 zero values omitted
+7219c7192
+< PC:		52
+---
+> PC:		308
+7224c7197
+< PC:		50
+---
+> PC:		306
+7230c7203
+< next_PC:	24
+---
+> next_PC:	280
+7239,7240c7212,7213
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+7245c7218
+< PC:		52
+---
+> PC:		308
+7251c7224
+< next_PC:	24
+---
+> next_PC:	280
+7260,7263c7233,7236
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7267c7240
+< mem[0]:64
+---
+> mem[0]:1
+7272,7273c7245,7246
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7276c7249,7250
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7289,7290c7263,7264
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+7295c7269
+< PC:		52
+---
+> PC:		308
+7301c7275
+< next_PC:	24
+---
+> next_PC:	280
+7311c7285
+< PC:		56
+---
+> PC:		312
+7314,7316c7288,7290
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		60
+> instr:		16640
+> PC:		310
+7322c7296
+< next_PC:	24
+---
+> next_PC:	280
+7324c7298
+< mem_data:	64
+---
+> mem_data:	1
+7331,7334c7305,7308
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7338c7312
+< mem[0]:64
+---
+> mem[0]:1
+7343,7344c7317,7318
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7347c7321,7322
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7361c7336
+< PC:		56
+---
+> PC:		312
+7364,7366c7339,7341
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		60
+> instr:		16640
+> PC:		310
+7372c7347
+< next_PC:	24
+---
+> next_PC:	280
+7374c7349
+< mem_data:	64
+---
+> mem_data:	1
+7382c7357
+< PC:		58
+---
+> PC:		314
+7387c7362
+< PC:		56
+---
+> PC:		312
+7389,7391c7364,7366
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+7393c7368
+< next_PC:	24
+---
+> next_PC:	280
+7401,7405c7376,7380
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7409c7384
+< mem[0]:64
+---
+> mem[0]:1
+7414,7415c7389,7390
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7418c7393,7394
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7432c7408
+< PC:		58
+---
+> PC:		314
+7437c7413
+< PC:		56
+---
+> PC:		312
+7439,7441c7415,7417
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+7443c7419
+< next_PC:	24
+---
+> next_PC:	280
+7453c7429
+< PC:		2
+---
+> PC:		258
+7458c7434
+< PC:		58
+---
+> PC:		314
+7460,7462c7436,7438
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+7464c7440
+< next_PC:	56
+---
+> next_PC:	312
+7467,7468c7443,7444
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+7472,7476c7448,7452
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7480c7456
+< mem[0]:64
+---
+> mem[0]:1
+7485,7486c7461,7462
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7489c7465,7466
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7503c7480
+< PC:		2
+---
+> PC:		258
+7508c7485
+< PC:		58
+---
+> PC:		314
+7510,7512c7487,7489
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+7514c7491
+< next_PC:	56
+---
+> next_PC:	312
+7517,7518c7494,7495
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+7524c7501
+< PC:		4
+---
+> PC:		260
+7527c7504
+< rt:		0
+---
+> rt:		240
+7529c7506
+< PC:		2
+---
+> PC:		258
+7531,7533c7508,7510
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+7535c7512
+< next_PC:	58
+---
+> next_PC:	314
+7538,7539c7515,7516
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+7543,7547c7520,7524
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7551c7528
+< mem[0]:64
+---
+> mem[0]:1
+7556,7557c7533,7534
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7560c7537,7538
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7575c7553
+< PC:		4
+---
+> PC:		260
+7578c7556
+< rt:		0
+---
+> rt:		240
+7580c7558
+< PC:		2
+---
+> PC:		258
+7582,7584c7560,7562
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+7586c7564
+< next_PC:	58
+---
+> next_PC:	314
+7589,7590c7567,7568
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+7595,7596c7573,7574
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+7599c7577
+< rt:		0
+---
+> rt:		240
+7601c7579
+< PC:		4
+---
+> PC:		260
+7604c7582
+< rt_val:		0
+---
+> rt_val:		240
+7607c7585
+< next_PC:	58
+---
+> next_PC:	314
+7610,7611c7588,7589
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+7615,7619c7593,7597
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7623c7601
+< mem[0]:64
+---
+> mem[0]:1
+7628,7629c7606,7607
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7632c7610,7611
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7645,7646c7624,7625
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+7649c7628
+< rt:		0
+---
+> rt:		240
+7651c7630
+< PC:		4
+---
+> PC:		260
+7654c7633
+< rt_val:		0
+---
+> rt_val:		240
+7657c7636
+< next_PC:	58
+---
+> next_PC:	314
+7660,7661c7639,7640
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+7667c7646
+< PC:		8
+---
+> PC:		264
+7670,7672c7649,7651
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		60
+> instr:		16694
+> PC:		262
+7675c7654
+< rt_val:		0
+---
+> rt_val:		240
+7678c7657
+< next_PC:	58
+---
+> next_PC:	314
+7686,7690c7665,7669
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	240
+7694c7673
+< mem[0]:64
+---
+> mem[0]:1
+7699,7700c7678,7679
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7703c7682,7683
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7717c7697
+< PC:		8
+---
+> PC:		264
+7720,7722c7700,7702
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		60
+> instr:		16694
+> PC:		262
+7725c7705
+< rt_val:		0
+---
+> rt_val:		240
+7728c7708
+< next_PC:	58
+---
+> next_PC:	314
+7738c7718
+< PC:		10
+---
+> PC:		266
+7743c7723
+< PC:		8
+---
+> PC:		264
+7746c7726
+< rt_val:		0
+---
+> rt_val:		240
+7749c7729
+< next_PC:	6
+---
+> next_PC:	262
+7757,7760c7737,7740
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+7765c7745
+< mem[0]:64
+---
+> mem[0]:1
+7770,7771c7750,7751
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7774c7754,7755
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7788c7769
+< PC:		10
+---
+> PC:		266
+7793c7774
+< PC:		8
+---
+> PC:		264
+7796c7777
+< rt_val:		0
+---
+> rt_val:		240
+7799c7780
+< next_PC:	6
+---
+> next_PC:	262
+7809c7790
+< PC:		12
+---
+> PC:		268
+7814c7795
+< PC:		10
+---
+> PC:		266
+7820c7801
+< next_PC:	6
+---
+> next_PC:	262
+7828,7831c7809,7812
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+7836c7817
+< mem[0]:64
+---
+> mem[0]:1
+7841,7842c7822,7823
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7845c7826,7827
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7859c7841
+< PC:		12
+---
+> PC:		268
+7864c7846
+< PC:		10
+---
+> PC:		266
+7870c7852
+< next_PC:	6
+---
+> next_PC:	262
+7880c7862
+< PC:		14
+---
+> PC:		270
+7883c7865
+< rt:		64
+---
+> rt:		1
+7885c7867
+< PC:		12
+---
+> PC:		268
+7891c7873
+< next_PC:	6
+---
+> next_PC:	262
+7899,7902c7881,7884
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+7907c7889
+< mem[0]:64
+---
+> mem[0]:1
+7912,7913c7894,7895
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7916c7898,7899
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+7930c7913
+< PC:		12
+---
+> PC:		268
+7933c7916
+< rt:		64
+---
+> rt:		1
+7935c7918
+< PC:		12
+---
+> PC:		268
+7941c7924
+< next_PC:	6
+---
+> next_PC:	262
+7951c7934
+< PC:		14
+---
+> PC:		270
+7954c7937
+< rt:		64
+---
+> rt:		1
+7956c7939
+< PC:		12
+---
+> PC:		268
+7959c7942
+< rt_val:		64
+---
+> rt_val:		1
+7962c7945
+< next_PC:	6
+---
+> next_PC:	262
+7964c7947
+< mem_data:	0
+---
+> mem_data:	255
+7970,7973c7953,7956
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+7978c7961
+< mem[0]:64
+---
+> mem[0]:1
+7983,7984c7966,7967
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+7987c7970,7971
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8001c7985
+< PC:		14
+---
+> PC:		270
+8004c7988
+< rt:		64
+---
+> rt:		1
+8006c7990
+< PC:		12
+---
+> PC:		268
+8009c7993
+< rt_val:		64
+---
+> rt_val:		1
+8012c7996
+< next_PC:	6
+---
+> next_PC:	262
+8014c7998
+< mem_data:	0
+---
+> mem_data:	255
+8022c8006
+< PC:		16
+---
+> PC:		272
+8025c8009
+< rt:		64
+---
+> rt:		1
+8027c8011
+< PC:		14
+---
+> PC:		270
+8030c8014
+< rt_val:		64
+---
+> rt_val:		1
+8033c8017
+< next_PC:	6
+---
+> next_PC:	262
+8041,8045c8025,8029
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8049c8033
+< mem[0]:64
+---
+> mem[0]:1
+8054,8055c8038,8039
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8058c8042,8043
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8072c8057
+< PC:		16
+---
+> PC:		272
+8075c8060
+< rt:		64
+---
+> rt:		1
+8077c8062
+< PC:		14
+---
+> PC:		270
+8080c8065
+< rt_val:		64
+---
+> rt_val:		1
+8083c8068
+< next_PC:	6
+---
+> next_PC:	262
+8093c8078
+< PC:		18
+---
+> PC:		274
+8095,8096c8080,8081
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		255
+8098c8083
+< PC:		16
+---
+> PC:		272
+8101c8086
+< rt_val:		64
+---
+> rt_val:		1
+8104c8089
+< next_PC:	6
+---
+> next_PC:	262
+8112,8116c8097,8101
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8120c8105
+< mem[0]:64
+---
+> mem[0]:1
+8125,8126c8110,8111
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8129c8114,8115
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8140c8126
+< a: 2 b: 0 func: 1 alu out: 2
+---
+> a: 2 b: 255 func: 1 alu out: 65283
+8144c8130
+< PC:		16
+---
+> PC:		272
+8146,8147c8132,8133
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		255
+8149c8135
+< PC:		16
+---
+> PC:		272
+8152c8138
+< rt_val:		64
+---
+> rt_val:		1
+8155c8141
+< next_PC:	6
+---
+> next_PC:	262
+8165c8151
+< PC:		18
+---
+> PC:		274
+8167,8168c8153,8154
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		255
+8170c8156
+< PC:		16
+---
+> PC:		272
+8172,8173c8158,8159
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		255
+8176c8162
+< next_PC:	6
+---
+> next_PC:	262
+8184,8188c8170,8174
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8192c8178
+< mem[0]:64
+---
+> mem[0]:1
+8197,8198c8183,8184
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8201c8187,8188
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8212c8199
+< a: 256 b: 0 func: 1 alu out: 256
+---
+> a: 256 b: 255 func: 1 alu out: 1
+8216c8203
+< PC:		18
+---
+> PC:		274
+8218,8219c8205,8206
+< rs:		64
+< rt:		0
+---
+> rs:		1
+> rt:		255
+8221c8208
+< PC:		16
+---
+> PC:		272
+8223,8224c8210,8211
+< ALU_out:	0
+< rt_val:		0
+---
+> ALU_out:	1
+> rt_val:		255
+8227c8214
+< next_PC:	6
+---
+> next_PC:	262
+8236,8237c8223,8224
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+8242c8229
+< PC:		18
+---
+> PC:		274
+8245c8232
+< rt_val:		0
+---
+> rt_val:		255
+8248c8235
+< next_PC:	6
+---
+> next_PC:	262
+8251c8238
+< ALU_data:	0
+---
+> ALU_data:	1
+8257,8260c8244,8247
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8264c8251
+< mem[0]:64
+---
+> mem[0]:1
+8269,8270c8256,8257
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8273c8260,8261
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8286,8287c8274,8275
+< instr:		16420
+< PC:		20
+---
+> instr:		16676
+> PC:		276
+8292c8280
+< PC:		18
+---
+> PC:		274
+8295c8283
+< rt_val:		0
+---
+> rt_val:		255
+8298c8286
+< next_PC:	6
+---
+> next_PC:	262
+8301c8289
+< ALU_data:	0
+---
+> ALU_data:	1
+8308c8296
+< PC:		22
+---
+> PC:		278
+8311,8313c8299,8301
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		60
+> instr:		16676
+> PC:		276
+8319c8307
+< next_PC:	6
+---
+> next_PC:	262
+8328,8331c8316,8319
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8335c8323
+< mem[0]:64
+---
+> mem[0]:1
+8340,8341c8328,8329
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8344c8332,8333
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8358c8347
+< PC:		22
+---
+> PC:		278
+8361,8363c8350,8352
+< rt:		0
+< instr:		16420
+< PC:		20
+---
+> rt:		60
+> instr:		16676
+> PC:		276
+8369c8358
+< next_PC:	6
+---
+> next_PC:	262
+8379c8368
+< PC:		24
+---
+> PC:		280
+8384c8373
+< PC:		22
+---
+> PC:		278
+8386,8388c8375,8377
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+8390c8379
+< next_PC:	6
+---
+> next_PC:	262
+8399,8402c8388,8391
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8406c8395
+< mem[0]:64
+---
+> mem[0]:1
+8411,8412c8400,8401
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8415c8404,8405
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8429c8419
+< PC:		24
+---
+> PC:		280
+8434c8424
+< PC:		22
+---
+> PC:		278
+8436,8438c8426,8428
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+8440c8430
+< next_PC:	6
+---
+> next_PC:	262
+8450c8440
+< PC:		38
+---
+> PC:		294
+8455c8445
+< PC:		24
+---
+> PC:		280
+8457,8459c8447,8449
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+8461c8451
+< next_PC:	22
+---
+> next_PC:	278
+8464,8465c8454,8455
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+8470,8473c8460,8463
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8477c8467
+< mem[0]:64
+---
+> mem[0]:1
+8482,8483c8472,8473
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8486c8476,8477
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8500c8491
+< PC:		24
+---
+> PC:		280
+8505c8496
+< PC:		24
+---
+> PC:		280
+8507,8509c8498,8500
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+8511c8502
+< next_PC:	22
+---
+> next_PC:	278
+8514,8515c8505,8506
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+8521c8512
+< PC:		38
+---
+> PC:		294
+8526c8517
+< PC:		24
+---
+> PC:		280
+8528,8530c8519,8521
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+8532c8523
+< next_PC:	24
+---
+> next_PC:	280
+8535,8536c8526,8527
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+8541,8544c8532,8535
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8548c8539
+< mem[0]:64
+---
+> mem[0]:1
+8553,8554c8544,8545
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8557c8548,8549
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8571c8563
+< PC:		38
+---
+> PC:		294
+8576c8568
+< PC:		24
+---
+> PC:		280
+8578,8580c8570,8572
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	60
+> rt_val:		60
+> rt:		4
+8582c8574
+< next_PC:	24
+---
+> next_PC:	280
+8585,8586c8577,8578
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+8592c8584
+< PC:		40
+---
+> PC:		296
+8597c8589
+< PC:		38
+---
+> PC:		294
+8603c8595
+< next_PC:	24
+---
+> next_PC:	280
+8606,8607c8598,8599
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+8612,8615c8604,8607
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8619c8611
+< mem[0]:64
+---
+> mem[0]:1
+8624,8625c8616,8617
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8628c8620,8621
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8642c8635
+< PC:		40
+---
+> PC:		296
+8647c8640
+< PC:		38
+---
+> PC:		294
+8653c8646
+< next_PC:	24
+---
+> next_PC:	280
+8656,8657c8649,8650
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	60
+> rt:		4
+8663c8656
+< PC:		42
+---
+> PC:		298
+8665,8666c8658,8659
+< rs:		3840
+< rt:		3840
+---
+> rs:		240
+> rt:		240
+8668c8661
+< PC:		40
+---
+> PC:		296
+8674c8667
+< next_PC:	24
+---
+> next_PC:	280
+8683,8686c8676,8679
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8690c8683
+< mem[0]:64
+---
+> mem[0]:1
+8695,8696c8688,8689
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8699c8692,8693
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8713c8707
+< PC:		42
+---
+> PC:		298
+8715,8716c8709,8710
+< rs:		3840
+< rt:		3840
+---
+> rs:		240
+> rt:		240
+8718c8712
+< PC:		40
+---
+> PC:		296
+8724c8718
+< next_PC:	24
+---
+> next_PC:	280
+8734c8728
+< PC:		44
+---
+> PC:		300
+8736,8737c8730,8731
+< rs:		3324
+< rt:		3840
+---
+> rs:		60
+> rt:		240
+8739c8733
+< PC:		42
+---
+> PC:		298
+8741,8742c8735,8736
+< ALU_out:	15360
+< rt_val:		3840
+---
+> ALU_out:	960
+> rt_val:		240
+8745c8739
+< next_PC:	24
+---
+> next_PC:	280
+8747c8741
+< mem_data:	64
+---
+> mem_data:	1
+8754,8757c8748,8751
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8761c8755
+< mem[0]:64
+---
+> mem[0]:1
+8766,8767c8760,8761
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8770c8764,8765
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8784c8779
+< PC:		44
+---
+> PC:		300
+8786,8787c8781,8782
+< rs:		3324
+< rt:		3840
+---
+> rs:		60
+> rt:		240
+8789c8784
+< PC:		42
+---
+> PC:		298
+8791,8792c8786,8787
+< ALU_out:	15360
+< rt_val:		3840
+---
+> ALU_out:	960
+> rt_val:		240
+8795c8790
+< next_PC:	24
+---
+> next_PC:	280
+8797c8792
+< mem_data:	64
+---
+> mem_data:	1
+8805c8800
+< PC:		46
+---
+> PC:		302
+8808c8803
+< rt:		64
+---
+> rt:		1
+8810c8805
+< PC:		44
+---
+> PC:		300
+8812,8813c8807,8808
+< ALU_out:	12540
+< rt_val:		3840
+---
+> ALU_out:	1020
+> rt_val:		240
+8816c8811
+< next_PC:	24
+---
+> next_PC:	280
+8819c8814
+< ALU_data:	15360
+---
+> ALU_data:	960
+8824,8828c8819,8823
+< $v0:	64
+< $v1:	4112
+< $v2:	3840
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	240
+> $v3:	60
+> $t0:	255
+8832c8827
+< mem[0]:64
+---
+> mem[0]:1
+8837,8838c8832,8833
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8841c8836,8837
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8855c8851
+< PC:		46
+---
+> PC:		302
+8858c8854
+< rt:		64
+---
+> rt:		1
+8860c8856
+< PC:		44
+---
+> PC:		300
+8862,8863c8858,8859
+< ALU_out:	12540
+< rt_val:		3840
+---
+> ALU_out:	1020
+> rt_val:		240
+8866c8862
+< next_PC:	24
+---
+> next_PC:	280
+8869c8865
+< ALU_data:	15360
+---
+> ALU_data:	960
+8876c8872
+< PC:		48
+---
+> PC:		304
+8879c8875
+< rt:		64
+---
+> rt:		1
+8881c8877
+< PC:		46
+---
+> PC:		302
+8884c8880
+< rt_val:		64
+---
+> rt_val:		1
+8887c8883
+< next_PC:	24
+---
+> next_PC:	280
+8890c8886
+< ALU_data:	12540
+---
+> ALU_data:	1020
+8895,8899c8891,8895
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	3324
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	60
+> $t0:	255
+8903c8899
+< mem[0]:64
+---
+> mem[0]:1
+8908,8909c8904,8905
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8912c8908,8909
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8926c8923
+< PC:		48
+---
+> PC:		304
+8929c8926
+< rt:		64
+---
+> rt:		1
+8931c8928
+< PC:		46
+---
+> PC:		302
+8934c8931
+< rt_val:		64
+---
+> rt_val:		1
+8937c8934
+< next_PC:	24
+---
+> next_PC:	280
+8940c8937
+< ALU_data:	12540
+---
+> ALU_data:	1020
+8947c8944
+< PC:		50
+---
+> PC:		306
+8950c8947
+< rt:		64
+---
+> rt:		1
+8952c8949
+< PC:		48
+---
+> PC:		304
+8955c8952
+< rt_val:		64
+---
+> rt_val:		1
+8958c8955
+< next_PC:	24
+---
+> next_PC:	280
+8966,8970c8963,8967
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+8974c8971
+< mem[0]:64
+---
+> mem[0]:1
+8979,8980c8976,8977
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+8983c8980,8981
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+8997c8995
+< PC:		48
+---
+> PC:		304
+9000c8998
+< rt:		64
+---
+> rt:		1
+9002c9000
+< PC:		48
+---
+> PC:		304
+9005c9003
+< rt_val:		64
+---
+> rt_val:		1
+9008c9006
+< next_PC:	24
+---
+> next_PC:	280
+9018c9016
+< PC:		50
+---
+> PC:		306
+9021c9019
+< rt:		64
+---
+> rt:		1
+9023c9021
+< PC:		48
+---
+> PC:		304
+9026c9024
+< rt_val:		64
+---
+> rt_val:		1
+9029c9027
+< next_PC:	24
+---
+> next_PC:	280
+9037,9041c9035,9039
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9045c9043
+< mem[0]:64
+---
+> mem[0]:1
+9050,9051c9048,9049
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9054c9052,9053
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+9068c9067
+< PC:		50
+---
+> PC:		306
+9071c9070
+< rt:		64
+---
+> rt:		1
+9073c9072
+< PC:		48
+---
+> PC:		304
+9076c9075
+< rt_val:		64
+---
+> rt_val:		1
+9079c9078
+< next_PC:	24
+---
+> next_PC:	280
+9089c9088
+< PC:		52
+---
+> PC:		308
+9094c9093
+< PC:		50
+---
+> PC:		306
+9100c9099
+< next_PC:	24
+---
+> next_PC:	280
+9109,9112c9108,9111
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9116c9115
+< mem[0]:64
+---
+> mem[0]:1
+9121,9122c9120,9121
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9125c9124,9125
+< 4 zero values omitted
+---
+> mem[12]:255
+> 3 zero values omitted
+9139c9139
+< PC:		52
+---
+> PC:		308
+9144c9144
+< PC:		50
+---
+> PC:		306
+9150c9150
+< next_PC:	24
+---
+> next_PC:	280
+9159,9160c9159,9160
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+9165c9165
+< PC:		52
+---
+> PC:		308
+9171c9171
+< next_PC:	24
+---
+> next_PC:	280
+9180,9183c9180,9183
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9187c9187
+< mem[0]:64
+---
+> mem[0]:1
+9192,9193c9192,9193
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9210,9211c9210,9211
+< instr:		16384
+< PC:		54
+---
+> instr:		16640
+> PC:		310
+9216c9216
+< PC:		52
+---
+> PC:		308
+9222c9222
+< next_PC:	24
+---
+> next_PC:	280
+9232c9232
+< PC:		56
+---
+> PC:		312
+9235,9237c9235,9237
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		1020
+> instr:		16640
+> PC:		310
+9243c9243
+< next_PC:	24
+---
+> next_PC:	280
+9245c9245
+< mem_data:	64
+---
+> mem_data:	1
+9252,9255c9252,9255
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9259c9259
+< mem[0]:64
+---
+> mem[0]:1
+9264,9265c9264,9265
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9283c9283
+< PC:		56
+---
+> PC:		312
+9286,9288c9286,9288
+< rt:		0
+< instr:		16384
+< PC:		54
+---
+> rt:		1020
+> instr:		16640
+> PC:		310
+9294c9294
+< next_PC:	24
+---
+> next_PC:	280
+9296c9296
+< mem_data:	64
+---
+> mem_data:	1
+9304c9304
+< PC:		58
+---
+> PC:		314
+9309c9309
+< PC:		56
+---
+> PC:		312
+9311,9313c9311,9313
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9315c9315
+< next_PC:	24
+---
+> next_PC:	280
+9323,9327c9323,9327
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9331c9331
+< mem[0]:64
+---
+> mem[0]:1
+9336,9337c9336,9337
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9355c9355
+< PC:		58
+---
+> PC:		314
+9360c9360
+< PC:		56
+---
+> PC:		312
+9362,9364c9362,9364
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9366c9366
+< next_PC:	24
+---
+> next_PC:	280
+9376c9376
+< PC:		2
+---
+> PC:		258
+9381c9381
+< PC:		58
+---
+> PC:		314
+9383,9385c9383,9385
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9387c9387
+< next_PC:	56
+---
+> next_PC:	312
+9390,9391c9390,9391
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9395,9399c9395,9399
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9403c9403
+< mem[0]:64
+---
+> mem[0]:1
+9408,9409c9408,9409
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9427c9427
+< PC:		2
+---
+> PC:		258
+9432c9432
+< PC:		58
+---
+> PC:		314
+9434,9436c9434,9436
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9438c9438
+< next_PC:	56
+---
+> next_PC:	312
+9441,9442c9441,9442
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9448c9448
+< PC:		4
+---
+> PC:		260
+9451c9451
+< rt:		0
+---
+> rt:		255
+9453c9453
+< PC:		2
+---
+> PC:		258
+9455,9457c9455,9457
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9459c9459
+< next_PC:	58
+---
+> next_PC:	314
+9462,9463c9462,9463
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9467,9471c9467,9471
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9475c9475
+< mem[0]:64
+---
+> mem[0]:1
+9480,9481c9480,9481
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9500c9500
+< PC:		4
+---
+> PC:		260
+9503c9503
+< rt:		0
+---
+> rt:		255
+9505c9505
+< PC:		2
+---
+> PC:		258
+9507,9509c9507,9509
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9511c9511
+< next_PC:	58
+---
+> next_PC:	314
+9514,9515c9514,9515
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9520,9521c9520,9521
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+9524c9524
+< rt:		0
+---
+> rt:		255
+9526c9526
+< PC:		4
+---
+> PC:		260
+9529c9529
+< rt_val:		0
+---
+> rt_val:		255
+9532c9532
+< next_PC:	58
+---
+> next_PC:	314
+9535,9536c9535,9536
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9540,9544c9540,9544
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9548c9548
+< mem[0]:64
+---
+> mem[0]:1
+9553,9554c9553,9554
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9571,9572c9571,9572
+< instr:		16438
+< PC:		6
+---
+> instr:		16694
+> PC:		262
+9575c9575
+< rt:		0
+---
+> rt:		255
+9577c9577
+< PC:		4
+---
+> PC:		260
+9580c9580
+< rt_val:		0
+---
+> rt_val:		255
+9583c9583
+< next_PC:	58
+---
+> next_PC:	314
+9586,9587c9586,9587
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9593c9593
+< PC:		8
+---
+> PC:		264
+9596,9598c9596,9598
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		1020
+> instr:		16694
+> PC:		262
+9601c9601
+< rt_val:		0
+---
+> rt_val:		255
+9604c9604
+< next_PC:	58
+---
+> next_PC:	314
+9612,9616c9612,9616
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+< $t0:	0
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+> $t0:	255
+9620c9620
+< mem[0]:64
+---
+> mem[0]:1
+9625,9626c9625,9626
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9644c9644
+< PC:		8
+---
+> PC:		264
+9647,9649c9647,9649
+< rt:		0
+< instr:		16438
+< PC:		6
+---
+> rt:		1020
+> instr:		16694
+> PC:		262
+9652c9652
+< rt_val:		0
+---
+> rt_val:		255
+9655c9655
+< next_PC:	58
+---
+> next_PC:	314
+9665c9665
+< PC:		10
+---
+> PC:		266
+9670c9670
+< PC:		8
+---
+> PC:		264
+9672,9674c9672,9674
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9676c9676
+< next_PC:	58
+---
+> next_PC:	314
+9684,9687c9684,9687
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+9692c9692
+< mem[0]:64
+---
+> mem[0]:1
+9697,9698c9697,9698
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9716c9716
+< PC:		10
+---
+> PC:		266
+9721c9721
+< PC:		8
+---
+> PC:		264
+9723,9725c9723,9725
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9727c9727
+< next_PC:	58
+---
+> next_PC:	314
+9737c9737
+< PC:		56
+---
+> PC:		312
+9742c9742
+< PC:		10
+---
+> PC:		266
+9744,9746c9744,9746
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9748c9748
+< next_PC:	8
+---
+> next_PC:	264
+9751,9752c9751,9752
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9756,9759c9756,9759
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+9764c9764
+< mem[0]:64
+---
+> mem[0]:1
+9769,9770c9769,9770
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9788c9788
+< PC:		56
+---
+> PC:		312
+9793c9793
+< PC:		10
+---
+> PC:		266
+9795,9797c9795,9797
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9799c9799
+< next_PC:	8
+---
+> next_PC:	264
+9802,9803c9802,9803
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9809c9809
+< PC:		58
+---
+> PC:		314
+9814c9814
+< PC:		56
+---
+> PC:		312
+9816,9818c9816,9818
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9820c9820
+< next_PC:	10
+---
+> next_PC:	266
+9823,9824c9823,9824
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9828,9831c9828,9831
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+9836c9836
+< mem[0]:64
+---
+> mem[0]:1
+9841,9842c9841,9842
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9860c9860
+< PC:		58
+---
+> PC:		314
+9865c9865
+< PC:		56
+---
+> PC:		312
+9867,9869c9867,9869
+< ALU_out:	0
+< rt_val:		0
+< rt:		0
+---
+> ALU_out:	1020
+> rt_val:		1020
+> rt:		4
+9871c9871
+< next_PC:	10
+---
+> next_PC:	266
+9874,9875c9874,9875
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9881c9881
+< PC:		60
+---
+> PC:		316
+9886c9886
+< PC:		58
+---
+> PC:		314
+9892c9892
+< next_PC:	10
+---
+> next_PC:	266
+9895,9896c9895,9896
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9900,9903c9900,9903
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+9908c9908
+< mem[0]:64
+---
+> mem[0]:1
+9913,9914c9913,9914
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+9932c9932
+< PC:		60
+---
+> PC:		316
+9937c9937
+< PC:		58
+---
+> PC:		314
+9943c9943
+< next_PC:	10
+---
+> next_PC:	266
+9946,9947c9946,9947
+< ALU_data:	0
+< rt:		0
+---
+> ALU_data:	1020
+> rt:		4
+9953c9953
+< PC:		62
+---
+> PC:		318
+9958c9958
+< PC:		60
+---
+> PC:		316
+9964c9964
+< next_PC:	10
+---
+> next_PC:	266
+9972,9975c9972,9975
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+9980c9980
+< mem[0]:64
+---
+> mem[0]:1
+9985,9986c9985,9986
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280
+10004c10004
+< PC:		62
+---
+> PC:		318
+10009c10009
+< PC:		60
+---
+> PC:		316
+10015c10015
+< next_PC:	10
+---
+> next_PC:	266
+10025c10025
+< PC:		64
+---
+> PC:		320
+10030c10030
+< PC:		62
+---
+> PC:		318
+10036c10036
+< next_PC:	10
+---
+> next_PC:	266
+10044,10047c10044,10047
+< $v0:	64
+< $v1:	4112
+< $v2:	15360
+< $v3:	12540
+---
+> $v0:	1
+> $v1:	4121
+> $v2:	960
+> $v3:	1020
+10052c10052
+< mem[0]:64
+---
+> mem[0]:1
+10057,10058c10057,10058
+< mem[8]:255
+< mem[9]:255
+---
+> mem[8]:65280
+> mem[9]:65280

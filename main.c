@@ -4,6 +4,30 @@
 #include "stages.h"
 
 
+void sim_setup(uint16_t *mem, uint16_t *reg)
+{
+	//registers
+	reg[1] = 0x0040;
+	reg[2] = 0x1010;
+	reg[3] = 0x000F;
+	reg[4] = 0x00F0;
+	reg[5] = 0x0000;
+	reg[6] = 0x0010;
+	reg[7] = 0x0005;
+
+	//memory
+	mem[(0x0010 + 0)/2] = 0x0101;
+	mem[(0x0010 + 2)/2] = 0x0110;
+	mem[(0x0010 + 4)/2] = 0x0011;
+	mem[(0x0010 + 6)/2] = 0x00F0;
+	mem[(0x0010 + 8)/2] = 0x00FF;
+
+	//some extra constants
+	mem[0x0001] = 0x0100;
+	mem[0x0002] = 0xFF00;
+	mem[0x0003] = 0x00FF;
+}
+
 //prints contents of a register file
 void print_reg(uint16_t *reg_file)
 {
@@ -142,6 +166,8 @@ int main(int argc, char** argv)
 		printf("%d\n",instr_mem[i]);
 	}
 
+	//loading default values
+	sim_setup(data_mem, reg_file);
 	while(PC / 2 < (prog_size + num_nops))
 	{
 		printf("\n---------------------\n");

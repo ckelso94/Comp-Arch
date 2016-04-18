@@ -1,0 +1,10041 @@
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		64
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		64
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	257
+ALU_data:	16
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		64
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		64
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	64
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+1 zero values omitted
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		64
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		64
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		64
+rt:		257
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		64
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	64
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 2 b: 257 func: 1 alu out: 65281
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		64
+rt:		257
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		64
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		64
+rt:		257
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		257
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	64
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 256 b: 257 func: 1 alu out: 65535
+Old buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		64
+rt:		257
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		257
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		257
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		257
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		1109
+PC:		282
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		1109
+PC:		282
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	64
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		1109
+PC:		282
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	64
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		284
+ID EXE Buffer
+rs:		4112
+rt:		64
+instr:		1109
+PC:		282
+EXE MEM Buffer
+ALU_out:	8
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	64
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		284
+ID EXE Buffer
+rs:		4112
+rt:		64
+instr:		1109
+PC:		282
+EXE MEM Buffer
+ALU_out:	8
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4164
+PC:		286
+ID EXE Buffer
+rs:		0
+rt:		64
+instr:		8256
+PC:		284
+EXE MEM Buffer
+ALU_out:	4120
+rt_val:		64
+rt:		1
+rd:		2
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	8
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	64
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4164
+PC:		286
+ID EXE Buffer
+rs:		0
+rt:		64
+instr:		8256
+PC:		284
+EXE MEM Buffer
+ALU_out:	4120
+rt_val:		64
+rt:		1
+rd:		2
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	8
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		11328
+PC:		288
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		4164
+PC:		286
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	4120
+rt:		1
+rd:		2
+
+$zero:	0
+$v0:	8
+$v1:	4112
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:64
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		288
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		4164
+PC:		286
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	4120
+rt:		1
+rd:		2
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		290
+ID EXE Buffer
+rs:		16
+rt:		8
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	4
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		288
+ID EXE Buffer
+rs:		16
+rt:		8
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	4
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		290
+ID EXE Buffer
+rs:		16
+rt:		8
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	16
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	65280
+ALU_data:	4
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		290
+ID EXE Buffer
+rs:		16
+rt:		8
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	16
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	65280
+ALU_data:	4
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16690
+PC:		292
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		290
+EXE MEM Buffer
+ALU_out:	16
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	16
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	65280
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:257
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16690
+PC:		292
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		290
+EXE MEM Buffer
+ALU_out:	16
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	16
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16690
+PC:		292
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	16
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	65280
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16690
+PC:		292
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	16
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	276
+MEM WB Buffer
+mem_data:	8
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	65280
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	276
+MEM WB Buffer
+mem_data:	8
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		15
+rt:		15
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	294
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		15
+rt:		15
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	294
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		16
+rt:		16
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		16
+rt:		16
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		16
+rt:		6
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		16
+rt:		6
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	18
+rt:		6
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	16
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	18
+rt:		6
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		4
+rt:		257
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 4 b: 1 func: 1 alu out: 3
+Old buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		4
+rt:		257
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		257
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		257
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		257
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		257
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		257
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	257
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		257
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		4
+rt:		4
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		257
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		4
+rt:		4
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		257
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		18
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	3
+rt_val:		4
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		18
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	3
+rt_val:		4
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	3
+rt:		7
+rd:		7
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	18
+$a1:	4
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	3
+rt:		7
+rd:		7
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	272
+ALU_data:	18
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	272
+ALU_data:	18
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		8
+rt:		272
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 2 b: 272 func: 1 alu out: 65266
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		8
+rt:		272
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		8
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		8
+rt:		272
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		272
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 256 b: 272 func: 1 alu out: 65520
+Old buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		8
+rt:		272
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		272
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		272
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		272
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		1109
+PC:		282
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		1109
+PC:		282
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	8
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		1109
+PC:		282
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	8
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		284
+ID EXE Buffer
+rs:		4120
+rt:		8
+instr:		1109
+PC:		282
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		284
+ID EXE Buffer
+rs:		4120
+rt:		8
+instr:		1109
+PC:		282
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4164
+PC:		286
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		8256
+PC:		284
+EXE MEM Buffer
+ALU_out:	4121
+rt_val:		8
+rt:		1
+rd:		2
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	8
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4164
+PC:		286
+ID EXE Buffer
+rs:		0
+rt:		8
+instr:		8256
+PC:		284
+EXE MEM Buffer
+ALU_out:	4121
+rt_val:		8
+rt:		1
+rd:		2
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		11328
+PC:		288
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4164
+PC:		286
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	4121
+rt:		1
+rd:		2
+
+$zero:	0
+$v0:	1
+$v1:	4120
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:8
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		288
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4164
+PC:		286
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	4121
+rt:		1
+rd:		2
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		290
+ID EXE Buffer
+rs:		18
+rt:		1
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	4
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		288
+ID EXE Buffer
+rs:		18
+rt:		1
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	4
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		290
+ID EXE Buffer
+rs:		18
+rt:		1
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	65280
+ALU_data:	4
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		290
+ID EXE Buffer
+rs:		18
+rt:		1
+instr:		11328
+PC:		288
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	65280
+ALU_data:	4
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16690
+PC:		292
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		290
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	18
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	65280
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:272
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16690
+PC:		292
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		290
+EXE MEM Buffer
+ALU_out:	18
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	18
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16690
+PC:		292
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	18
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	65280
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16690
+PC:		292
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		65280
+rt:		1
+rd:		0
+next_PC:	276
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	18
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	276
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	65280
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		65280
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	276
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		15
+rt:		15
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	294
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		15
+rt:		15
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	294
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		18
+rt:		18
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		18
+rt:		18
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		6
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		18
+rt:		6
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		18
+rt:		6
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	20
+rt:		6
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	18
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	296
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	20
+rt:		6
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		3
+rt:		272
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 3 b: 1 func: 1 alu out: 2
+Old buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		3
+rt:		272
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		272
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		272
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		272
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		272
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		272
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	272
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		272
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		3
+rt:		3
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		272
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		3
+rt:		3
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		272
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		20
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		3
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		20
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		3
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	2
+rt:		7
+rd:		7
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	20
+$a1:	3
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	2
+rt:		7
+rd:		7
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	17
+ALU_data:	20
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	0
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	17
+ALU_data:	20
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		17
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 2 b: 17 func: 1 alu out: 65521
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		1
+rt:		17
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		17
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		17
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 256 b: 17 func: 1 alu out: 239
+Old buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		17
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		17
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		4
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		4
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		4
+next_PC:	278
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		4
+next_PC:	278
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		240
+rt:		4
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		2278
+PC:		298
+ID EXE Buffer
+rs:		15
+rt:		15
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		2278
+PC:		298
+ID EXE Buffer
+rs:		15
+rt:		15
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		300
+ID EXE Buffer
+rs:		240
+rt:		15
+instr:		2278
+PC:		298
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		15
+rt:		3
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		300
+ID EXE Buffer
+rs:		240
+rt:		15
+instr:		2278
+PC:		298
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		15
+rt:		3
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4166
+PC:		302
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		300
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		15
+rt:		3
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		3
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	15
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4166
+PC:		302
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		300
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		15
+rt:		3
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		3
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4166
+PC:		302
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		3
+rd:		4
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	240
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4166
+PC:		302
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		3
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		20
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	6
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		20
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	6
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		20
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	255
+ALU_data:	6
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		20
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	255
+ALU_data:	6
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		4160
+PC:		306
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	20
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:17
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		4160
+PC:		306
+EXE MEM Buffer
+ALU_out:	20
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	20
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		20
+rt:		20
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	20
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		20
+rt:		20
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	20
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		204
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		20
+rt:		6
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		204
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		20
+rt:		6
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	22
+rt:		6
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	20
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	22
+rt:		6
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		2
+rt:		17
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 2 b: 1 func: 1 alu out: 1
+Old buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		2
+rt:		17
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		17
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		17
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		204
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	17
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		204
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		2
+rt:		2
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	0
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		2
+rt:		2
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		17
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		22
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		2
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	0
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		22
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		2
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		7
+rd:		7
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	0
+$a0:	22
+$a1:	2
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		7
+rd:		7
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	240
+ALU_data:	22
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	0
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	240
+ALU_data:	22
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		240
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 2 b: 240 func: 1 alu out: 65298
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		1
+rt:		240
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		240
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		240
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 256 b: 240 func: 1 alu out: 16
+Old buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		240
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		240
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		204
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		204
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		4
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		4
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		4
+next_PC:	278
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		4
+next_PC:	278
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	204
+rt_val:		204
+rt:		4
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	204
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		2278
+PC:		298
+ID EXE Buffer
+rs:		60
+rt:		60
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		2278
+PC:		298
+ID EXE Buffer
+rs:		60
+rt:		60
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		300
+ID EXE Buffer
+rs:		204
+rt:		60
+instr:		2278
+PC:		298
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		60
+rt:		3
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		300
+ID EXE Buffer
+rs:		204
+rt:		60
+instr:		2278
+PC:		298
+EXE MEM Buffer
+ALU_out:	240
+rt_val:		60
+rt:		3
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4166
+PC:		302
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		300
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		3
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		3
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	60
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4166
+PC:		302
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		300
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		3
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	240
+rt:		3
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4166
+PC:		302
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		3
+rd:		4
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	204
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4166
+PC:		302
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		3
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		22
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	6
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		22
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	6
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		22
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	255
+ALU_data:	6
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		22
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	255
+ALU_data:	6
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		4160
+PC:		306
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	22
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:240
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		4160
+PC:		306
+EXE MEM Buffer
+ALU_out:	22
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	22
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		22
+rt:		22
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	22
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		22
+rt:		22
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	22
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		60
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		22
+rt:		6
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		60
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		22
+rt:		6
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	24
+rt:		6
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	22
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	24
+rt:		6
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		1
+rt:		240
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 1 b: 1 func: 1 alu out: 0
+Old buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		1
+rt:		240
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		240
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		60
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	240
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		60
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	0
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		1
+rt:		1
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		240
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		24
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	0
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		24
+rt:		0
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		7
+rd:		7
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		7
+rd:		7
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	0
+$a0:	24
+$a1:	1
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		268
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		0
+rt:		5
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		7
+rd:		7
+
+New buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	255
+ALU_data:	24
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	0
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4162
+PC:		270
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		268
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	255
+ALU_data:	24
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4162
+PC:		270
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		255
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 2 b: 255 func: 1 alu out: 65283
+Old buffers:
+IF ID Buffer
+instr:		21320
+PC:		272
+ID EXE Buffer
+rs:		1
+rt:		255
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	2
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		255
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		255
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 256 b: 255 func: 1 alu out: 1
+Old buffers:
+IF ID Buffer
+instr:		28736
+PC:		274
+ID EXE Buffer
+rs:		1
+rt:		255
+instr:		21320
+PC:		272
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		255
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	256
+ALU_data:	2
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16676
+PC:		276
+ID EXE Buffer
+rs:		0
+rt:		256
+instr:		28736
+PC:		274
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		5
+rd:		1
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		60
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		1
+
+$zero:	0
+$v0:	256
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		278
+ID EXE Buffer
+rs:		0
+rt:		60
+instr:		16676
+PC:		276
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		256
+rt:		1
+rd:		0
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		5
+rd:		1
+
+New buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		4
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		278
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		4
+next_PC:	262
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		4
+next_PC:	278
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		45635
+PC:		280
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		4
+next_PC:	278
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		294
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		45635
+PC:		280
+EXE MEM Buffer
+ALU_out:	60
+rt_val:		60
+rt:		4
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		4
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		42690
+PC:		296
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		4160
+PC:		294
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	60
+rt:		4
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		2278
+PC:		298
+ID EXE Buffer
+rs:		240
+rt:		240
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		2278
+PC:		298
+ID EXE Buffer
+rs:		240
+rt:		240
+instr:		42690
+PC:		296
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		8256
+PC:		300
+ID EXE Buffer
+rs:		60
+rt:		240
+instr:		2278
+PC:		298
+EXE MEM Buffer
+ALU_out:	960
+rt_val:		240
+rt:		3
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	0
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		8256
+PC:		300
+ID EXE Buffer
+rs:		60
+rt:		240
+instr:		2278
+PC:		298
+EXE MEM Buffer
+ALU_out:	960
+rt_val:		240
+rt:		3
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4166
+PC:		302
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		300
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		240
+rt:		3
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	960
+rt:		3
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	240
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4166
+PC:		302
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		8256
+PC:		300
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		240
+rt:		3
+rd:		4
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	960
+rt:		3
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4166
+PC:		302
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		3
+rd:		4
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	60
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		0
+rt:		1
+instr:		4166
+PC:		302
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		3
+rd:		4
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		24
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	6
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		11328
+PC:		304
+ID EXE Buffer
+rs:		24
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	6
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		24
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	255
+ALU_data:	6
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		4160
+PC:		306
+ID EXE Buffer
+rs:		24
+rt:		1
+instr:		11328
+PC:		304
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		1
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	255
+ALU_data:	6
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		4160
+PC:		306
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	24
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36226
+PC:		308
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		4160
+PC:		306
+EXE MEM Buffer
+ALU_out:	24
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	24
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		24
+rt:		24
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	24
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16640
+PC:		310
+ID EXE Buffer
+rs:		24
+rt:		24
+instr:		36226
+PC:		308
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		255
+rt:		1
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	24
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		1020
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	26
+rt_val:		24
+rt:		6
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+$zero:	0
+$v0:	255
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		0
+rt:		1020
+instr:		16640
+PC:		310
+EXE MEM Buffer
+ALU_out:	26
+rt_val:		24
+rt:		6
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	1
+ALU_data:	0
+rt:		1
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	26
+rt:		6
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	24
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		0
+next_PC:	280
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	26
+rt:		6
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		28481
+PC:		258
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		0
+next_PC:	312
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+a: 0 b: 1 func: 1 alu out: 65535
+Old buffers:
+IF ID Buffer
+instr:		12608
+PC:		260
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		28481
+PC:		258
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		255
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		16694
+PC:		262
+ID EXE Buffer
+rs:		0
+rt:		255
+instr:		12608
+PC:		260
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		255
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		1020
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		255
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	255
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		36863
+PC:		264
+ID EXE Buffer
+rs:		0
+rt:		1020
+instr:		16694
+PC:		262
+EXE MEM Buffer
+ALU_out:	1
+rt_val:		255
+rt:		5
+rd:		0
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		6
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	1
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:2
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		7488
+PC:		266
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		36863
+PC:		264
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		6
+next_PC:	314
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1
+rt:		5
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		26
+rt:		1
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		6
+next_PC:	264
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	1
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:1
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		312
+ID EXE Buffer
+rs:		26
+rt:		1
+instr:		7488
+PC:		266
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		6
+next_PC:	264
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		6
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	1
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		314
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		312
+EXE MEM Buffer
+ALU_out:	1020
+rt_val:		1020
+rt:		4
+rd:		6
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		316
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		0
+rd:		0
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		6
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	1
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		316
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		314
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		0
+rd:		0
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	1020
+rt:		4
+rd:		6
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		318
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		316
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		0
+rd:		0
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		0
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	1
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
+
+---------------------
+Old buffers:
+IF ID Buffer
+instr:		0
+PC:		318
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		316
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		0
+rd:		0
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		0
+rd:		0
+
+New buffers:
+IF ID Buffer
+instr:		0
+PC:		320
+ID EXE Buffer
+rs:		0
+rt:		0
+instr:		0
+PC:		318
+EXE MEM Buffer
+ALU_out:	0
+rt_val:		0
+rt:		0
+rd:		0
+next_PC:	266
+MEM WB Buffer
+mem_data:	48879
+ALU_data:	0
+rt:		0
+rd:		0
+
+$zero:	0
+$v0:	1
+$v1:	4121
+$v2:	960
+$v3:	1020
+$t0:	1
+$a0:	26
+$a1:	0
+
+mem[0]:1
+mem[1]:256
+mem[2]:65280
+mem[3]:255
+4 zero values omitted
+mem[8]:65280
+mem[9]:65280
+mem[10]:255
+mem[11]:255
+mem[12]:255
+3 zero values omitted
+mem[16]:257
+mem[17]:272
+mem[18]:17
+mem[19]:240
+mem[20]:255
+491 zero values omitted
+
+skip_next:0
