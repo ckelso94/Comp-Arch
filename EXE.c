@@ -203,7 +203,6 @@ void EXE_stage(ID_EXE_Buffer *in_buf, uint16_t *PC, uint8_t *skip_next, EXE_MEM_
 	//slt logic
 	if(in_buf->slt_ctrl == 1)
 	{
-		printf("a: %d b: %d func: %d alu out: %d\n", ALU_a, ALU_b, func, out_buf->ALU_out);
 		out_buf->ALU_out >>= 15;//shift all the way down
 	}
 
