@@ -49,7 +49,7 @@ void print_mem(uint16_t *data_mem)
 			{
 				printf("%d zero values omitted\n", num_zero);
 			}
-			printf("mem[%d]:0x%04x\n",i * 2,data_mem[i]);
+			printf("mem[0x%03x]:0x%04x\n",i * 2,data_mem[i]);
 			num_zero = 0;
 		}
 		else
