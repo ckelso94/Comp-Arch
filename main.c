@@ -160,17 +160,28 @@ int main(int argc, char** argv)
 	{
 		instr_mem[i] = 0;
 	}
-
+	//loading default values
+	sim_setup(data_mem, reg_file);
+	
+	printf("initial values:\n");
+	
 	for(int i = 0; i < prog_size; i++)
 	{
 		printf("%d\n",instr_mem[i]);
 	}
 
-	//loading default values
-	sim_setup(data_mem, reg_file);
+	print_reg(reg_file);
+	printf("\n");
+	print_mem(data_mem);
+	printf("\n");
+
+	//simple clock cycle count
+	int cycle = 0;
+	//we print when nextprint == cycle
+	int nextprint = -1;
+
 	while(PC / 2 < (prog_size + num_nops))
 	{
-		printf("\n---------------------\n");
 		WB_stage(&mem_wb_read, reg_file);
 		IF_stage(PC, instr_mem, &if_id_write);
 		PC += 2;
@@ -184,27 +195,6 @@ int main(int argc, char** argv)
 
 		reg_file[0] = 0;//hard code $zero
 
-		printf("Old buffers:\n");
-		print_if_id(&if_id_read);
-		print_id_exe(&id_exe_read);
-		print_exe_mem(&exe_mem_read);
-		print_mem_wb(&mem_wb_read);
-
-
-		printf("\nNew buffers:\n");
-		print_if_id(&if_id_write);
-		print_id_exe(&id_exe_write);
-		print_exe_mem(&exe_mem_write);
-		print_mem_wb(&mem_wb_write);
-		printf("\n");
-
-		print_reg(reg_file);
-		printf("\n");
-		print_mem(data_mem);
-		printf("\n");
-
-		printf("skip_next:%d\n",skip_next);
-
 		if(!load_hazard)
 		{
 			if_id_read = if_id_write;
@@ -214,6 +204,29 @@ int main(int argc, char** argv)
 		mem_wb_read = mem_wb_write;
 
 		load_hazard = 0;
+
+		if(PC == 54)//fetching end of loop (a jump)
+		{
+			//schedule a print when the jump is in WB
+			nextprint = cycle + 5;
+			printf("if_id_write.instr:%d\n", if_id_write.instr);
+		}
+
+		if(cycle == nextprint)
+		{
+			printf("data for clock cycle %d:\n",cycle);
+			print_reg(reg_file);
+			printf("\n");
+			print_mem(data_mem);
+			printf("\n");
+		}
+
+		cycle++;
 	}
+	printf("output after %d cycles:\n", cycle);
+	print_reg(reg_file);
+	printf("\n");
+	print_mem(data_mem);
+	printf("\n");
 
 }
