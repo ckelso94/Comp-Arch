@@ -34,7 +34,7 @@ void print_reg(uint16_t *reg_file)
 	static char *reg_names[] = {"$zero","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
 	for(int i = 0; i < 8; i++)
 	{
-		printf("%s:\t%d\n",reg_names[i],reg_file[i]);
+		printf("%s:\t0x%04x\n",reg_names[i],reg_file[i]);
 	}
 }
 
@@ -49,7 +49,7 @@ void print_mem(uint16_t *data_mem)
 			{
 				printf("%d zero values omitted\n", num_zero);
 			}
-			printf("mem[%d]:%d\n",i,data_mem[i]);
+			printf("mem[%d]:0x%04x\n",i * 2,data_mem[i]);
 			num_zero = 0;
 		}
 		else
