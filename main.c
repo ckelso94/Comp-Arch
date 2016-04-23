@@ -34,12 +34,14 @@ void print_reg(uint16_t *reg_file)
 	static char *reg_names[] = {"$zero","$v0","$v1","$v2","$v3","$t0","$a0","$a1"};
 	for(int i = 0; i < 8; i++)
 	{
-		printf("%s:\t0x%04x\n",reg_names[i],reg_file[i]);
+		//printf("%s:\t0x%04x\n",reg_names[i],reg_file[i]);
+		printf("0x%04x\n", reg_file[i]);
 	}
 }
 
 void print_mem(uint16_t *data_mem)
 {
+	return;
 	uint16_t num_zero = 0;
 	for(int i = 0; i < MEM_SIZE; i++)
 	{
@@ -47,9 +49,9 @@ void print_mem(uint16_t *data_mem)
 		{
 			if(num_zero > 0)
 			{
-				printf("%d zero values omitted\n", num_zero);
+				//printf("%d zero values omitted\n", num_zero);
 			}
-			printf("mem[0x%03x]:0x%04x\n",i * 2,data_mem[i]);
+			printf("0x%03x\n0x%04x\n",i * 2,data_mem[i]);
 			num_zero = 0;
 		}
 		else
@@ -59,7 +61,7 @@ void print_mem(uint16_t *data_mem)
 	}
 	if(num_zero > 0)
 	{
-		printf("%d zero values omitted\n", num_zero);
+		//printf("%d zero values omitted\n", num_zero);
 	}
 }
 
@@ -100,7 +102,7 @@ void print_mem_wb(MEM_WB_Buffer *buf)
 
 int main(int argc, char** argv)
 {
-	printf("hello world\n");
+	//printf("hello world\n");
 
 	IF_ID_Buffer if_id_read;
 	IF_ID_Buffer if_id_write;
@@ -163,17 +165,15 @@ int main(int argc, char** argv)
 	//loading default values
 	sim_setup(data_mem, reg_file);
 	
-	printf("initial values:\n");
+	printf("init\n");
 	
 	for(int i = 0; i < prog_size; i++)
 	{
-		printf("%d\n",instr_mem[i]);
+		//printf("%d\n",instr_mem[i]);
 	}
 
 	print_reg(reg_file);
-	printf("\n");
 	print_mem(data_mem);
-	printf("\n");
 
 	//simple clock cycle count
 	int cycle = 0;
@@ -209,16 +209,16 @@ int main(int argc, char** argv)
 		{
 			//schedule a print when the jump is in WB
 			nextprint = cycle + 5;
-			printf("if_id_write.instr:%d\n", if_id_write.instr);
+			//printf("if_id_write.instr:%d\n", if_id_write.instr);
 		}
 
 		if(cycle == nextprint)
 		{
 			printf("data for clock cycle %d:\n",cycle);
 			print_reg(reg_file);
-			printf("\n");
+			//printf("\n");
 			print_mem(data_mem);
-			printf("\n");
+			//printf("\n");
 		}
 
 		cycle++;

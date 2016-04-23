@@ -1,210 +1,74 @@
-hello world
-initial values:
-28481
-12608
-16438
-36863
-7488
-8256
-4162
-21320
-28736
-16420
-4160
-45635
-1109
-8256
-4164
-11328
-4160
-16434
-4160
-42690
-2278
-8256
-4166
-11328
-4160
-36226
-16384
-$zero:	0
-$v0:	64
-$v1:	4112
-$v2:	15
-$v3:	240
-$t0:	0
-$a0:	16
-$a1:	5
-
-1 zero values omitted
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:257
-mem[9]:272
-mem[10]:17
-mem[11]:240
-mem[12]:255
-499 zero values omitted
-
-if_id_write.instr:16384
+init
+0x0000
+0x0040
+0x1010
+0x000f
+0x00f0
+0x0000
+0x0010
+0x0005
 data for clock cycle 30:
-$zero:	0
-$v0:	8
-$v1:	4120
-$v2:	15
-$v3:	240
-$t0:	257
-$a0:	18
-$a1:	4
-
-mem[0]:8
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:272
-mem[10]:17
-mem[11]:240
-mem[12]:255
-499 zero values omitted
-
-if_id_write.instr:16384
+0x0000
+0x0008
+0x1018
+0x000f
+0x00f0
+0x0101
+0x0012
+0x0004
 data for clock cycle 58:
-$zero:	0
-$v0:	1
-$v1:	4121
-$v2:	15
-$v3:	240
-$t0:	272
-$a0:	20
-$a1:	3
-
-mem[0]:1
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:65280
-mem[10]:17
-mem[11]:240
-mem[12]:255
-499 zero values omitted
-
-if_id_write.instr:16384
+0x0000
+0x0001
+0x1019
+0x000f
+0x00f0
+0x0110
+0x0014
+0x0003
 data for clock cycle 85:
-$zero:	0
-$v0:	1
-$v1:	4121
-$v2:	60
-$v3:	204
-$t0:	17
-$a0:	22
-$a1:	2
-
-mem[0]:1
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:65280
-mem[10]:255
-mem[11]:240
-mem[12]:255
-499 zero values omitted
-
-if_id_write.instr:16384
+0x0000
+0x0001
+0x1019
+0x003c
+0x00cc
+0x0011
+0x0016
+0x0002
 data for clock cycle 112:
-$zero:	0
-$v0:	1
-$v1:	4121
-$v2:	240
-$v3:	60
-$t0:	240
-$a0:	24
-$a1:	1
-
-mem[0]:1
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:65280
-mem[10]:255
-mem[11]:255
-mem[12]:255
-499 zero values omitted
-
-if_id_write.instr:16384
+0x0000
+0x0001
+0x1019
+0x00f0
+0x003c
+0x00f0
+0x0018
+0x0001
 data for clock cycle 139:
-$zero:	0
-$v0:	1
-$v1:	4121
-$v2:	960
-$v3:	1020
-$t0:	255
-$a0:	26
-$a1:	0
-
-mem[0]:1
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:65280
-mem[10]:255
-mem[11]:255
-mem[12]:255
-499 zero values omitted
-
-if_id_write.instr:7488
+0x0000
+0x0001
+0x1019
+0x03c0
+0x03fc
+0x00ff
+0x001a
+0x0000
 data for clock cycle 146:
-$zero:	0
-$v0:	1
-$v1:	4121
-$v2:	960
-$v3:	1020
-$t0:	1
-$a0:	26
-$a1:	0
-
-mem[0]:1
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:65280
-mem[10]:255
-mem[11]:255
-mem[12]:255
-499 zero values omitted
-
+0x0000
+0x0001
+0x1019
+0x03c0
+0x03fc
+0x0001
+0x001a
+0x0000
 output after 147 cycles:
-$zero:	0
-$v0:	1
-$v1:	4121
-$v2:	960
-$v3:	1020
-$t0:	1
-$a0:	26
-$a1:	0
+0x0000
+0x0001
+0x1019
+0x03c0
+0x03fc
+0x0001
+0x001a
+0x0000
 
-mem[0]:1
-mem[1]:256
-mem[2]:65280
-mem[3]:255
-4 zero values omitted
-mem[8]:65280
-mem[9]:65280
-mem[10]:255
-mem[11]:255
-mem[12]:255
-499 zero values omitted
 
