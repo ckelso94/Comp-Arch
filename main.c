@@ -102,13 +102,13 @@ int main(int argc, char** argv)
 {
 	printf("hello world\n");
 
-	IF_ID_Buffer if_id_read;
+	IF_ID_Buffer if_id_read = (IF_ID_Buffer) {0,0};
 	IF_ID_Buffer if_id_write;
-	ID_EXE_Buffer id_exe_read;
+	ID_EXE_Buffer id_exe_read = (ID_EXE_Buffer) {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	ID_EXE_Buffer id_exe_write;
-	EXE_MEM_Buffer exe_mem_read;
+	EXE_MEM_Buffer exe_mem_read = (EXE_MEM_Buffer) {0,0,0,0,0,0,0,0,0,0};
 	EXE_MEM_Buffer exe_mem_write;
-	MEM_WB_Buffer mem_wb_read;
+	MEM_WB_Buffer mem_wb_read = (MEM_WB_Buffer) {0,0,0,0,0,0,0};
 	MEM_WB_Buffer mem_wb_write;
 
 	uint16_t PC;
